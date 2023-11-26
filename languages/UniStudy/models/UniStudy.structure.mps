@@ -26,6 +26,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -249,6 +250,7 @@
     <property role="EcuMT" value="8662004459809132492" />
     <property role="TrG5h" value="User" />
     <property role="R4oN_" value="A generic user of the university, might be a student or a professor" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyi" id="7wPBMAPLsZe" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132494" />
@@ -286,7 +288,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="thesis_defended" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7wPBMAPLt0c" resolve="Thesis" />
+      <ref role="20lvS9" node="4Sn75fF$Z0s" resolve="ThesisRef" />
     </node>
     <node concept="1TJgyj" id="7wPBMAPLt3a" role="1TKVEi">
       <property role="IQ2ns" value="8662004459809132746" />
@@ -392,6 +394,7 @@
     <property role="EcuMT" value="8662004459809132580" />
     <property role="TrG5h" value="DegreeCourse" />
     <property role="R4oN_" value="A degree course (bachelor, master or post-graduate course)." />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyj" id="7wPBMAPLt1Y" role="1TKVEi">
       <property role="IQ2ns" value="8662004459809132670" />
@@ -472,6 +475,7 @@
     <property role="EcuMT" value="8662004459809132614" />
     <property role="TrG5h" value="PostGraduateCourse" />
     <property role="R4oN_" value="A course reserved to post graduates. Can be a master or PhD." />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="7wPBMAPLt0$" resolve="DegreeCourse" />
   </node>
   <node concept="1TIwiD" id="7wPBMAPLt18">
@@ -598,6 +602,29 @@
       <property role="20kJfa" value="degree_course" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7wPBMAPLt0$" resolve="DegreeCourse" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4Sn75fF$Z0s">
+    <property role="EcuMT" value="5626997406182928412" />
+    <property role="TrG5h" value="ThesisRef" />
+    <property role="R4oN_" value="Wrapper for a reference to a thesis." />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="4Sn75fF$Z0t" role="1TKVEi">
+      <property role="IQ2ns" value="5626997406182928413" />
+      <property role="20kJfa" value="thesis" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7wPBMAPLt0c" resolve="Thesis" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4Sn75fF$Z0x">
+    <property role="EcuMT" value="5626997406182928417" />
+    <property role="TrG5h" value="EvaluationRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="4Sn75fF$Z0y" role="1TKVEi">
+      <property role="IQ2ns" value="5626997406182928418" />
+      <property role="20kJfa" value="evaluation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7wPBMAPLsZB" resolve="Evaluation" />
     </node>
   </node>
 </model>

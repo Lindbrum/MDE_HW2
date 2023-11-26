@@ -15,6 +15,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_DegreeCourseRef;
   private ConceptPresentation props_Department;
   private ConceptPresentation props_Evaluation;
+  private ConceptPresentation props_EvaluationRef;
   private ConceptPresentation props_ExaminationCall;
   private ConceptPresentation props_Master;
   private ConceptPresentation props_MasterDegree;
@@ -25,6 +26,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ProfessorRef;
   private ConceptPresentation props_Student;
   private ConceptPresentation props_Thesis;
+  private ConceptPresentation props_ThesisRef;
   private ConceptPresentation props_User;
 
   @Override
@@ -52,7 +54,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_DegreeCourse == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("A degree course (bachelor, master or post-graduate course).");
-          cpb.rawPresentation("DegreeCourse");
           props_DegreeCourse = cpb.create();
         }
         return props_DegreeCourse;
@@ -80,6 +81,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Evaluation = cpb.create();
         }
         return props_Evaluation;
+      case LanguageConceptSwitch.EvaluationRef:
+        if (props_EvaluationRef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb93f021L, 0x4e171c53eb93f022L, "evaluation", "", "");
+          props_EvaluationRef = cpb.create();
+        }
+        return props_EvaluationRef;
       case LanguageConceptSwitch.ExaminationCall:
         if (props_ExaminationCall == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -124,7 +132,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_PostGraduateCourse == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("A course reserved to post graduates. Can be a master or PhD.");
-          cpb.rawPresentation("PostGraduateCourse");
           props_PostGraduateCourse = cpb.create();
         }
         return props_PostGraduateCourse;
@@ -159,11 +166,18 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Thesis = cpb.create();
         }
         return props_Thesis;
+      case LanguageConceptSwitch.ThesisRef:
+        if (props_ThesisRef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Wrapper for a reference to a thesis.");
+          cpb.presentationByReference(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb93f01cL, 0x4e171c53eb93f01dL, "thesis", "", "");
+          props_ThesisRef = cpb.create();
+        }
+        return props_ThesisRef;
       case LanguageConceptSwitch.User:
         if (props_User == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("A generic user of the university, might be a student or a professor");
-          cpb.rawPresentation("User");
           props_User = cpb.create();
         }
         return props_User;

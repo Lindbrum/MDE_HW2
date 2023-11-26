@@ -36,12 +36,16 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 0:
         return Collections.<SubstituteMenu>singletonList(new DegreeCourseRef_SubstituteMenu());
       case 1:
+        return Collections.<SubstituteMenu>singletonList(new EvaluationRef_SubstituteMenu());
+      case 2:
         return Collections.<SubstituteMenu>singletonList(new ProfessorRef_SubstituteMenu());
+      case 3:
+        return Collections.<SubstituteMenu>singletonList(new ThesisRef_SubstituteMenu());
       default:
     }
     return Collections.<SubstituteMenu>emptyList();
   }
 
   private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d044L), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfe1L)).seal();
-  private static final ConceptSwitchIndex conceptIndex1 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d0d2L), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d008L)).seal();
+  private static final ConceptSwitchIndex conceptIndex1 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d0d2L), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb93f021L), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d008L), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb93f01cL)).seal();
 }

@@ -7,25 +7,23 @@
   <imports />
   <registry>
     <language id="6d0cfce3-b6ce-4188-a634-93977a58376f" name="UniStudy">
-      <concept id="8662004459809132580" name="UniStudy.structure.DegreeCourse" flags="ng" index="3dW4Wd">
-        <child id="8662004459809132696" name="course_catalog" index="3dW4YL" />
+      <concept id="8662004459809132513" name="UniStudy.structure.Student" flags="ng" index="3dW538">
+        <property id="8662004459809132516" name="matriculation_number" index="3dW53d" />
       </concept>
-      <concept id="8662004459809132552" name="UniStudy.structure.ProfessorRef" flags="ng" index="3dW4Wx" />
-      <concept id="8662004459809132612" name="UniStudy.structure.BachelorDegree" flags="ng" index="3dW4XH" />
-      <concept id="8662004459809132404" name="UniStudy.structure.Course" flags="ng" index="3dW51t">
-        <child id="8662004459809132544" name="calls" index="3dW4WD" />
-        <child id="8662004459809132548" name="professors" index="3dW4WH" />
+      <concept id="8662004459809132492" name="UniStudy.structure.User" flags="ng" index="3dW53_">
+        <property id="8662004459809132494" name="name" index="3dW53B" />
+        <property id="8662004459809132496" name="surname" index="3dW53T" />
+        <property id="8662004459809132499" name="email" index="3dW53U" />
+        <property id="8662004459809132503" name="telephone_number" index="3dW53Y" />
       </concept>
-      <concept id="8662004459809132513" name="UniStudy.structure.Student" flags="ng" index="3dW538" />
-      <concept id="8662004459809110560" name="UniStudy.structure.ExaminationCall" flags="ng" index="3dWek9" />
     </language>
   </registry>
-  <node concept="3dW4XH" id="64LMs1QlnQX">
-    <node concept="3dW51t" id="64LMs1QlnQY" role="3dW4YL">
-      <node concept="3dWek9" id="64LMs1QlnQZ" role="3dW4WD" />
-      <node concept="3dW4Wx" id="64LMs1QlnR0" role="3dW4WH" />
-    </node>
+  <node concept="3dW538" id="64LMs1QlnR1">
+    <property role="3dW53B" value="Dario" />
+    <property role="3dW53T" value="D'Ercole" />
+    <property role="3dW53d" value="299643" />
+    <property role="3dW53U" value="dario.dercole@student.univaq.it" />
+    <property role="3dW53Y" value="+393896661213" />
   </node>
-  <node concept="3dW538" id="64LMs1QlnR1" />
 </model>
 

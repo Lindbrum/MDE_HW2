@@ -15,17 +15,19 @@ public final class LanguageConceptSwitch {
   public static final int DegreeCourseRef = 3;
   public static final int Department = 4;
   public static final int Evaluation = 5;
-  public static final int ExaminationCall = 6;
-  public static final int Master = 7;
-  public static final int MasterDegree = 8;
-  public static final int News = 9;
-  public static final int PhD = 10;
-  public static final int PostGraduateCourse = 11;
-  public static final int Professor = 12;
-  public static final int ProfessorRef = 13;
-  public static final int Student = 14;
-  public static final int Thesis = 15;
-  public static final int User = 16;
+  public static final int EvaluationRef = 6;
+  public static final int ExaminationCall = 7;
+  public static final int Master = 8;
+  public static final int MasterDegree = 9;
+  public static final int News = 10;
+  public static final int PhD = 11;
+  public static final int PostGraduateCourse = 12;
+  public static final int Professor = 13;
+  public static final int ProfessorRef = 14;
+  public static final int Student = 15;
+  public static final int Thesis = 16;
+  public static final int ThesisRef = 17;
+  public static final int User = 18;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL);
@@ -35,6 +37,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x78359f29b5c5d0d2L, DegreeCourseRef);
     builder.put(0x78359f29b5c5d064L, Department);
     builder.put(0x78359f29b5c5cfe7L, Evaluation);
+    builder.put(0x4e171c53eb93f021L, EvaluationRef);
     builder.put(0x78359f29b5c57a20L, ExaminationCall);
     builder.put(0x78359f29b5c5d048L, Master);
     builder.put(0x78359f29b5c5d045L, MasterDegree);
@@ -45,6 +48,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x78359f29b5c5d008L, ProfessorRef);
     builder.put(0x78359f29b5c5cfe1L, Student);
     builder.put(0x78359f29b5c5d00cL, Thesis);
+    builder.put(0x4e171c53eb93f01cL, ThesisRef);
     builder.put(0x78359f29b5c5cfccL, User);
     myIndex = builder.seal();
   }

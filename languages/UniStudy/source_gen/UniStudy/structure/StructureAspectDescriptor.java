@@ -24,6 +24,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptDegreeCourseRef = createDescriptorForDegreeCourseRef();
   /*package*/ final ConceptDescriptor myConceptDepartment = createDescriptorForDepartment();
   /*package*/ final ConceptDescriptor myConceptEvaluation = createDescriptorForEvaluation();
+  /*package*/ final ConceptDescriptor myConceptEvaluationRef = createDescriptorForEvaluationRef();
   /*package*/ final ConceptDescriptor myConceptExaminationCall = createDescriptorForExaminationCall();
   /*package*/ final ConceptDescriptor myConceptMaster = createDescriptorForMaster();
   /*package*/ final ConceptDescriptor myConceptMasterDegree = createDescriptorForMasterDegree();
@@ -34,6 +35,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptProfessorRef = createDescriptorForProfessorRef();
   /*package*/ final ConceptDescriptor myConceptStudent = createDescriptorForStudent();
   /*package*/ final ConceptDescriptor myConceptThesis = createDescriptorForThesis();
+  /*package*/ final ConceptDescriptor myConceptThesisRef = createDescriptorForThesisRef();
   /*package*/ final ConceptDescriptor myConceptUser = createDescriptorForUser();
   /*package*/ final EnumerationDescriptor myEnumerationCoursePeriod = new EnumerationDescriptor_CoursePeriod();
   /*package*/ final EnumerationDescriptor myEnumerationCreditType = new EnumerationDescriptor_CreditType();
@@ -56,7 +58,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBachelorDegree, myConceptCourse, myConceptDegreeCourse, myConceptDegreeCourseRef, myConceptDepartment, myConceptEvaluation, myConceptExaminationCall, myConceptMaster, myConceptMasterDegree, myConceptNews, myConceptPhD, myConceptPostGraduateCourse, myConceptProfessor, myConceptProfessorRef, myConceptStudent, myConceptThesis, myConceptUser);
+    return Arrays.asList(myConceptBachelorDegree, myConceptCourse, myConceptDegreeCourse, myConceptDegreeCourseRef, myConceptDepartment, myConceptEvaluation, myConceptEvaluationRef, myConceptExaminationCall, myConceptMaster, myConceptMasterDegree, myConceptNews, myConceptPhD, myConceptPostGraduateCourse, myConceptProfessor, myConceptProfessorRef, myConceptStudent, myConceptThesis, myConceptThesisRef, myConceptUser);
   }
 
   @Override
@@ -75,6 +77,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptDepartment;
       case LanguageConceptSwitch.Evaluation:
         return myConceptEvaluation;
+      case LanguageConceptSwitch.EvaluationRef:
+        return myConceptEvaluationRef;
       case LanguageConceptSwitch.ExaminationCall:
         return myConceptExaminationCall;
       case LanguageConceptSwitch.Master:
@@ -95,6 +99,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptStudent;
       case LanguageConceptSwitch.Thesis:
         return myConceptThesis;
+      case LanguageConceptSwitch.ThesisRef:
+        return myConceptThesisRef;
       case LanguageConceptSwitch.User:
         return myConceptUser;
       default:
@@ -140,7 +146,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForDegreeCourse() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("UniStudy", "DegreeCourse", 0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d024L);
-    b.class_(false, false, true);
+    b.class_(false, true, false);
     b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/8662004459809132580");
     b.version(3);
     b.property("code", 0x78359f29b5c5d025L).type(PrimitiveTypeId.STRING).origin("8662004459809132581").done();
@@ -184,6 +190,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("student", 0x78359f29b5c5cff7L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfe1L).optional(false).origin("8662004459809132535").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForEvaluationRef() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("UniStudy", "EvaluationRef", 0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb93f021L);
+    b.class_(false, false, false);
+    b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/5626997406182928417");
+    b.version(3);
+    b.associate("evaluation", 0x4e171c53eb93f022L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfe7L).optional(false).origin("5626997406182928418").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForExaminationCall() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("UniStudy", "ExaminationCall", 0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c57a20L);
     b.class_(false, false, false);
@@ -199,7 +213,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForMaster() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("UniStudy", "Master", 0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d048L);
-    b.class_(false, false, false);
+    b.class_(false, false, true);
     // extends: UniStudy.structure.PostGraduateCourse
     b.super_(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d046L);
     b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/8662004459809132616");
@@ -211,7 +225,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForMasterDegree() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("UniStudy", "MasterDegree", 0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d045L);
-    b.class_(false, false, false);
+    b.class_(false, false, true);
     // extends: UniStudy.structure.DegreeCourse
     b.super_(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d024L);
     b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/8662004459809132613");
@@ -232,7 +246,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForPhD() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("UniStudy", "PhD", 0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d05dL);
-    b.class_(false, false, false);
+    b.class_(false, false, true);
     // extends: UniStudy.structure.PostGraduateCourse
     b.super_(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d046L);
     b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/8662004459809132637");
@@ -242,7 +256,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForPostGraduateCourse() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("UniStudy", "PostGraduateCourse", 0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d046L);
-    b.class_(false, false, false);
+    b.class_(false, true, false);
     // extends: UniStudy.structure.DegreeCourse
     b.super_(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d024L);
     b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/8662004459809132614");
@@ -281,7 +295,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/8662004459809132513");
     b.version(3);
     b.property("matriculation_number", 0x78359f29b5c5cfe4L).type(PrimitiveTypeId.INTEGER).origin("8662004459809132516").done();
-    b.aggregate("thesis_defended", 0x78359f29b5c5d0c7L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d00cL).optional(true).ordered(true).multiple(true).origin("8662004459809132743").done();
+    b.aggregate("thesis_defended", 0x78359f29b5c5d0c7L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb93f01cL).optional(true).ordered(true).multiple(true).origin("8662004459809132743").done();
     b.aggregate("evaluations_received", 0x78359f29b5c5d0caL).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfe7L).optional(true).ordered(true).multiple(true).origin("8662004459809132746").done();
     b.aggregate("enrolled_courses", 0x78359f29b5c5d0cdL).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d0d2L).optional(true).ordered(true).multiple(true).origin("8662004459809132749").done();
     return b.create();
@@ -297,9 +311,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("supervisor", 0x78359f29b5c5d021L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfc9L).optional(false).origin("8662004459809132577").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForThesisRef() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("UniStudy", "ThesisRef", 0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb93f01cL);
+    b.class_(false, false, false);
+    b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/5626997406182928412");
+    b.version(3);
+    b.associate("thesis", 0x4e171c53eb93f01dL).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d00cL).optional(false).origin("5626997406182928413").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForUser() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("UniStudy", "User", 0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfccL);
-    b.class_(false, false, false);
+    b.class_(false, true, false);
     b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/8662004459809132492");
     b.version(3);
     b.property("name", 0x78359f29b5c5cfceL).type(PrimitiveTypeId.STRING).origin("8662004459809132494").done();
