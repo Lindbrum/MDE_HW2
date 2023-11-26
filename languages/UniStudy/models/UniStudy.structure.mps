@@ -215,7 +215,7 @@
     <node concept="1TJgyi" id="7wPBMAPLsZu" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132510" />
       <property role="TrG5h" value="office_telephone" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <ref role="AX2Wp" node="4Sn75fFB_Ay" resolve="telephone" />
     </node>
     <node concept="1TJgyj" id="7wPBMAPLt2M" role="1TKVEi">
       <property role="IQ2ns" value="8662004459809132722" />
@@ -270,7 +270,7 @@
     <node concept="1TJgyi" id="7wPBMAPLsZn" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132503" />
       <property role="TrG5h" value="telephone_number" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <ref role="AX2Wp" node="4Sn75fFB_Ay" resolve="telephone" />
     </node>
   </node>
   <node concept="1TIwiD" id="7wPBMAPLsZx">
@@ -281,14 +281,14 @@
     <node concept="1TJgyi" id="7wPBMAPLsZ$" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132516" />
       <property role="TrG5h" value="matriculation_number" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" node="4Sn75fFBzzB" resolve="matNumber" />
     </node>
     <node concept="1TJgyj" id="7wPBMAPLt37" role="1TKVEi">
       <property role="IQ2ns" value="8662004459809132743" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="thesis_defended" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="4Sn75fF$Z0s" resolve="ThesisRef" />
+      <ref role="20lvS9" node="7wPBMAPLt0c" resolve="Thesis" />
     </node>
     <node concept="1TJgyj" id="7wPBMAPLt3a" role="1TKVEi">
       <property role="IQ2ns" value="8662004459809132746" />
@@ -380,14 +380,17 @@
     <node concept="25R33" id="7wPBMAPLt0j" role="25R1y">
       <property role="3tVfz5" value="8662004459809132563" />
       <property role="TrG5h" value="COMPILATION" />
+      <property role="1L1pqM" value="compilation" />
     </node>
     <node concept="25R33" id="7wPBMAPLt0k" role="25R1y">
       <property role="3tVfz5" value="8662004459809132564" />
       <property role="TrG5h" value="EXPERIMENTAL" />
+      <property role="1L1pqM" value="experimental" />
     </node>
     <node concept="25R33" id="7wPBMAPLt0n" role="25R1y">
       <property role="3tVfz5" value="8662004459809132567" />
       <property role="TrG5h" value="PUBLICATION" />
+      <property role="1L1pqM" value="publication" />
     </node>
   </node>
   <node concept="1TIwiD" id="7wPBMAPLt0$">
@@ -426,7 +429,7 @@
     <node concept="1TJgyi" id="7wPBMAPLt0I" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132590" />
       <property role="TrG5h" value="language" />
-      <ref role="AX2Wp" node="7wPBMAPLt0N" resolve="commaSeparatedList" />
+      <ref role="AX2Wp" node="7wPBMAPLt0N" resolve="commaSeparatedLanguageList" />
     </node>
     <node concept="1TJgyi" id="7wPBMAPLt0Q" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132598" />
@@ -626,6 +629,16 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7wPBMAPLsZB" resolve="Evaluation" />
     </node>
+  </node>
+  <node concept="Az7Fb" id="4Sn75fFBzzB">
+    <property role="3F6X1D" value="5626997406183602407" />
+    <property role="TrG5h" value="matNumber" />
+    <property role="FLfZY" value="^\\d{1,10}$" />
+  </node>
+  <node concept="Az7Fb" id="4Sn75fFB_Ay">
+    <property role="3F6X1D" value="5626997406183610786" />
+    <property role="TrG5h" value="telephone" />
+    <property role="FLfZY" value="[+]?[\\s./0-9]{1,6}[(]?[0-9]{1,4}[)]?[-\\s./0-9]{8,14}" />
   </node>
 </model>
 

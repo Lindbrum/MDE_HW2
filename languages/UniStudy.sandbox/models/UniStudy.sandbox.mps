@@ -18,12 +18,12 @@
       </concept>
     </language>
   </registry>
-  <node concept="3dW538" id="64LMs1QlnR1">
-    <property role="3dW53B" value="Dario" />
-    <property role="3dW53T" value="D'Ercole" />
-    <property role="3dW53d" value="299643" />
-    <property role="3dW53U" value="dario.dercole@student.univaq.it" />
+  <node concept="3dW538" id="4Sn75fFAnRw">
+    <property role="3dW53B" value="d" />
+    <property role="3dW53T" value="d" />
+    <property role="3dW53U" value="d@s.c" />
     <property role="3dW53Y" value="+393896661213" />
+    <property role="3dW53d" value="288643" />
   </node>
 </model>
 

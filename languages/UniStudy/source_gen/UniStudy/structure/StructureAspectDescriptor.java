@@ -44,6 +44,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final EnumerationDescriptor myEnumerationThesisType = new EnumerationDescriptor_ThesisType();
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypecommaSeparatedLanguageList = new ConstrainedStringDatatypeDescriptorImpl(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d033L, "commaSeparatedLanguageList", "r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/8662004459809132595", "(\\w*\\s*[,]{0,1}\\s*)*");
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypedate = new ConstrainedStringDatatypeDescriptorImpl(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d07aL, "date", "r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/8662004459809132666", "(0?[1-9]|[12]\\d|30|31)[^\\w\\d\r\n:](0?[1-9]|1[0-2])[^\\w\\d\r\n:](\\d{4}|\\d{2})");
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypematNumber = new ConstrainedStringDatatypeDescriptorImpl(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb9e38e7L, "matNumber", "r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/5626997406183602407", "^\\d{1,10}$");
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypetelephone = new ConstrainedStringDatatypeDescriptorImpl(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb9e59a2L, "telephone", "r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/5626997406183610786", "[+]?[\\s./0-9]{1,6}[(]?[0-9]{1,4}[)]?[-\\s./0-9]{8,14}");
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -110,7 +112,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationCoursePeriod, myEnumerationCreditType, myEnumerationExamType, myEnumerationPostGraduateLevel, myEnumerationThesisType, myCSDatatypecommaSeparatedLanguageList, myCSDatatypedate);
+    return Arrays.asList(myEnumerationCoursePeriod, myEnumerationCreditType, myEnumerationExamType, myEnumerationPostGraduateLevel, myEnumerationThesisType, myCSDatatypecommaSeparatedLanguageList, myCSDatatypedate, myCSDatatypematNumber, myCSDatatypetelephone);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -271,7 +273,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/8662004459809132489");
     b.version(3);
     b.property("orcid", 0x78359f29b5c5cfdcL).type(PrimitiveTypeId.STRING).origin("8662004459809132508").done();
-    b.property("office_telephone", 0x78359f29b5c5cfdeL).type(PrimitiveTypeId.STRING).origin("8662004459809132510").done();
+    b.property("office_telephone", 0x78359f29b5c5cfdeL).type(MetaIdFactory.dataTypeId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb9e59a2L)).origin("8662004459809132510").done();
     b.aggregate("taught_courses", 0x78359f29b5c5d0b2L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cf74L).optional(false).ordered(true).multiple(true).origin("8662004459809132722").done();
     b.aggregate("thesis_supervised", 0x78359f29b5c5d0b6L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d00cL).optional(true).ordered(true).multiple(true).origin("8662004459809132726").done();
     b.aggregate("coordinated_degree_courses", 0x78359f29b5c5d0bbL).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d024L).optional(true).ordered(true).multiple(true).origin("8662004459809132731").done();
@@ -294,8 +296,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfccL);
     b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/8662004459809132513");
     b.version(3);
-    b.property("matriculation_number", 0x78359f29b5c5cfe4L).type(PrimitiveTypeId.INTEGER).origin("8662004459809132516").done();
-    b.aggregate("thesis_defended", 0x78359f29b5c5d0c7L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb93f01cL).optional(true).ordered(true).multiple(true).origin("8662004459809132743").done();
+    b.property("matriculation_number", 0x78359f29b5c5cfe4L).type(MetaIdFactory.dataTypeId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb9e38e7L)).origin("8662004459809132516").done();
+    b.aggregate("thesis_defended", 0x78359f29b5c5d0c7L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d00cL).optional(true).ordered(true).multiple(true).origin("8662004459809132743").done();
     b.aggregate("evaluations_received", 0x78359f29b5c5d0caL).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfe7L).optional(true).ordered(true).multiple(true).origin("8662004459809132746").done();
     b.aggregate("enrolled_courses", 0x78359f29b5c5d0cdL).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d0d2L).optional(true).ordered(true).multiple(true).origin("8662004459809132749").done();
     return b.create();
@@ -327,7 +329,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("name", 0x78359f29b5c5cfceL).type(PrimitiveTypeId.STRING).origin("8662004459809132494").done();
     b.property("surname", 0x78359f29b5c5cfd0L).type(PrimitiveTypeId.STRING).origin("8662004459809132496").done();
     b.property("email", 0x78359f29b5c5cfd3L).type(PrimitiveTypeId.STRING).origin("8662004459809132499").done();
-    b.property("telephone_number", 0x78359f29b5c5cfd7L).type(PrimitiveTypeId.STRING).origin("8662004459809132503").done();
+    b.property("telephone_number", 0x78359f29b5c5cfd7L).type(MetaIdFactory.dataTypeId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb9e59a2L)).origin("8662004459809132503").done();
     return b.create();
   }
 }

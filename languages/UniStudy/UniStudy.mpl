@@ -49,6 +49,7 @@
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="6d0cfce3-b6ce-4188-a634-93977a58376f(UniStudy)" version="0" />
         <module reference="24662386-213a-43a0-98e9-bf23cf6407bb(UniStudy.generator)" version="0" />
+        <module reference="134ef213-c518-42b0-b12c-c109aa13d320(collections_trove.runtime)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
@@ -97,6 +98,9 @@
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
   </dependencyVersions>
+  <runtime>
+    <dependency reexport="false">134ef213-c518-42b0-b12c-c109aa13d320(collections_trove.runtime)</dependency>
+  </runtime>
   <extendedLanguages />
 </language>
 

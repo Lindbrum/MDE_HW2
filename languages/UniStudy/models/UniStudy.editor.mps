@@ -38,6 +38,7 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -83,12 +84,12 @@
         </node>
         <node concept="3F0A7n" id="4Sn75fF$4DE" role="3EZMnx">
           <ref role="1NtTu8" to="8nhb:7wPBMAPLsZ$" resolve="matriculation_number" />
-          <node concept="11LMrY" id="4Sn75fF$AHQ" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
         </node>
         <node concept="3F0ifn" id="4Sn75fF$4DU" role="3EZMnx">
           <property role="3F0ifm" value="]" />
+          <node concept="11L4FC" id="4Sn75fFBfa_" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
         <node concept="2iRfu4" id="4Sn75fF$4C7" role="2iSdaV" />
       </node>
@@ -128,6 +129,23 @@
           <node concept="2iRfu4" id="4Sn75fF$Z1b" role="2iSdaV" />
         </node>
         <node concept="2iRkQZ" id="4Sn75fF$Z08" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="4Sn75fF_rCM" role="3EZMnx">
+        <property role="3F0ifm" value=" " />
+      </node>
+      <node concept="3EZMnI" id="4Sn75fF_rBA" role="3EZMnx">
+        <node concept="VPM3Z" id="4Sn75fF_rBC" role="3F10Kt" />
+        <node concept="3F0ifn" id="4Sn75fF_rDq" role="3EZMnx">
+          <property role="3F0ifm" value="Thesis discussed" />
+        </node>
+        <node concept="3F0ifn" id="4Sn75fF_rDt" role="3EZMnx">
+          <property role="3F0ifm" value=" " />
+        </node>
+        <node concept="3F2HdR" id="4Sn75fF_J7E" role="3EZMnx">
+          <ref role="1NtTu8" to="8nhb:7wPBMAPLt37" resolve="thesis_defended" />
+          <node concept="2iRkQZ" id="4Sn75fF_J7G" role="2czzBx" />
+        </node>
+        <node concept="2iRkQZ" id="4Sn75fF_rBF" role="2iSdaV" />
       </node>
     </node>
   </node>
@@ -303,6 +321,76 @@
         <node concept="3mYdg7" id="64LMs1Ql8Nu" role="3F10Kt">
           <property role="1413C4" value="body-brace" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4Sn75fF_rzo">
+    <ref role="1XX52x" to="8nhb:7wPBMAPLt0c" resolve="Thesis" />
+    <node concept="3EZMnI" id="4Sn75fF_rzw" role="2wV5jI">
+      <node concept="3EZMnI" id="4Sn75fF_rzI" role="3EZMnx">
+        <node concept="VPM3Z" id="4Sn75fF_rzK" role="3F10Kt" />
+        <node concept="3F0ifn" id="4Sn75fF_r$2" role="3EZMnx">
+          <property role="3F0ifm" value="Thesis: &quot;" />
+          <node concept="11LMrY" id="4Sn75fFBfaw" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="4Sn75fF_r$8" role="3EZMnx">
+          <ref role="1NtTu8" to="8nhb:7wPBMAPLt0r" resolve="title" />
+        </node>
+        <node concept="3F0ifn" id="4Sn75fFAWRt" role="3EZMnx">
+          <property role="3F0ifm" value="&quot;" />
+          <node concept="11L4FC" id="4Sn75fFBfay" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="4Sn75fF_rzN" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="4Sn75fF_r$c" role="3EZMnx">
+        <property role="3F0ifm" value=" " />
+      </node>
+      <node concept="3EZMnI" id="4Sn75fF_r$s" role="3EZMnx">
+        <node concept="VPM3Z" id="4Sn75fF_r$u" role="3F10Kt" />
+        <node concept="3EZMnI" id="4Sn75fF_r$G" role="3EZMnx">
+          <node concept="VPM3Z" id="4Sn75fF_r$I" role="3F10Kt" />
+          <node concept="3F0ifn" id="4Sn75fF_r$T" role="3EZMnx">
+            <property role="3F0ifm" value="Type of thesis:" />
+          </node>
+          <node concept="3F0A7n" id="4Sn75fF_r_p" role="3EZMnx">
+            <ref role="1NtTu8" to="8nhb:7wPBMAPLt0g" resolve="type" />
+          </node>
+          <node concept="2iRfu4" id="4Sn75fF_r$L" role="2iSdaV" />
+        </node>
+        <node concept="3EZMnI" id="4Sn75fF_r_A" role="3EZMnx">
+          <node concept="VPM3Z" id="4Sn75fF_r_C" role="3F10Kt" />
+          <node concept="3F0ifn" id="4Sn75fF_r_P" role="3EZMnx">
+            <property role="3F0ifm" value="Defended by:" />
+          </node>
+          <node concept="1iCGBv" id="4Sn75fF_rA4" role="3EZMnx">
+            <ref role="1NtTu8" to="8nhb:7wPBMAPLt0u" resolve="student" />
+            <node concept="1sVBvm" id="4Sn75fF_rA6" role="1sWHZn">
+              <node concept="3F0A7n" id="4Sn75fF_rAe" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="8nhb:7wPBMAPLsZe" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="1iCGBv" id="4Sn75fF_rAM" role="3EZMnx">
+            <ref role="1NtTu8" to="8nhb:7wPBMAPLt0u" resolve="student" />
+            <node concept="1sVBvm" id="4Sn75fF_rAO" role="1sWHZn">
+              <node concept="3F0A7n" id="4Sn75fF_rB2" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="8nhb:7wPBMAPLsZg" resolve="surname" />
+              </node>
+            </node>
+          </node>
+          <node concept="2iRfu4" id="4Sn75fF_r_F" role="2iSdaV" />
+        </node>
+        <node concept="2iRkQZ" id="4Sn75fF_r$x" role="2iSdaV" />
+      </node>
+      <node concept="l2Vlx" id="4Sn75fF_rzz" role="2iSdaV" />
+      <node concept="pj6Ft" id="4Sn75fF_rzF" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
     </node>
   </node>
