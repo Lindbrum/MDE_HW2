@@ -134,7 +134,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForCourse() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("UniStudy", "Course", 0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cf74L);
-    b.class_(false, false, false);
+    b.class_(false, false, true);
     b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/8662004459809132404");
     b.version(3);
     b.property("id", 0x78359f29b5c5cf8bL).type(PrimitiveTypeId.STRING).origin("8662004459809132427").done();
@@ -218,6 +218,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("date", 0x78359f29b5c5cf75L).type(MetaIdFactory.dataTypeId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d07aL)).origin("8662004459809132405").done();
     b.property("classroom", 0x78359f29b5c5cf77L).type(PrimitiveTypeId.STRING).origin("8662004459809132407").done();
     b.property("exam_type", 0x78359f29b5c5cf7aL).type(MetaIdFactory.dataTypeId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cf7eL)).origin("8662004459809132410").done();
+    b.property("description", 0xc081217450dda00L).type(PrimitiveTypeId.STRING).origin("866962819420903936").done();
     b.associate("course", 0x78359f29b5c5cf87L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cf74L).optional(false).origin("8662004459809132423").done();
     b.aggregate("evaluations", 0x78359f29b5c5d0a6L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfe7L).optional(true).ordered(true).multiple(true).origin("8662004459809132710").done();
     b.alias("Exam");

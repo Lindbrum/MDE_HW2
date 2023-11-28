@@ -74,6 +74,11 @@
       <property role="TrG5h" value="exam_type" />
       <ref role="AX2Wp" node="7wPBMAPLsXY" resolve="ExamType" />
     </node>
+    <node concept="1TJgyi" id="K84xt53tC0" role="1TKVEl">
+      <property role="IQ2nx" value="866962819420903936" />
+      <property role="TrG5h" value="description" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="7wPBMAPLsY7" role="1TKVEi">
       <property role="IQ2ns" value="8662004459809132423" />
       <property role="20kJfa" value="course" />
@@ -92,6 +97,7 @@
     <property role="EcuMT" value="8662004459809132404" />
     <property role="TrG5h" value="Course" />
     <property role="R4oN_" value="A course held by the university. It has one or examination calls and is held by one or more professors." />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyi" id="7wPBMAPLsYb" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132427" />
