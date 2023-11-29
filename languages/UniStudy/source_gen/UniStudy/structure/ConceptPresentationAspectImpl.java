@@ -22,6 +22,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Master;
   private ConceptPresentation props_MasterDegree;
   private ConceptPresentation props_News;
+  private ConceptPresentation props_NewsRef;
   private ConceptPresentation props_PhD;
   private ConceptPresentation props_PostGraduateCourse;
   private ConceptPresentation props_Professor;
@@ -54,7 +55,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Course:
         if (props_Course == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("A course held by the university. It has one or examination calls and is held by one or more professors.");
+          cpb.shortDesc("A course held by the university. It has one or examination calls and is held by one or more professors");
           cpb.rawPresentation("Course");
           props_Course = cpb.create();
         }
@@ -137,6 +138,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_News = cpb.create();
         }
         return props_News;
+      case LanguageConceptSwitch.NewsRef:
+        if (props_NewsRef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Smart reference for news");
+          cpb.presentationByReference(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x54ae37f9007110edL, 0x54ae37f9007110eeL, "news", "", "");
+          props_NewsRef = cpb.create();
+        }
+        return props_NewsRef;
       case LanguageConceptSwitch.PhD:
         if (props_PhD == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -156,7 +165,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_Professor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("A teacher for the university. Can hold courses as well as coordinating degree and post-graduate courses.");
-          cpb.rawPresentation("prof");
+          cpb.presentationByName();
           props_Professor = cpb.create();
         }
         return props_Professor;
@@ -171,7 +180,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Student:
         if (props_Student == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Student");
+          cpb.presentationByName();
           props_Student = cpb.create();
         }
         return props_Student;

@@ -31,6 +31,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptMaster = createDescriptorForMaster();
   /*package*/ final ConceptDescriptor myConceptMasterDegree = createDescriptorForMasterDegree();
   /*package*/ final ConceptDescriptor myConceptNews = createDescriptorForNews();
+  /*package*/ final ConceptDescriptor myConceptNewsRef = createDescriptorForNewsRef();
   /*package*/ final ConceptDescriptor myConceptPhD = createDescriptorForPhD();
   /*package*/ final ConceptDescriptor myConceptPostGraduateCourse = createDescriptorForPostGraduateCourse();
   /*package*/ final ConceptDescriptor myConceptProfessor = createDescriptorForProfessor();
@@ -62,7 +63,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBachelorDegree, myConceptCareerManagement, myConceptCourse, myConceptCourseRef, myConceptDegreeCourse, myConceptDegreeCourseRef, myConceptDepartment, myConceptEvaluation, myConceptEvaluationRef, myConceptExaminationCall, myConceptMaster, myConceptMasterDegree, myConceptNews, myConceptPhD, myConceptPostGraduateCourse, myConceptProfessor, myConceptProfessorRef, myConceptStudent, myConceptThesis, myConceptThesisRef, myConceptUser);
+    return Arrays.asList(myConceptBachelorDegree, myConceptCareerManagement, myConceptCourse, myConceptCourseRef, myConceptDegreeCourse, myConceptDegreeCourseRef, myConceptDepartment, myConceptEvaluation, myConceptEvaluationRef, myConceptExaminationCall, myConceptMaster, myConceptMasterDegree, myConceptNews, myConceptNewsRef, myConceptPhD, myConceptPostGraduateCourse, myConceptProfessor, myConceptProfessorRef, myConceptStudent, myConceptThesis, myConceptThesisRef, myConceptUser);
   }
 
   @Override
@@ -95,6 +96,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptMasterDegree;
       case LanguageConceptSwitch.News:
         return myConceptNews;
+      case LanguageConceptSwitch.NewsRef:
+        return myConceptNewsRef;
       case LanguageConceptSwitch.PhD:
         return myConceptPhD;
       case LanguageConceptSwitch.PostGraduateCourse:
@@ -272,6 +275,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("department", 0x78359f29b5c5d0acL).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d064L).optional(true).origin("8662004459809132716").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForNewsRef() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("UniStudy", "NewsRef", 0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x54ae37f9007110edL);
+    b.class_(false, false, false);
+    b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/6101876087727395053");
+    b.version(3);
+    b.associate("news", 0x54ae37f9007110eeL).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d06dL).optional(false).origin("6101876087727395054").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForPhD() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("UniStudy", "PhD", 0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d05dL);
     b.class_(false, false, false);
@@ -350,9 +361,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForUser() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("UniStudy", "User", 0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfccL);
     b.class_(false, true, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/8662004459809132492");
     b.version(3);
-    b.property("name", 0xa4521685c82a912L).type(PrimitiveTypeId.STRING).origin("740034445884696850").done();
     b.property("surname", 0x78359f29b5c5cfd0L).type(PrimitiveTypeId.STRING).origin("8662004459809132496").done();
     b.property("email", 0x78359f29b5c5cfd3L).type(PrimitiveTypeId.STRING).origin("8662004459809132499").done();
     b.property("telephone_number", 0x78359f29b5c5cfd7L).type(MetaIdFactory.dataTypeId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb9e59a2L)).origin("8662004459809132503").done();

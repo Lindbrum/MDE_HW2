@@ -31,9 +31,13 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <property id="241647608299431129" name="propertyId" index="IQ2nx" />
@@ -96,7 +100,7 @@
   <node concept="1TIwiD" id="7wPBMAPLsXO">
     <property role="EcuMT" value="8662004459809132404" />
     <property role="TrG5h" value="Course" />
-    <property role="R4oN_" value="A course held by the university. It has one or examination calls and is held by one or more professors." />
+    <property role="R4oN_" value="A course held by the university. It has one or examination calls and is held by one or more professors" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyi" id="7wPBMAPLsYb" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132427" />
@@ -259,11 +263,6 @@
     <property role="R4oN_" value="A generic user of the university, might be a student or a professor" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="1TJgyi" id="D58mxswE$i" role="1TKVEl">
-      <property role="IQ2nx" value="740034445884696850" />
-      <property role="TrG5h" value="name" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyi" id="7wPBMAPLsZg" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132496" />
       <property role="TrG5h" value="surname" />
@@ -278,6 +277,9 @@
       <property role="IQ2nx" value="8662004459809132503" />
       <property role="TrG5h" value="telephone_number" />
       <ref role="AX2Wp" node="4Sn75fFB_Ay" resolve="telephone" />
+    </node>
+    <node concept="PrWs8" id="6xEI9E9d$Yj" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="7wPBMAPLsZx">
@@ -688,6 +690,18 @@
       <property role="20kJfa" value="courses" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="7wPBMAPLt0$" resolve="DegreeCourse" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5iIdZ$0sh3H">
+    <property role="EcuMT" value="6101876087727395053" />
+    <property role="TrG5h" value="NewsRef" />
+    <property role="R4oN_" value="Smart reference for news" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="5iIdZ$0sh3I" role="1TKVEi">
+      <property role="IQ2ns" value="6101876087727395054" />
+      <property role="20kJfa" value="news" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7wPBMAPLt1H" resolve="News" />
     </node>
   </node>
 </model>

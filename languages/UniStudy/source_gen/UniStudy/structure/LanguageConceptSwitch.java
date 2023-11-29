@@ -22,14 +22,15 @@ public final class LanguageConceptSwitch {
   public static final int Master = 10;
   public static final int MasterDegree = 11;
   public static final int News = 12;
-  public static final int PhD = 13;
-  public static final int PostGraduateCourse = 14;
-  public static final int Professor = 15;
-  public static final int ProfessorRef = 16;
-  public static final int Student = 17;
-  public static final int Thesis = 18;
-  public static final int ThesisRef = 19;
-  public static final int User = 20;
+  public static final int NewsRef = 13;
+  public static final int PhD = 14;
+  public static final int PostGraduateCourse = 15;
+  public static final int Professor = 16;
+  public static final int ProfessorRef = 17;
+  public static final int Student = 18;
+  public static final int Thesis = 19;
+  public static final int ThesisRef = 20;
+  public static final int User = 21;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL);
@@ -46,6 +47,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x78359f29b5c5d048L, Master);
     builder.put(0x78359f29b5c5d045L, MasterDegree);
     builder.put(0x78359f29b5c5d06dL, News);
+    builder.put(0x54ae37f9007110edL, NewsRef);
     builder.put(0x78359f29b5c5d05dL, PhD);
     builder.put(0x78359f29b5c5d046L, PostGraduateCourse);
     builder.put(0x78359f29b5c5cfc9L, Professor);
