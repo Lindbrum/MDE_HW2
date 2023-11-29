@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="35mg9mnqgvk1g7svs4jxgc9x40r4d9w">
-  <files names="BachelorDegree_Editor.java:BachelorDegree_EditorBuilder_a.java:CourseRef_SubstituteMenu.java:Course_Editor.java:Course_EditorBuilder_a.java:DegreeCourseRef_SubstituteMenu.java:EditorAspectDescriptorImpl.java:EvaluationRef_SubstituteMenu.java:Evaluation_Editor.java:Evaluation_EditorBuilder_a.java:ExaminationCall_Editor.java:ExaminationCall_EditorBuilder_a.java:ProfessorRef_SubstituteMenu.java:Professor_Editor.java:Professor_EditorBuilder_a.java:Student_Editor.java:Student_EditorBuilder_a.java:ThesisRef_SubstituteMenu.java:Thesis_Editor.java:Thesis_EditorBuilder_a.java" />
+<product version="3" modelHash="5lqy92hm4b4fsaezl3v6ylebe08iplc">
+  <files names="BachelorDegree_Editor.java:BachelorDegree_EditorBuilder_a.java:CourseRef_SubstituteMenu.java:Course_Editor.java:Course_EditorBuilder_a.java:DegreeCourseEditor.java:DegreeCourseEditor_ComponentBuilder_a.java:DegreeCourseRef_SubstituteMenu.java:EditorAspectDescriptorImpl.java:EvaluationRef_SubstituteMenu.java:Evaluation_Editor.java:Evaluation_EditorBuilder_a.java:ExaminationCall_Editor.java:ExaminationCall_EditorBuilder_a.java:ProfessorRef_SubstituteMenu.java:Professor_Editor.java:Professor_EditorBuilder_a.java:Student_Editor.java:Student_EditorBuilder_a.java:ThesisRef_SubstituteMenu.java:Thesis_Editor.java:Thesis_EditorBuilder_a.java" />
 </product>
 

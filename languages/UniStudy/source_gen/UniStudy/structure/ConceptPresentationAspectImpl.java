@@ -10,6 +10,7 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_BachelorDegree;
+  private ConceptPresentation props_CareerManagement;
   private ConceptPresentation props_Course;
   private ConceptPresentation props_CourseRef;
   private ConceptPresentation props_DegreeCourse;
@@ -43,6 +44,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_BachelorDegree = cpb.create();
         }
         return props_BachelorDegree;
+      case LanguageConceptSwitch.CareerManagement:
+        if (props_CareerManagement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("CareerManagement");
+          props_CareerManagement = cpb.create();
+        }
+        return props_CareerManagement;
       case LanguageConceptSwitch.Course:
         if (props_Course == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

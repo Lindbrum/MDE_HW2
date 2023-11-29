@@ -97,7 +97,6 @@
     <property role="EcuMT" value="8662004459809132404" />
     <property role="TrG5h" value="Course" />
     <property role="R4oN_" value="A course held by the university. It has one or examination calls and is held by one or more professors." />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyi" id="7wPBMAPLsYb" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132427" />
@@ -214,7 +213,6 @@
     <property role="TrG5h" value="Professor" />
     <property role="34LRSv" value="prof" />
     <property role="R4oN_" value="A teacher for the university. Can hold courses as well as coordinating degree and post-graduate courses." />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="7wPBMAPLsZc" resolve="User" />
     <node concept="1TJgyi" id="7wPBMAPLsZs" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132508" />
@@ -261,8 +259,8 @@
     <property role="R4oN_" value="A generic user of the university, might be a student or a professor" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="1TJgyi" id="7wPBMAPLsZe" role="1TKVEl">
-      <property role="IQ2nx" value="8662004459809132494" />
+    <node concept="1TJgyi" id="D58mxswE$i" role="1TKVEl">
+      <property role="IQ2nx" value="740034445884696850" />
       <property role="TrG5h" value="name" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
@@ -285,7 +283,6 @@
   <node concept="1TIwiD" id="7wPBMAPLsZx">
     <property role="EcuMT" value="8662004459809132513" />
     <property role="TrG5h" value="Student" />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="7wPBMAPLsZc" resolve="User" />
     <node concept="1TJgyi" id="7wPBMAPLsZ$" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132516" />
@@ -453,7 +450,7 @@
     <node concept="1TJgyj" id="7wPBMAPLt2o" role="1TKVEi">
       <property role="IQ2ns" value="8662004459809132696" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="course_catalog" />
+      <property role="20kJfa" value="course_catalogue" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="7wPBMAPLsXO" resolve="Course" />
     </node>
@@ -468,14 +465,12 @@
     <property role="TrG5h" value="BachelorDegree" />
     <property role="R4oN_" value="A bachelor degree." />
     <property role="34LRSv" value="bachelor" />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="7wPBMAPLt0$" resolve="DegreeCourse" />
   </node>
   <node concept="1TIwiD" id="7wPBMAPLt15">
     <property role="EcuMT" value="8662004459809132613" />
     <property role="TrG5h" value="MasterDegree" />
     <property role="R4oN_" value="A master degree." />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="7wPBMAPLt0$" resolve="DegreeCourse" />
   </node>
   <node concept="1TIwiD" id="7wPBMAPLt16">
@@ -489,7 +484,6 @@
     <property role="EcuMT" value="8662004459809132616" />
     <property role="TrG5h" value="Master" />
     <property role="R4oN_" value="A post-graduate master. They can be first or second level (reserved to bachelor and master degree graduates, respectively)." />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="7wPBMAPLt16" resolve="PostGraduateCourse" />
     <node concept="1TJgyi" id="7wPBMAPLt1a" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132618" />
@@ -524,7 +518,6 @@
     <property role="EcuMT" value="8662004459809132637" />
     <property role="TrG5h" value="PhD" />
     <property role="R4oN_" value="A PhD (philosophiae doctor) course." />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="7wPBMAPLt16" resolve="PostGraduateCourse" />
     <node concept="1TJgyi" id="7wPBMAPLt1v" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132639" />
@@ -654,6 +647,47 @@
       <property role="20kJfa" value="course" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7wPBMAPLsXO" resolve="Course" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3HDsOC80ssS">
+    <property role="EcuMT" value="4281079682591475512" />
+    <property role="TrG5h" value="CareerManagement" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="3HDsOC80xLh" role="1TKVEi">
+      <property role="IQ2ns" value="4281079682591497297" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="students" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="7wPBMAPLsZx" resolve="Student" />
+    </node>
+    <node concept="1TJgyj" id="3HDsOC80xLj" role="1TKVEi">
+      <property role="IQ2ns" value="4281079682591497299" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="professors" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7wPBMAPLsZ9" resolve="Professor" />
+    </node>
+    <node concept="1TJgyj" id="3HDsOC80xLm" role="1TKVEi">
+      <property role="IQ2ns" value="4281079682591497302" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="departments" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7wPBMAPLt1$" resolve="Department" />
+    </node>
+    <node concept="1TJgyj" id="3HDsOC80xLq" role="1TKVEi">
+      <property role="IQ2ns" value="4281079682591497306" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="news" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7wPBMAPLt1H" resolve="News" />
+    </node>
+    <node concept="1TJgyj" id="3HDsOC80xLv" role="1TKVEi">
+      <property role="IQ2ns" value="4281079682591497311" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="courses" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="7wPBMAPLt0$" resolve="DegreeCourse" />
     </node>
   </node>
 </model>
