@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class BachelorDegree_Editor extends DefaultNodeEditor {
+public class DegreeCourse_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new BachelorDegree_EditorBuilder_a(editorContext, node).createCell();
+    return new DegreeCourse_EditorBuilder_a(editorContext, node).createCell();
   }
 }

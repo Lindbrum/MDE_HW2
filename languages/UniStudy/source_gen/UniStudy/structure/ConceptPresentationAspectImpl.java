@@ -9,25 +9,26 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_BachelorDegree;
+  private ConceptPresentation props_Career;
   private ConceptPresentation props_CareerManagement;
   private ConceptPresentation props_Course;
   private ConceptPresentation props_CourseRef;
   private ConceptPresentation props_DegreeCourse;
   private ConceptPresentation props_DegreeCourseRef;
   private ConceptPresentation props_Department;
-  private ConceptPresentation props_Evaluation;
-  private ConceptPresentation props_EvaluationRef;
   private ConceptPresentation props_ExaminationCall;
+  private ConceptPresentation props_ExaminationCallRef;
   private ConceptPresentation props_Master;
-  private ConceptPresentation props_MasterDegree;
   private ConceptPresentation props_News;
   private ConceptPresentation props_NewsRef;
+  private ConceptPresentation props_PassingGrade;
+  private ConceptPresentation props_PassingGradeRef;
   private ConceptPresentation props_PhD;
   private ConceptPresentation props_PostGraduateCourse;
   private ConceptPresentation props_Professor;
   private ConceptPresentation props_ProfessorRef;
   private ConceptPresentation props_Student;
+  private ConceptPresentation props_StudentRef;
   private ConceptPresentation props_Thesis;
   private ConceptPresentation props_ThesisRef;
   private ConceptPresentation props_User;
@@ -37,14 +38,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.BachelorDegree:
-        if (props_BachelorDegree == null) {
+      case LanguageConceptSwitch.Career:
+        if (props_Career == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("A bachelor degree.");
-          cpb.rawPresentation("bachelor");
-          props_BachelorDegree = cpb.create();
+          cpb.rawPresentation("Career");
+          props_Career = cpb.create();
         }
-        return props_BachelorDegree;
+        return props_Career;
       case LanguageConceptSwitch.CareerManagement:
         if (props_CareerManagement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -56,7 +56,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_Course == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("A course held by the university. It has one or examination calls and is held by one or more professors");
-          cpb.rawPresentation("Course");
+          cpb.presentationByName();
           props_Course = cpb.create();
         }
         return props_Course;
@@ -72,6 +72,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_DegreeCourse == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("A degree course (bachelor, master or post-graduate course). It has a catalog of courses to select from.");
+          cpb.presentationByName();
           props_DegreeCourse = cpb.create();
         }
         return props_DegreeCourse;
@@ -87,49 +88,33 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_Department == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("A department of the university. A department offers several degree courses and can list news for all students to see.");
-          cpb.rawPresentation("Department");
+          cpb.presentationByName();
           props_Department = cpb.create();
         }
         return props_Department;
-      case LanguageConceptSwitch.Evaluation:
-        if (props_Evaluation == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("The result of an examination call for a student. Contains a grade that ranges from \"1\" to \"30 cum laude\" (30L) and report (or feedback) from the teacher");
-          cpb.rawPresentation("Evaluation");
-          props_Evaluation = cpb.create();
-        }
-        return props_Evaluation;
-      case LanguageConceptSwitch.EvaluationRef:
-        if (props_EvaluationRef == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb93f021L, 0x4e171c53eb93f022L, "evaluation", "", "");
-          props_EvaluationRef = cpb.create();
-        }
-        return props_EvaluationRef;
       case LanguageConceptSwitch.ExaminationCall:
         if (props_ExaminationCall == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("An examination call for a course, with a date, the room and the type of exam");
+          cpb.shortDesc("An examination call for a course, with a date, the room and the type of exam. Has a list of students that booked.");
           cpb.rawPresentation("Exam");
           props_ExaminationCall = cpb.create();
         }
         return props_ExaminationCall;
+      case LanguageConceptSwitch.ExaminationCallRef:
+        if (props_ExaminationCallRef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x13cf5a8b21e5c42cL, 0x13cf5a8b21e5c42dL, "call", "", "");
+          props_ExaminationCallRef = cpb.create();
+        }
+        return props_ExaminationCallRef;
       case LanguageConceptSwitch.Master:
         if (props_Master == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("A post-graduate master. They can be first or second level (reserved to bachelor and master degree graduates, respectively).");
-          cpb.rawPresentation("Master");
+          cpb.presentationByName();
           props_Master = cpb.create();
         }
         return props_Master;
-      case LanguageConceptSwitch.MasterDegree:
-        if (props_MasterDegree == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("A master degree.");
-          cpb.rawPresentation("MasterDegree");
-          props_MasterDegree = cpb.create();
-        }
-        return props_MasterDegree;
       case LanguageConceptSwitch.News:
         if (props_News == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -146,11 +131,26 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_NewsRef = cpb.create();
         }
         return props_NewsRef;
+      case LanguageConceptSwitch.PassingGrade:
+        if (props_PassingGrade == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("The result of an examination call for a student. Contains a grade that ranges from \"1\" to \"30 cum laude\" (30L) and report (or feedback) from the teacher");
+          cpb.rawPresentation("PassingGrade");
+          props_PassingGrade = cpb.create();
+        }
+        return props_PassingGrade;
+      case LanguageConceptSwitch.PassingGradeRef:
+        if (props_PassingGradeRef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x13cf5a8b21e5c443L, 0x13cf5a8b21e5c444L, "grade", "", "");
+          props_PassingGradeRef = cpb.create();
+        }
+        return props_PassingGradeRef;
       case LanguageConceptSwitch.PhD:
         if (props_PhD == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("A PhD (philosophiae doctor) course.");
-          cpb.rawPresentation("PhD");
+          cpb.shortDesc("A PhD (philosophiae doctor) course. Each PhD students do research in a specific field");
+          cpb.presentationByName();
           props_PhD = cpb.create();
         }
         return props_PhD;
@@ -184,6 +184,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Student = cpb.create();
         }
         return props_Student;
+      case LanguageConceptSwitch.StudentRef:
+        if (props_StudentRef == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x13cf5a8b21e5c413L, 0x13cf5a8b21e5c414L, "student", "", "");
+          props_StudentRef = cpb.create();
+        }
+        return props_StudentRef;
       case LanguageConceptSwitch.Thesis:
         if (props_Thesis == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

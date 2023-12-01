@@ -22,34 +22,34 @@ import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 
-public class EvaluationRef_SubstituteMenu extends SubstituteMenuBase {
-  public EvaluationRef_SubstituteMenu() {
-    super(false, new EditorMenuDescriptorBase("default substitute menu for EvaluationRef. Generated from implicit smart reference attribute.", new SNodePointer("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)", "5626997406182928417")));
+public class ExaminationCallRef_SubstituteMenu extends SubstituteMenuBase {
+  public ExaminationCallRef_SubstituteMenu() {
+    super(false, new EditorMenuDescriptorBase("default substitute menu for ExaminationCallRef. Generated from implicit smart reference attribute.", new SNodePointer("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)", "1427459160515396652")));
   }
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_mkoi28_a(), CONCEPTS.EvaluationRef$CT));
-    result.add(new SMP_Subconcepts_mkoi28_b());
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_e6n32i_a(), CONCEPTS.ExaminationCallRef$Xm));
+    result.add(new SMP_Subconcepts_e6n32i_b());
     return result;
   }
 
-  public class SMP_ReferenceScope_mkoi28_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_e6n32i_a extends ReferenceScopeSubstituteMenuPart {
 
-    public SMP_ReferenceScope_mkoi28_a() {
-      super(CONCEPTS.EvaluationRef$CT, LINKS.evaluation$hZRm, new EditorMenuDescriptorBase("reference scope substitute menu part", null));
+    public SMP_ReferenceScope_e6n32i_a() {
+      super(CONCEPTS.ExaminationCallRef$Xm, LINKS.call$Aa5Q, new EditorMenuDescriptorBase("reference scope substitute menu part", null));
     }
 
   }
-  public class SMP_Subconcepts_mkoi28_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
-    public SMP_Subconcepts_mkoi28_b() {
-      super(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "EvaluationRef", null));
+  public class SMP_Subconcepts_e6n32i_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
+    public SMP_Subconcepts_e6n32i_b() {
+      super(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "ExaminationCallRef", null));
     }
 
     @Override
     protected Collection<SAbstractConcept> getConcepts(final SubstituteMenuContext _context) {
-      return getDirectDescendants(_context, CONCEPTS.EvaluationRef$CT);
+      return getDirectDescendants(_context, CONCEPTS.ExaminationCallRef$Xm);
     }
 
     @Override
@@ -59,10 +59,10 @@ public class EvaluationRef_SubstituteMenu extends SubstituteMenuBase {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept EvaluationRef$CT = MetaAdapterFactory.getConcept(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb93f021L, "UniStudy.structure.EvaluationRef");
+    /*package*/ static final SConcept ExaminationCallRef$Xm = MetaAdapterFactory.getConcept(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x13cf5a8b21e5c42cL, "UniStudy.structure.ExaminationCallRef");
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink evaluation$hZRm = MetaAdapterFactory.getReferenceLink(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb93f021L, 0x4e171c53eb93f022L, "evaluation");
+    /*package*/ static final SReferenceLink call$Aa5Q = MetaAdapterFactory.getReferenceLink(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x13cf5a8b21e5c42cL, 0x13cf5a8b21e5c42dL, "call");
   }
 }
