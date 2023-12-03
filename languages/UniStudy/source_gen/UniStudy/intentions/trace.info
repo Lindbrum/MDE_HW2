@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="IntentionsDescriptor.java">
+      <unit at="18,0,64,0" name="UniStudy.intentions.IntentionsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:8394d85f-5a71-486a-ab53-42b7678aabc0(UniStudy.intentions)/4690418037763872741">
+    <file name="AddUniversity_Intention.java">
+      <node id="4690418037763872741" at="23,0,24,0" concept="3" trace="myCachedExecutable" />
+      <node id="4690418037763872741" at="25,36,26,133" concept="10" />
+      <node id="4690418037763872741" at="30,35,31,27" concept="7" />
+      <node id="4690418037763872741" at="35,35,36,17" concept="7" />
+      <node id="4690418037763872741" at="40,37,41,105" concept="2" />
+      <node id="4690418037763872741" at="42,5,43,30" concept="7" />
+      <node id="4690418037763873835" at="50,87,51,43" concept="7" />
+      <node id="4690418037763877057" at="55,78,56,148" concept="2" />
+      <node id="4690418037763872741" at="60,86,61,18" concept="7" />
+      <node id="4690418037763872741" at="67,48,68,42" concept="7" />
+      <node id="4690418037763872741" at="74,0,75,0" concept="9" trace="CareerManagement$$r" />
+      <node id="4690418037763872741" at="78,0,79,0" concept="9" trace="university$MlEO" />
+      <node id="4690418037763872741" at="46,0,48,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="4690418037763872741" at="25,0,28,0" concept="1" trace="AddUniversity_Intention#()V" />
+      <node id="4690418037763872741" at="39,99,42,5" concept="4" />
+      <node id="4690418037763872741" at="29,0,33,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="4690418037763872741" at="34,0,38,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="4690418037763872741" at="49,0,53,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="4690418037763872741" at="54,0,58,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="4690418037763872741" at="59,0,63,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="4690418037763872741" at="66,0,70,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="4690418037763872741" at="39,0,45,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <scope id="4690418037763872741" at="46,38,46,38" />
+      <scope id="4690418037763872741" at="25,36,26,133" />
+      <scope id="4690418037763872741" at="30,35,31,27" />
+      <scope id="4690418037763872741" at="35,35,36,17" />
+      <scope id="4690418037763872741" at="40,37,41,105" />
+      <scope id="4690418037763872743" at="50,87,51,43" />
+      <scope id="4690418037763872745" at="55,78,56,148" />
+      <scope id="4690418037763872741" at="60,86,61,18" />
+      <scope id="4690418037763872741" at="67,48,68,42" />
+      <scope id="4690418037763872741" at="46,0,48,0" />
+      <scope id="4690418037763872741" at="25,0,28,0" />
+      <scope id="4690418037763872741" at="29,0,33,0" />
+      <scope id="4690418037763872741" at="34,0,38,0" />
+      <scope id="4690418037763872741" at="39,99,43,30" />
+      <scope id="4690418037763872741" at="49,0,53,0">
+        <var name="editorContext" id="4690418037763872741" />
+        <var name="node" id="4690418037763872741" />
+      </scope>
+      <scope id="4690418037763872741" at="54,0,58,0">
+        <var name="editorContext" id="4690418037763872741" />
+        <var name="node" id="4690418037763872741" />
+      </scope>
+      <scope id="4690418037763872741" at="59,0,63,0">
+        <var name="editorContext" id="4690418037763872741" />
+        <var name="node" id="4690418037763872741" />
+      </scope>
+      <scope id="4690418037763872741" at="66,0,70,0" />
+      <scope id="4690418037763872741" at="39,0,45,0">
+        <var name="context" id="4690418037763872741" />
+        <var name="node" id="4690418037763872741" />
+      </scope>
+      <unit id="4690418037763872741" at="73,0,76,0" name="UniStudy.intentions.AddUniversity_Intention$CONCEPTS" />
+      <unit id="4690418037763872741" at="77,0,80,0" name="UniStudy.intentions.AddUniversity_Intention$LINKS" />
+      <unit id="4690418037763872741" at="45,0,72,0" name="UniStudy.intentions.AddUniversity_Intention$IntentionImplementation" />
+      <unit id="4690418037763872741" at="22,0,81,0" name="UniStudy.intentions.AddUniversity_Intention" />
+    </file>
+    <file name="IntentionsDescriptor.java">
+      <node id="4690418037763872741" at="37,47,38,56" concept="2" />
+      <node id="4690418037763872741" at="57,52,58,42" concept="2" />
+    </file>
+  </root>
+  <root nodeRef="r:8394d85f-5a71-486a-ab53-42b7678aabc0(UniStudy.intentions)/4690418037764264724">
+    <file name="AddUser_Intention.java">
+      <node id="4690418037764264724" at="23,0,24,0" concept="3" trace="myCachedExecutable" />
+      <node id="4690418037764264724" at="25,30,26,134" concept="10" />
+      <node id="4690418037764264724" at="30,35,31,21" concept="7" />
+      <node id="4690418037764264724" at="35,35,36,17" concept="7" />
+      <node id="4690418037764264724" at="40,37,41,105" concept="2" />
+      <node id="4690418037764264724" at="42,5,43,30" concept="7" />
+      <node id="4690418037764265795" at="51,7,52,35" concept="6" />
+      <node id="4690418037764270879" at="53,73,54,45" concept="7" />
+      <node id="4690418037764267280" at="57,7,58,32" concept="6" />
+      <node id="4690418037764272049" at="59,72,60,47" concept="7" />
+      <node id="4690418037764272194" at="62,7,63,0" concept="8" />
+      <node id="4690418037764272470" at="63,0,64,21" concept="7" />
+      <node id="4690418037764274675" at="69,7,70,35" concept="6" />
+      <node id="4690418037764275833" at="71,73,72,150" concept="2" />
+      <node id="4690418037764274682" at="75,7,76,32" concept="6" />
+      <node id="4690418037764322487" at="77,72,78,152" concept="2" />
+      <node id="4690418037764264724" at="84,86,85,18" concept="7" />
+      <node id="4690418037764264724" at="91,48,92,36" concept="7" />
+      <node id="4690418037764264724" at="98,0,99,0" concept="9" trace="Student$Dd" />
+      <node id="4690418037764264724" at="99,0,100,0" concept="9" trace="Professor$3J" />
+      <node id="4690418037764264724" at="100,0,101,0" concept="9" trace="CareerManagement$$r" />
+      <node id="4690418037764264724" at="104,0,105,0" concept="9" trace="students$JQPf" />
+      <node id="4690418037764264724" at="105,0,106,0" concept="9" trace="professors$JRjh" />
+      <node id="4690418037764264724" at="46,0,48,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="4690418037764264724" at="25,0,28,0" concept="1" trace="AddUser_Intention#()V" />
+      <node id="4690418037764264724" at="39,99,42,5" concept="4" />
+      <node id="4690418037764265795" at="52,35,55,9" concept="4" />
+      <node id="4690418037764267280" at="58,32,61,9" concept="4" />
+      <node id="4690418037764274675" at="70,35,73,9" concept="4" />
+      <node id="4690418037764274682" at="76,32,79,9" concept="4" />
+      <node id="4690418037764264724" at="29,0,33,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="4690418037764264724" at="34,0,38,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="4690418037764264724" at="83,0,87,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="4690418037764264724" at="90,0,94,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="4690418037764264724" at="39,0,45,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="4690418037764265795" at="50,87,56,7" concept="0" />
+      <node id="4690418037764267280" at="56,7,62,7" concept="0" />
+      <node id="4690418037764274675" at="68,78,74,7" concept="0" />
+      <node id="4690418037764274682" at="74,7,80,7" concept="0" />
+      <node id="4690418037764264724" at="67,0,82,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="4690418037764264724" at="49,0,66,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <scope id="4690418037764264724" at="46,38,46,38" />
+      <scope id="4690418037764264724" at="25,30,26,134" />
+      <scope id="4690418037764264724" at="30,35,31,21" />
+      <scope id="4690418037764264724" at="35,35,36,17" />
+      <scope id="4690418037764264724" at="40,37,41,105" />
+      <scope id="4690418037764265797" at="53,73,54,45" />
+      <scope id="4690418037764267284" at="59,72,60,47" />
+      <scope id="4690418037764274677" at="71,73,72,150" />
+      <scope id="4690418037764274684" at="77,72,78,152" />
+      <scope id="4690418037764264724" at="84,86,85,18" />
+      <scope id="4690418037764264724" at="91,48,92,36" />
+      <scope id="4690418037764264724" at="46,0,48,0" />
+      <scope id="4690418037764264724" at="25,0,28,0" />
+      <scope id="4690418037764264724" at="29,0,33,0" />
+      <scope id="4690418037764264724" at="34,0,38,0" />
+      <scope id="4690418037764264724" at="39,99,43,30" />
+      <scope id="4690418037764265795" at="51,7,55,9">
+        <var name="student" id="4690418037764265795" />
+      </scope>
+      <scope id="4690418037764267280" at="57,7,61,9">
+        <var name="prof" id="4690418037764267280" />
+      </scope>
+      <scope id="4690418037764274675" at="69,7,73,9">
+        <var name="student" id="4690418037764274675" />
+      </scope>
+      <scope id="4690418037764274682" at="75,7,79,9">
+        <var name="prof" id="4690418037764274682" />
+      </scope>
+      <scope id="4690418037764264724" at="83,0,87,0">
+        <var name="editorContext" id="4690418037764264724" />
+        <var name="node" id="4690418037764264724" />
+      </scope>
+      <scope id="4690418037764264724" at="90,0,94,0" />
+      <scope id="4690418037764264724" at="39,0,45,0">
+        <var name="context" id="4690418037764264724" />
+        <var name="node" id="4690418037764264724" />
+      </scope>
+      <scope id="4690418037764264728" at="68,78,80,7" />
+      <scope id="4690418037764264726" at="50,87,64,21" />
+      <scope id="4690418037764264724" at="67,0,82,0">
+        <var name="editorContext" id="4690418037764264724" />
+        <var name="node" id="4690418037764264724" />
+      </scope>
+      <scope id="4690418037764264724" at="49,0,66,0">
+        <var name="editorContext" id="4690418037764264724" />
+        <var name="node" id="4690418037764264724" />
+      </scope>
+      <unit id="4690418037764264724" at="103,0,107,0" name="UniStudy.intentions.AddUser_Intention$LINKS" />
+      <unit id="4690418037764264724" at="97,0,102,0" name="UniStudy.intentions.AddUser_Intention$CONCEPTS" />
+      <unit id="4690418037764264724" at="45,0,96,0" name="UniStudy.intentions.AddUser_Intention$IntentionImplementation" />
+      <unit id="4690418037764264724" at="22,0,108,0" name="UniStudy.intentions.AddUser_Intention" />
+    </file>
+    <file name="IntentionsDescriptor.java">
+      <node id="4690418037764264724" at="44,47,45,50" concept="2" />
+      <node id="4690418037764264724" at="58,42,59,36" concept="2" />
+    </file>
+  </root>
+</debug-info>
+

@@ -12,25 +12,26 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Career;
   private ConceptPresentation props_CareerManagement;
   private ConceptPresentation props_Course;
-  private ConceptPresentation props_CourseRef;
+  private ConceptPresentation props_CourseReference;
   private ConceptPresentation props_DegreeCourse;
-  private ConceptPresentation props_DegreeCourseRef;
+  private ConceptPresentation props_DegreeCourseReference;
   private ConceptPresentation props_Department;
   private ConceptPresentation props_ExaminationCall;
-  private ConceptPresentation props_ExaminationCallRef;
+  private ConceptPresentation props_ExaminationCallReference;
   private ConceptPresentation props_Master;
   private ConceptPresentation props_News;
-  private ConceptPresentation props_NewsRef;
+  private ConceptPresentation props_NewsReference;
   private ConceptPresentation props_PassingGrade;
-  private ConceptPresentation props_PassingGradeRef;
+  private ConceptPresentation props_PassingGradeReference;
   private ConceptPresentation props_PhD;
   private ConceptPresentation props_PostGraduateCourse;
   private ConceptPresentation props_Professor;
-  private ConceptPresentation props_ProfessorRef;
+  private ConceptPresentation props_ProfessorReference;
   private ConceptPresentation props_Student;
-  private ConceptPresentation props_StudentRef;
+  private ConceptPresentation props_StudentReference;
   private ConceptPresentation props_Thesis;
-  private ConceptPresentation props_ThesisRef;
+  private ConceptPresentation props_ThesisReference;
+  private ConceptPresentation props_University;
   private ConceptPresentation props_User;
 
   @Override
@@ -48,7 +49,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.CareerManagement:
         if (props_CareerManagement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("CareerManagement");
+          cpb.presentationByName();
           props_CareerManagement = cpb.create();
         }
         return props_CareerManagement;
@@ -60,14 +61,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Course = cpb.create();
         }
         return props_Course;
-      case LanguageConceptSwitch.CourseRef:
-        if (props_CourseRef == null) {
+      case LanguageConceptSwitch.CourseReference:
+        if (props_CourseReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("Wrapper for a course reference.");
           cpb.presentationByReference(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x42956696c652c0c0L, 0x42956696c652c0c1L, "course", "", "");
-          props_CourseRef = cpb.create();
+          props_CourseReference = cpb.create();
         }
-        return props_CourseRef;
+        return props_CourseReference;
       case LanguageConceptSwitch.DegreeCourse:
         if (props_DegreeCourse == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -76,14 +77,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_DegreeCourse = cpb.create();
         }
         return props_DegreeCourse;
-      case LanguageConceptSwitch.DegreeCourseRef:
-        if (props_DegreeCourseRef == null) {
+      case LanguageConceptSwitch.DegreeCourseReference:
+        if (props_DegreeCourseReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("Wrapper concept for a reference to a degree course (since MPS does not allow 1..n references)");
           cpb.presentationByReference(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d0d2L, 0x78359f29b5c5d0d3L, "degree_course", "", "");
-          props_DegreeCourseRef = cpb.create();
+          props_DegreeCourseReference = cpb.create();
         }
-        return props_DegreeCourseRef;
+        return props_DegreeCourseReference;
       case LanguageConceptSwitch.Department:
         if (props_Department == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -100,13 +101,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ExaminationCall = cpb.create();
         }
         return props_ExaminationCall;
-      case LanguageConceptSwitch.ExaminationCallRef:
-        if (props_ExaminationCallRef == null) {
+      case LanguageConceptSwitch.ExaminationCallReference:
+        if (props_ExaminationCallReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByReference(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x13cf5a8b21e5c42cL, 0x13cf5a8b21e5c42dL, "call", "", "");
-          props_ExaminationCallRef = cpb.create();
+          props_ExaminationCallReference = cpb.create();
         }
-        return props_ExaminationCallRef;
+        return props_ExaminationCallReference;
       case LanguageConceptSwitch.Master:
         if (props_Master == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -123,29 +124,29 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_News = cpb.create();
         }
         return props_News;
-      case LanguageConceptSwitch.NewsRef:
-        if (props_NewsRef == null) {
+      case LanguageConceptSwitch.NewsReference:
+        if (props_NewsReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("Smart reference for news");
           cpb.presentationByReference(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x54ae37f9007110edL, 0x54ae37f9007110eeL, "news", "", "");
-          props_NewsRef = cpb.create();
+          props_NewsReference = cpb.create();
         }
-        return props_NewsRef;
+        return props_NewsReference;
       case LanguageConceptSwitch.PassingGrade:
         if (props_PassingGrade == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("The result of an examination call for a student. Contains a grade that ranges from \"1\" to \"30 cum laude\" (30L) and report (or feedback) from the teacher");
-          cpb.rawPresentation("PassingGrade");
+          cpb.presentationByName();
           props_PassingGrade = cpb.create();
         }
         return props_PassingGrade;
-      case LanguageConceptSwitch.PassingGradeRef:
-        if (props_PassingGradeRef == null) {
+      case LanguageConceptSwitch.PassingGradeReference:
+        if (props_PassingGradeReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByReference(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x13cf5a8b21e5c443L, 0x13cf5a8b21e5c444L, "grade", "", "");
-          props_PassingGradeRef = cpb.create();
+          props_PassingGradeReference = cpb.create();
         }
-        return props_PassingGradeRef;
+        return props_PassingGradeReference;
       case LanguageConceptSwitch.PhD:
         if (props_PhD == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -169,14 +170,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Professor = cpb.create();
         }
         return props_Professor;
-      case LanguageConceptSwitch.ProfessorRef:
-        if (props_ProfessorRef == null) {
+      case LanguageConceptSwitch.ProfessorReference:
+        if (props_ProfessorReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("Wrapper concept for a reference to a professor (since MPS does not allow 1..n references)");
           cpb.presentationByReference(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d008L, 0x78359f29b5c5d009L, "professor", "", "");
-          props_ProfessorRef = cpb.create();
+          props_ProfessorReference = cpb.create();
         }
-        return props_ProfessorRef;
+        return props_ProfessorReference;
       case LanguageConceptSwitch.Student:
         if (props_Student == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -184,13 +185,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Student = cpb.create();
         }
         return props_Student;
-      case LanguageConceptSwitch.StudentRef:
-        if (props_StudentRef == null) {
+      case LanguageConceptSwitch.StudentReference:
+        if (props_StudentReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByReference(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x13cf5a8b21e5c413L, 0x13cf5a8b21e5c414L, "student", "", "");
-          props_StudentRef = cpb.create();
+          props_StudentReference = cpb.create();
         }
-        return props_StudentRef;
+        return props_StudentReference;
       case LanguageConceptSwitch.Thesis:
         if (props_Thesis == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -199,14 +200,22 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Thesis = cpb.create();
         }
         return props_Thesis;
-      case LanguageConceptSwitch.ThesisRef:
-        if (props_ThesisRef == null) {
+      case LanguageConceptSwitch.ThesisReference:
+        if (props_ThesisReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("Wrapper for a reference to a thesis.");
           cpb.presentationByReference(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb93f01cL, 0x4e171c53eb93f01dL, "thesis", "", "");
-          props_ThesisRef = cpb.create();
+          props_ThesisReference = cpb.create();
         }
-        return props_ThesisRef;
+        return props_ThesisReference;
+      case LanguageConceptSwitch.University:
+        if (props_University == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("The university this model refers to, with departments holding various degree courses. It has a rector.");
+          cpb.presentationByName();
+          props_University = cpb.create();
+        }
+        return props_University;
       case LanguageConceptSwitch.User:
         if (props_User == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

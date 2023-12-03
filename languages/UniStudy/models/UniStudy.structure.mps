@@ -94,7 +94,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="booked_students" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1ffmCGxTsgj" resolve="StudentRef" />
+      <ref role="20lvS9" node="1ffmCGxTsgj" resolve="StudentReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="7wPBMAPLsXO">
@@ -144,7 +144,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="professors" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="7wPBMAPLt08" resolve="ProfessorRef" />
+      <ref role="20lvS9" node="7wPBMAPLt08" resolve="ProfessorReference" />
     </node>
     <node concept="1TJgyj" id="1ffmCGxTsgZ" role="1TKVEi">
       <property role="IQ2ns" value="1427459160515396671" />
@@ -158,7 +158,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="degree_courses" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="7wPBMAPLt3i" resolve="DegreeCourseRef" />
+      <ref role="20lvS9" node="7wPBMAPLt3i" resolve="DegreeCourseReference" />
     </node>
     <node concept="PrWs8" id="1ffmCGxTsfR" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -245,28 +245,28 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="taught_courses" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="4alpDr6kG30" resolve="CourseRef" />
+      <ref role="20lvS9" node="4alpDr6kG30" resolve="CourseReference" />
     </node>
     <node concept="1TJgyj" id="7wPBMAPLt2Q" role="1TKVEi">
       <property role="IQ2ns" value="8662004459809132726" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="thesis_supervised" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="4Sn75fF$Z0s" resolve="ThesisRef" />
+      <ref role="20lvS9" node="4Sn75fF$Z0s" resolve="ThesisReference" />
     </node>
     <node concept="1TJgyj" id="7wPBMAPLt2V" role="1TKVEi">
       <property role="IQ2ns" value="8662004459809132731" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="coordinated_degree_courses" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7wPBMAPLt3i" resolve="DegreeCourseRef" />
+      <ref role="20lvS9" node="7wPBMAPLt3i" resolve="DegreeCourseReference" />
     </node>
     <node concept="1TJgyj" id="7wPBMAPLt31" role="1TKVEi">
       <property role="IQ2ns" value="8662004459809132737" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="posted_news" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="5iIdZ$0sh3H" resolve="NewsRef" />
+      <ref role="20lvS9" node="7wPBMAPLt1H" resolve="News" />
     </node>
     <node concept="PrWs8" id="4XmZw0Fq1g4" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -320,14 +320,14 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="enrolled_courses" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7wPBMAPLt3i" resolve="DegreeCourseRef" />
+      <ref role="20lvS9" node="7wPBMAPLt3i" resolve="DegreeCourseReference" />
     </node>
     <node concept="1TJgyj" id="1ffmCGxTsgK" role="1TKVEi">
       <property role="IQ2ns" value="1427459160515396656" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="booked_calls" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1ffmCGxTsgG" resolve="ExaminationCallRef" />
+      <ref role="20lvS9" node="1ffmCGxTsgG" resolve="ExaminationCallReference" />
     </node>
     <node concept="PrWs8" id="2BJerjMLgMg" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -360,10 +360,13 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="1ffmCGxTsg4" resolve="Career" />
     </node>
+    <node concept="PrWs8" id="44nH_EWMjBt" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7wPBMAPLt08">
     <property role="EcuMT" value="8662004459809132552" />
-    <property role="TrG5h" value="ProfessorRef" />
+    <property role="TrG5h" value="ProfessorReference" />
     <property role="R4oN_" value="Wrapper concept for a reference to a professor (since MPS does not allow 1..n references)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyj" id="7wPBMAPLt09" role="1TKVEi">
@@ -491,7 +494,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="enrolled_students" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1ffmCGxTsgj" resolve="StudentRef" />
+      <ref role="20lvS9" node="1ffmCGxTsgj" resolve="StudentReference" />
     </node>
     <node concept="PrWs8" id="1ffmCGxTsfw" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -572,7 +575,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="news_list" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="5iIdZ$0sh3H" resolve="NewsRef" />
+      <ref role="20lvS9" node="5iIdZ$0sh3H" resolve="NewsReference" />
     </node>
     <node concept="PrWs8" id="1ffmCGxTsfZ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -617,7 +620,7 @@
   </node>
   <node concept="1TIwiD" id="7wPBMAPLt3i">
     <property role="EcuMT" value="8662004459809132754" />
-    <property role="TrG5h" value="DegreeCourseRef" />
+    <property role="TrG5h" value="DegreeCourseReference" />
     <property role="R4oN_" value="Wrapper concept for a reference to a degree course (since MPS does not allow 1..n references)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyj" id="7wPBMAPLt3j" role="1TKVEi">
@@ -629,7 +632,7 @@
   </node>
   <node concept="1TIwiD" id="4Sn75fF$Z0s">
     <property role="EcuMT" value="5626997406182928412" />
-    <property role="TrG5h" value="ThesisRef" />
+    <property role="TrG5h" value="ThesisReference" />
     <property role="R4oN_" value="Wrapper for a reference to a thesis." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyj" id="4Sn75fF$Z0t" role="1TKVEi">
@@ -651,7 +654,7 @@
   </node>
   <node concept="1TIwiD" id="4alpDr6kG30">
     <property role="EcuMT" value="4797853775791571136" />
-    <property role="TrG5h" value="CourseRef" />
+    <property role="TrG5h" value="CourseReference" />
     <property role="R4oN_" value="Wrapper for a course reference." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyj" id="4alpDr6kG31" role="1TKVEi">
@@ -683,9 +686,9 @@
     <node concept="1TJgyj" id="3HDsOC80xLm" role="1TKVEi">
       <property role="IQ2ns" value="4281079682591497302" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="departments" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7wPBMAPLt1$" resolve="Department" />
+      <property role="20kJfa" value="university" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="44nH_EWYZnf" resolve="University" />
     </node>
     <node concept="1TJgyj" id="3HDsOC80xLq" role="1TKVEi">
       <property role="IQ2ns" value="4281079682591497306" />
@@ -694,10 +697,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7wPBMAPLt1H" resolve="News" />
     </node>
+    <node concept="PrWs8" id="44nH_EX01kv" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5iIdZ$0sh3H">
     <property role="EcuMT" value="6101876087727395053" />
-    <property role="TrG5h" value="NewsRef" />
+    <property role="TrG5h" value="NewsReference" />
     <property role="R4oN_" value="Smart reference for news" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyj" id="5iIdZ$0sh3I" role="1TKVEi">
@@ -748,12 +754,12 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="courses" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1ffmCGxTsh3" resolve="PassingGradeRef" />
+      <ref role="20lvS9" node="1ffmCGxTsh3" resolve="PassingGradeReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="1ffmCGxTsgj">
     <property role="EcuMT" value="1427459160515396627" />
-    <property role="TrG5h" value="StudentRef" />
+    <property role="TrG5h" value="StudentReference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyj" id="1ffmCGxTsgk" role="1TKVEi">
       <property role="IQ2ns" value="1427459160515396628" />
@@ -764,7 +770,7 @@
   </node>
   <node concept="1TIwiD" id="1ffmCGxTsgG">
     <property role="EcuMT" value="1427459160515396652" />
-    <property role="TrG5h" value="ExaminationCallRef" />
+    <property role="TrG5h" value="ExaminationCallReference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyj" id="1ffmCGxTsgH" role="1TKVEi">
       <property role="IQ2ns" value="1427459160515396653" />
@@ -775,13 +781,36 @@
   </node>
   <node concept="1TIwiD" id="1ffmCGxTsh3">
     <property role="EcuMT" value="1427459160515396675" />
-    <property role="TrG5h" value="PassingGradeRef" />
+    <property role="TrG5h" value="PassingGradeReference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyj" id="1ffmCGxTsh4" role="1TKVEi">
       <property role="IQ2ns" value="1427459160515396676" />
       <property role="20kJfa" value="grade" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7wPBMAPLsZB" resolve="PassingGrade" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="44nH_EWYZnf">
+    <property role="EcuMT" value="4690418037763601871" />
+    <property role="TrG5h" value="University" />
+    <property role="34LRSv" value="uni" />
+    <property role="R4oN_" value="The university this model refers to, with departments holding various degree courses. It has a rector." />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="44nH_EWYZng" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="44nH_EWYZni" role="1TKVEi">
+      <property role="IQ2ns" value="4690418037763601874" />
+      <property role="20kJfa" value="rector" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7wPBMAPLsZ9" resolve="Professor" />
+    </node>
+    <node concept="1TJgyj" id="44nH_EWYZnk" role="1TKVEi">
+      <property role="IQ2ns" value="4690418037763601876" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="departments" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="7wPBMAPLt1$" resolve="Department" />
     </node>
   </node>
 </model>
