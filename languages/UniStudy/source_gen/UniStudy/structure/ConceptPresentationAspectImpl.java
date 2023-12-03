@@ -42,7 +42,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Career:
         if (props_Career == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Career");
+          cpb.presentationByName();
           props_Career = cpb.create();
         }
         return props_Career;
@@ -97,7 +97,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_ExaminationCall == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("An examination call for a course, with a date, the room and the type of exam. Has a list of students that booked.");
-          cpb.rawPresentation("Exam");
+          cpb.presentationByName();
           props_ExaminationCall = cpb.create();
         }
         return props_ExaminationCall;
@@ -196,7 +196,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_Thesis == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("A thesis defended by a student that graduated. It was supervised by a professor.");
-          cpb.rawPresentation("Thesis");
+          cpb.presentationByName();
           props_Thesis = cpb.create();
         }
         return props_Thesis;
