@@ -9,6 +9,8 @@ import jetbrains.mps.smodel.runtime.ConstraintsDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.smodel.runtime.CheckingNodeContext;
+import jetbrains.mps.smodel.SNodePointer;
 import java.util.Map;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.runtime.PropertyConstraintsDescriptor;
@@ -39,10 +41,30 @@ public class PassingGrade_Constraints extends BaseConstraintsDescriptor {
       SPropertyOperations.assign(node, PROPS.date$o76I, propertyValue);
     }
   }
+  public static class Grade_Property extends BasePropertyConstraintsDescriptor {
+    public Grade_Property(ConstraintsDescriptor container) {
+      super(PROPS.grade$o6CG, container, false, false, true);
+    }
+    @Override
+    public boolean validateValue(SNode node, Object propertyValue, CheckingNodeContext checkingNodeContext) {
+      boolean result = staticValidateProperty(node, SPropertyOperations.castString(propertyValue));
+      if (!(result) && checkingNodeContext != null) {
+        checkingNodeContext.setBreakingNode(new SNodePointer("r:33dc6f87-d09c-4bff-860e-bccce74c2e6c(UniStudy.constraints)", "1577034227195273537"));
+      }
+      return result;
+    }
+    private static boolean staticValidateProperty(SNode node, String propertyValue) {
+      if (propertyValue.length() == 2 && propertyValue != "A+") {
+        return Integer.parseInt(propertyValue) <= 30;
+      }
+      return true;
+    }
+  }
   @Override
   protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
     Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
     properties.put(PROPS.date$o76I, new Date_Property(this));
+    properties.put(PROPS.grade$o6CG, new Grade_Property(this));
     return properties;
   }
   @Override
@@ -100,6 +122,7 @@ public class PassingGrade_Constraints extends BaseConstraintsDescriptor {
     /*package*/ static final SProperty date$o76I = MetaAdapterFactory.getProperty(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfe7L, 0x78359f29b5c5cfebL, "date");
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
     /*package*/ static final SProperty matriculation_number$o0vo = MetaAdapterFactory.getProperty(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfe1L, 0x78359f29b5c5cfe4L, "matriculation_number");
+    /*package*/ static final SProperty grade$o6CG = MetaAdapterFactory.getProperty(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfe7L, 0x78359f29b5c5cfe9L, "grade");
   }
 
   private static final class LINKS {

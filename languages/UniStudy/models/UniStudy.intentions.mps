@@ -73,7 +73,9 @@
         <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
       </concept>
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
-      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
+        <reference id="1139877738879" name="concept" index="1A0vxQ" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -133,7 +135,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="44nH_EX03O_" role="2OqNvi">
-                <ref role="3TtcxE" to="8nhb:3HDsOC80xLm" resolve="university" />
+                <ref role="3TtcxE" to="8nhb:3HDsOC80xLm" resolve="universities" />
               </node>
             </node>
             <node concept="WFELt" id="44nH_EX0bDG" role="2OqNvi" />
@@ -278,6 +280,7 @@
   </node>
   <node concept="2S6QgY" id="7swBFNgJTn">
     <property role="TrG5h" value="AddDegreeCourse" />
+    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="8nhb:7wPBMAPLt1$" resolve="Department" />
     <node concept="2S6ZIM" id="7swBFNgJTo" role="2ZfVej">
       <node concept="3clFbS" id="7swBFNgJTp" role="2VODD2">
@@ -306,6 +309,7 @@
   </node>
   <node concept="2S6QgY" id="7swBFNgVRP">
     <property role="TrG5h" value="AddNewsReference" />
+    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="8nhb:7wPBMAPLt1$" resolve="Department" />
     <node concept="2S6ZIM" id="7swBFNgVRQ" role="2ZfVej">
       <node concept="3clFbS" id="7swBFNgVRR" role="2VODD2">
@@ -390,7 +394,8 @@
     </node>
   </node>
   <node concept="2S6QgY" id="7swBFNhorF">
-    <property role="TrG5h" value="AddNew" />
+    <property role="TrG5h" value="AddNewTeacherRef" />
+    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="8nhb:7wPBMAPLsXO" resolve="Course" />
     <node concept="2S6ZIM" id="7swBFNhorG" role="2ZfVej">
       <node concept="3clFbS" id="7swBFNhorH" role="2VODD2">
@@ -618,6 +623,126 @@
               <node concept="chp4Y" id="7swBFNwhvY" role="cj9EA">
                 <ref role="cht4Q" to="8nhb:7wPBMAPLt3i" resolve="DegreeCourseReference" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1g_4SAm8_E8">
+    <property role="TrG5h" value="AddNewsToProfessor" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="8nhb:7wPBMAPLsZ9" resolve="Professor" />
+    <node concept="2S6ZIM" id="1g_4SAm8_E9" role="2ZfVej">
+      <node concept="3clFbS" id="1g_4SAm8_Ea" role="2VODD2">
+        <node concept="3clFbF" id="1g_4SAm8B8A" role="3cqZAp">
+          <node concept="Xl_RD" id="1g_4SAm8B8_" role="3clFbG">
+            <property role="Xl_RC" value="Create a news entry from this professor" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1g_4SAm8_Eb" role="2ZfgGD">
+      <node concept="3clFbS" id="1g_4SAm8_Ec" role="2VODD2">
+        <node concept="3clFbF" id="1g_4SAm8BJT" role="3cqZAp">
+          <node concept="2OqwBi" id="1g_4SAm8ERO" role="3clFbG">
+            <node concept="2OqwBi" id="1g_4SAm8BV0" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1g_4SAm8BJS" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="1g_4SAm8Cmr" role="2OqNvi">
+                <ref role="3TtcxE" to="8nhb:7wPBMAPLt31" resolve="posted_news" />
+              </node>
+            </node>
+            <node concept="WFELt" id="1g_4SAm8JgX" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1bnw5_z_eNE">
+    <property role="TrG5h" value="AddBookedCall" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="8nhb:7wPBMAPLsZx" resolve="Student" />
+    <node concept="2S6ZIM" id="1bnw5_z_eNF" role="2ZfVej">
+      <node concept="3clFbS" id="1bnw5_z_eNG" role="2VODD2">
+        <node concept="3clFbF" id="1bnw5_z_f4B" role="3cqZAp">
+          <node concept="Xl_RD" id="1bnw5_z_f4A" role="3clFbG">
+            <property role="Xl_RC" value="Create new examination call booking for this student" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1bnw5_z_eNH" role="2ZfgGD">
+      <node concept="3clFbS" id="1bnw5_z_eNI" role="2VODD2">
+        <node concept="3clFbF" id="1bnw5_z_fqD" role="3cqZAp">
+          <node concept="2OqwBi" id="1bnw5_z_izu" role="3clFbG">
+            <node concept="2OqwBi" id="1bnw5_z_fA9" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1bnw5_z_fqC" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="1bnw5_z_g25" role="2OqNvi">
+                <ref role="3TtcxE" to="8nhb:1ffmCGxTsgK" resolve="booked_calls" />
+              </node>
+            </node>
+            <node concept="WFELt" id="1bnw5_z_mWB" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1bnw5_zCXlC">
+    <property role="TrG5h" value="AddMaster" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="8nhb:7wPBMAPLt1$" resolve="Department" />
+    <node concept="2S6ZIM" id="1bnw5_zCXlD" role="2ZfVej">
+      <node concept="3clFbS" id="1bnw5_zCXlE" role="2VODD2">
+        <node concept="3clFbF" id="1bnw5_zCXAC" role="3cqZAp">
+          <node concept="Xl_RD" id="1bnw5_zCXAB" role="3clFbG">
+            <property role="Xl_RC" value="Create post-graduate master for this department" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1bnw5_zCXlF" role="2ZfgGD">
+      <node concept="3clFbS" id="1bnw5_zCXlG" role="2VODD2">
+        <node concept="3clFbF" id="1bnw5_zCXZm" role="3cqZAp">
+          <node concept="2OqwBi" id="1bnw5_zD1lB" role="3clFbG">
+            <node concept="2OqwBi" id="1bnw5_zCY9$" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1bnw5_zCXZl" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="1bnw5_zCYwR" role="2OqNvi">
+                <ref role="3TtcxE" to="8nhb:7wPBMAPLt2u" resolve="degree_courses" />
+              </node>
+            </node>
+            <node concept="WFELt" id="1bnw5_zD7c8" role="2OqNvi">
+              <ref role="1A0vxQ" to="8nhb:7wPBMAPLt18" resolve="Master" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1bnw5_zD8aQ">
+    <property role="TrG5h" value="AddPhD" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="8nhb:7wPBMAPLt1$" resolve="Department" />
+    <node concept="2S6ZIM" id="1bnw5_zD8aR" role="2ZfVej">
+      <node concept="3clFbS" id="1bnw5_zD8aS" role="2VODD2">
+        <node concept="3clFbF" id="1bnw5_zDb6_" role="3cqZAp">
+          <node concept="Xl_RD" id="1bnw5_zDb6A" role="3clFbG">
+            <property role="Xl_RC" value="Create PhD for this department" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1bnw5_zD8aT" role="2ZfgGD">
+      <node concept="3clFbS" id="1bnw5_zD8aU" role="2VODD2">
+        <node concept="3clFbF" id="1bnw5_zDbp_" role="3cqZAp">
+          <node concept="2OqwBi" id="1bnw5_zDgpC" role="3clFbG">
+            <node concept="2OqwBi" id="1bnw5_zDbzN" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1bnw5_zDbp$" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="1bnw5_zDdBe" role="2OqNvi">
+                <ref role="3TtcxE" to="8nhb:7wPBMAPLt2u" resolve="degree_courses" />
+              </node>
+            </node>
+            <node concept="WFELt" id="1bnw5_zDlqt" role="2OqNvi">
+              <ref role="1A0vxQ" to="8nhb:7wPBMAPLt1t" resolve="PhD" />
             </node>
           </node>
         </node>

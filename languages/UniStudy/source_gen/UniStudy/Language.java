@@ -12,6 +12,7 @@ import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import UniStudy.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.openapi.intentions.IntentionAspectDescriptor;
 import UniStudy.intentions.IntentionsDescriptor;
+import jetbrains.mps.text.rt.TextGenAspectDescriptor;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
 import UniStudy.structure.ConceptPresentationAspectImpl;
@@ -53,6 +54,9 @@ public class Language extends LanguageRuntime {
     }
     if (aspectClass == IntentionAspectDescriptor.class) {
       return aspectClass.cast(new IntentionsDescriptor());
+    }
+    if (aspectClass == TextGenAspectDescriptor.class) {
+      return aspectClass.cast(new UniStudy.textGen.TextGenAspectDescriptor());
     }
     if (aspectClass == StructureAspectDescriptor.class) {
       return aspectClass.cast(new UniStudy.structure.StructureAspectDescriptor());

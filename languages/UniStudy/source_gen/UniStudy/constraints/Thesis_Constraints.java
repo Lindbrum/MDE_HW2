@@ -16,7 +16,6 @@ import jetbrains.mps.smodel.runtime.ReferenceConstraintsDescriptor;
 import jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.IVisitor;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
@@ -58,11 +57,9 @@ public class Thesis_Constraints extends BaseConstraintsDescriptor {
       @Override
       public void onReferenceSet(final SNode referenceNode, final SNode oldReferentNode, final SNode newReferentNode) {
         if ((oldReferentNode != null)) {
-          ListSequence.fromList(SLinkOperations.getChildren(oldReferentNode, LINKS.thesis_supervised$v57r)).visitAll(new IVisitor<SNode>() {
-            public void visit(SNode it) {
-              if (Objects.equals(SLinkOperations.getTarget(it, LINKS.thesis$hYDQ), referenceNode)) {
-                SNodeOperations.deleteNode(it);
-              }
+          ListSequence.fromList(SLinkOperations.getChildren(oldReferentNode, LINKS.thesis_supervised$v57r)).visitAll((it) -> {
+            if (Objects.equals(SLinkOperations.getTarget(it, LINKS.thesis$hYDQ), referenceNode)) {
+              SNodeOperations.deleteNode(it);
             }
           });
         }

@@ -53,7 +53,7 @@ public final class AddUniversity_Intention extends AbstractIntentionDescriptor i
 
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SLinkOperations.addNewChild(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.CareerManagement$$r), LINKS.university$MlEO, null);
+      SLinkOperations.addNewChild(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.CareerManagement$$r), LINKS.universities$MlEO, null);
     }
 
     @Override
@@ -75,6 +75,6 @@ public final class AddUniversity_Intention extends AbstractIntentionDescriptor i
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink university$MlEO = MetaAdapterFactory.getContainmentLink(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x3b69734a0801c738L, 0x3b69734a08021c56L, "university");
+    /*package*/ static final SContainmentLink universities$MlEO = MetaAdapterFactory.getContainmentLink(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x3b69734a0801c738L, 0x3b69734a08021c56L, "universities");
   }
 }

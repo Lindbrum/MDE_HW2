@@ -30,6 +30,7 @@ public class Career_Constraints extends BaseConstraintsDescriptor {
       @Override
       public void onReferenceSet(final SNode referenceNode, final SNode oldReferentNode, final SNode newReferentNode) {
         SPropertyOperations.assign(referenceNode, PROPS.name$MnvL, SPropertyOperations.getString(newReferentNode, PROPS.name$MnvL) + " - " + SPropertyOperations.getString(SLinkOperations.getTarget(referenceNode, LINKS.degree_course$_Nll), PROPS.name$MnvL));
+        SLinkOperations.setTarget(referenceNode, LINKS.student$_G3Q, newReferentNode);
 
       }
     };
@@ -41,6 +42,7 @@ public class Career_Constraints extends BaseConstraintsDescriptor {
       @Override
       public void onReferenceSet(final SNode referenceNode, final SNode oldReferentNode, final SNode newReferentNode) {
         SPropertyOperations.assign(referenceNode, PROPS.name$MnvL, SPropertyOperations.getString(SLinkOperations.getTarget(referenceNode, LINKS.student$_G3Q), PROPS.name$MnvL) + " - " + SPropertyOperations.getString(newReferentNode, PROPS.name$MnvL));
+        SLinkOperations.setTarget(referenceNode, LINKS.degree_course$_Nll, newReferentNode);
 
       }
     };

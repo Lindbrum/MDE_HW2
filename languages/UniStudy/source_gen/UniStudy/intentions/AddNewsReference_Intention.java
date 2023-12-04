@@ -21,7 +21,7 @@ public final class AddNewsReference_Intention extends AbstractIntentionDescripto
   private Collection<IntentionExecutable> myCachedExecutable;
 
   public AddNewsReference_Intention() {
-    super(Kind.NORMAL, false, new SNodePointer("r:8394d85f-5a71-486a-ab53-42b7678aabc0(UniStudy.intentions)", "134125553493196277"));
+    super(Kind.NORMAL, true, new SNodePointer("r:8394d85f-5a71-486a-ab53-42b7678aabc0(UniStudy.intentions)", "134125553493196277"));
   }
 
   @Override

@@ -103,7 +103,7 @@
   <node concept="1TIwiD" id="7wPBMAPLsXO">
     <property role="EcuMT" value="8662004459809132404" />
     <property role="TrG5h" value="Course" />
-    <property role="R4oN_" value="A course held by the university. It has one or examination calls and is held by one or more professors" />
+    <property role="R4oN_" value="A course held by the university. It has one or more examination calls and is held by one or more professors" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyi" id="7wPBMAPLsYb" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132427" />
@@ -618,6 +618,9 @@
       <property role="20kJfa" value="department" />
       <ref role="20lvS9" node="7wPBMAPLt1$" resolve="Department" />
     </node>
+    <node concept="PrWs8" id="1bnw5_zAWtX" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="Az7Fb" id="7wPBMAPLt1U">
     <property role="3F6X1D" value="8662004459809132666" />
@@ -692,7 +695,7 @@
     <node concept="1TJgyj" id="3HDsOC80xLm" role="1TKVEi">
       <property role="IQ2ns" value="4281079682591497302" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="university" />
+      <property role="20kJfa" value="universities" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="44nH_EWYZnf" resolve="University" />
     </node>

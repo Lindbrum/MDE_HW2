@@ -50,6 +50,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final EnumerationDescriptor myEnumerationThesisType = new EnumerationDescriptor_ThesisType();
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypecommaSeparatedLanguageList = new ConstrainedStringDatatypeDescriptorImpl(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d033L, "commaSeparatedLanguageList", "r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/8662004459809132595", "(\\w*\\s*[,]{0,1}\\s*)*");
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypedate = new ConstrainedStringDatatypeDescriptorImpl(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d07aL, "date", "r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/8662004459809132666", "(0?[1-9]|[12]\\d|30|31)[^\\w\\d\r\n:](0?[1-9]|1[0-2])[^\\w\\d\r\n:](\\d{4}|\\d{2})");
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypegrade = new ConstrainedStringDatatypeDescriptorImpl(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x15e2c0462ea0027aL, "grade", "r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/1577034227195576954", "^\\d[1,2}$|[A-D]|30L|A+");
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypematNumber = new ConstrainedStringDatatypeDescriptorImpl(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb9e38e7L, "matNumber", "r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/5626997406183602407", "^\\d{1,10}$");
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypetelephone = new ConstrainedStringDatatypeDescriptorImpl(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb9e59a2L, "telephone", "r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/5626997406183610786", "[+]?[\\s./0-9]{1,6}[(]?[0-9]{1,4}[)]?[-\\s./0-9]{8,14}");
   private final LanguageConceptSwitch myIndexSwitch;
@@ -128,7 +129,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationCoursePeriod, myEnumerationCreditType, myEnumerationDegreeCourseType, myEnumerationExamType, myEnumerationPostGraduateLevel, myEnumerationThesisType, myCSDatatypecommaSeparatedLanguageList, myCSDatatypedate, myCSDatatypematNumber, myCSDatatypetelephone);
+    return Arrays.asList(myEnumerationCoursePeriod, myEnumerationCreditType, myEnumerationDegreeCourseType, myEnumerationExamType, myEnumerationPostGraduateLevel, myEnumerationThesisType, myCSDatatypecommaSeparatedLanguageList, myCSDatatypedate, myCSDatatypegrade, myCSDatatypematNumber, myCSDatatypetelephone);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -154,7 +155,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.aggregate("students", 0x3b69734a08021c51L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfe1L).optional(false).ordered(true).multiple(true).origin("4281079682591497297").done();
     b.aggregate("professors", 0x3b69734a08021c53L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfc9L).optional(true).ordered(true).multiple(true).origin("4281079682591497299").done();
-    b.aggregate("university", 0x3b69734a08021c56L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4117b65abcfbf5cfL).optional(false).ordered(true).multiple(true).origin("4281079682591497302").done();
+    b.aggregate("universities", 0x3b69734a08021c56L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4117b65abcfbf5cfL).optional(false).ordered(true).multiple(true).origin("4281079682591497302").done();
     b.aggregate("news", 0x3b69734a08021c5aL).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d06dL).optional(true).ordered(true).multiple(true).origin("4281079682591497306").done();
     return b.create();
   }
@@ -259,6 +260,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForNews() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("UniStudy", "News", 0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d06dL);
     b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/8662004459809132653");
     b.version(3);
     b.property("title", 0x78359f29b5c5d070L).type(PrimitiveTypeId.STRING).origin("8662004459809132656").done();
@@ -282,7 +284,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/8662004459809132519");
     b.version(3);
-    b.property("grade", 0x78359f29b5c5cfe9L).type(PrimitiveTypeId.STRING).origin("8662004459809132521").done();
+    b.property("grade", 0x78359f29b5c5cfe9L).type(MetaIdFactory.dataTypeId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x15e2c0462ea0027aL)).origin("8662004459809132521").done();
     b.property("date", 0x78359f29b5c5cfebL).type(MetaIdFactory.dataTypeId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d07aL)).origin("8662004459809132523").done();
     b.associate("course", 0x78359f29b5c5cff5L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cf74L).optional(false).origin("8662004459809132533").done();
     b.associate("student_career", 0x78359f29b5c5cff7L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x13cf5a8b21e5c404L).optional(false).origin("8662004459809132535").done();

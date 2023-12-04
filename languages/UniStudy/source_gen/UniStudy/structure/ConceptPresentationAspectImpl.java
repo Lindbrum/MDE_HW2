@@ -56,7 +56,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Course:
         if (props_Course == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("A course held by the university. It has one or examination calls and is held by one or more professors");
+          cpb.shortDesc("A course held by the university. It has one or more examination calls and is held by one or more professors");
           cpb.presentationByName();
           props_Course = cpb.create();
         }
@@ -120,7 +120,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_News == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("A news posted by a professor referring to either a department or the university as a whole.");
-          cpb.rawPresentation("News");
+          cpb.presentationByName();
           props_News = cpb.create();
         }
         return props_News;

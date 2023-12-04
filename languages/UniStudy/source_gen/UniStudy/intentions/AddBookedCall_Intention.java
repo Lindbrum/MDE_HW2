@@ -17,16 +17,16 @@ import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
-public final class AddNew_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
+public final class AddBookedCall_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
 
-  public AddNew_Intention() {
-    super(Kind.NORMAL, false, new SNodePointer("r:8394d85f-5a71-486a-ab53-42b7678aabc0(UniStudy.intentions)", "134125553493313259"));
+  public AddBookedCall_Intention() {
+    super(Kind.NORMAL, true, new SNodePointer("r:8394d85f-5a71-486a-ab53-42b7678aabc0(UniStudy.intentions)", "1357694934086642922"));
   }
 
   @Override
   public String getPresentation() {
-    return "AddNew";
+    return "AddBookedCall";
   }
 
   @Override
@@ -46,12 +46,12 @@ public final class AddNew_Intention extends AbstractIntentionDescriptor implemen
 
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
-      return "Create professor reference";
+      return "Create new examination call booking for this student";
     }
 
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SLinkOperations.addNewChild(node, LINKS.professors$ofhQ, null);
+      SLinkOperations.addNewChild(node, LINKS.booked_calls$9IuK, null);
     }
 
     @Override
@@ -63,12 +63,12 @@ public final class AddNew_Intention extends AbstractIntentionDescriptor implemen
 
     @Override
     public IntentionDescriptor getDescriptor() {
-      return AddNew_Intention.this;
+      return AddBookedCall_Intention.this;
     }
 
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink professors$ofhQ = MetaAdapterFactory.getContainmentLink(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cf74L, 0x78359f29b5c5d004L, "professors");
+    /*package*/ static final SContainmentLink booked_calls$9IuK = MetaAdapterFactory.getContainmentLink(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfe1L, 0x13cf5a8b21e5c430L, "booked_calls");
   }
 }

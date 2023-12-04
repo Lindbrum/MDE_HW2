@@ -13,7 +13,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Objects;
 import java.util.HashMap;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -36,11 +35,7 @@ public class DegreeCourse_Constraints extends BaseConstraintsDescriptor {
         ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(newReferentNode, CONCEPTS.Professor$3J), LINKS.coordinated_degree_courses$vbdP)).addElement(SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d0d2L, "UniStudy.structure.DegreeCourseReference")));
         SLinkOperations.setTarget(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(newReferentNode, CONCEPTS.Professor$3J), LINKS.coordinated_degree_courses$vbdP)).last(), LINKS.degree_course$vJLQ, referenceNode);
         if ((oldReferentNode != null)) {
-          ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(oldReferentNode, CONCEPTS.Professor$3J), LINKS.coordinated_degree_courses$vbdP)).removeWhere(new IWhereFilter<SNode>() {
-            public boolean accept(SNode it) {
-              return Objects.equals(SLinkOperations.getTarget(SNodeOperations.cast(it, CONCEPTS.DegreeCourseReference$8I), LINKS.degree_course$vJLQ), referenceNode);
-            }
-          });
+          ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(oldReferentNode, CONCEPTS.Professor$3J), LINKS.coordinated_degree_courses$vbdP)).removeWhere((it) -> Objects.equals(SLinkOperations.getTarget(it, LINKS.degree_course$vJLQ), referenceNode));
         }
 
         SLinkOperations.setTarget(referenceNode, LINKS.coordinator$sdNR, newReferentNode);
@@ -54,7 +49,6 @@ public class DegreeCourse_Constraints extends BaseConstraintsDescriptor {
   private static final class CONCEPTS {
     /*package*/ static final SConcept DegreeCourse$gR = MetaAdapterFactory.getConcept(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d024L, "UniStudy.structure.DegreeCourse");
     /*package*/ static final SConcept Professor$3J = MetaAdapterFactory.getConcept(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfc9L, "UniStudy.structure.Professor");
-    /*package*/ static final SConcept DegreeCourseReference$8I = MetaAdapterFactory.getConcept(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d0d2L, "UniStudy.structure.DegreeCourseReference");
   }
 
   private static final class LINKS {

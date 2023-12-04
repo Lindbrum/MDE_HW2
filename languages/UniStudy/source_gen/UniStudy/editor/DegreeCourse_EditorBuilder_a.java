@@ -56,6 +56,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     setCellContext(editorCell);
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     style.set(StyleAttributes.PADDING_TOP, new Padding(1, Measure.SPACES));
     style.set(StyleAttributes.PADDING_BOTTOM, new Padding(1, Measure.SPACES));
     editorCell.getStyle().putAll(style);

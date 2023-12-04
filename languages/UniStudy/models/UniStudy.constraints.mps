@@ -79,7 +79,7 @@
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -88,6 +88,9 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
+        <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
@@ -139,7 +142,16 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
+      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
+        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
+        <child id="1883223317721008709" name="body" index="Jncv$" />
+        <child id="1883223317721008711" name="variable" index="JncvA" />
+        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
+      </concept>
+      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
+      <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1145573345940" name="jetbrains.mps.lang.smodel.structure.Node_GetAllSiblingsOperation" flags="nn" index="2TvwIu" />
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -164,7 +176,7 @@
       <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -177,7 +189,6 @@
       </concept>
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
       <concept id="1227022179634" name="jetbrains.mps.baseLanguage.collections.structure.AddLastElementOperation" flags="nn" index="2Ke9KJ" />
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="3055999550620853964" name="jetbrains.mps.baseLanguage.collections.structure.RemoveWhereOperation" flags="nn" index="1aUR6E" />
       <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
@@ -227,6 +238,17 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbF" id="1bnw5_ztkat" role="3cqZAp">
+            <node concept="37vLTI" id="1bnw5_ztkVG" role="3clFbG">
+              <node concept="3khVwk" id="1bnw5_ztkYJ" role="37vLTx" />
+              <node concept="2OqwBi" id="1bnw5_ztknZ" role="37vLTJ">
+                <node concept="3kakTB" id="1bnw5_ztkas" role="2Oq$k0" />
+                <node concept="3TrEf2" id="1bnw5_ztkJG" role="2OqNvi">
+                  <ref role="3Tt5mk" to="8nhb:1ffmCGxTsg5" resolve="student" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3clFbH" id="4_ynFFOozQ0" role="3cqZAp" />
         </node>
       </node>
@@ -265,6 +287,17 @@
                 <node concept="3kakTB" id="7swBFNr1Pj" role="2Oq$k0" />
                 <node concept="3TrcHB" id="7swBFNr1Pk" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="1bnw5_ztl7u" role="3cqZAp">
+            <node concept="37vLTI" id="1bnw5_ztl7v" role="3clFbG">
+              <node concept="3khVwk" id="1bnw5_ztl7w" role="37vLTx" />
+              <node concept="2OqwBi" id="1bnw5_ztl7x" role="37vLTJ">
+                <node concept="3kakTB" id="1bnw5_ztl7y" role="2Oq$k0" />
+                <node concept="3TrEf2" id="1bnw5_ztlvY" role="2OqNvi">
+                  <ref role="3Tt5mk" to="8nhb:1ffmCGxTsgf" resolve="degree_course" />
                 </node>
               </node>
             </node>
@@ -586,12 +619,6 @@
         </node>
         <node concept="3clFbJ" id="7swBFNzJ4h" role="3cqZAp">
           <node concept="3clFbS" id="7swBFNzJ4j" role="3clFbx">
-            <node concept="RRSsy" id="7swBFN$GSC" role="3cqZAp">
-              <property role="RRSoG" value="h1akgim/info" />
-              <node concept="Xl_RD" id="4_ynFFOovzB" role="RRSoy">
-                <property role="Xl_RC" value="SETTING CLASS ON PASSING GRADE" />
-              </node>
-            </node>
             <node concept="3clFbF" id="7swBFNzJQ2" role="3cqZAp">
               <node concept="37vLTI" id="7swBFNzKI9" role="3clFbG">
                 <node concept="EsrRn" id="7swBFNzKZc" role="37vLTx" />
@@ -941,85 +968,6 @@
   </node>
   <node concept="1M2fIO" id="4_ynFFOrASN">
     <ref role="1M2myG" to="8nhb:7wPBMAPLsZx" resolve="Student" />
-    <node concept="9SLcT" id="4_ynFFOrATx" role="9SGkU">
-      <node concept="3clFbS" id="4_ynFFOrATy" role="2VODD2">
-        <node concept="3clFbJ" id="4_ynFFOrB7s" role="3cqZAp">
-          <node concept="2OqwBi" id="4_ynFFOrB$Z" role="3clFbw">
-            <node concept="2H4GUG" id="4_ynFFOrBfe" role="2Oq$k0" />
-            <node concept="1mIQ4w" id="4_ynFFOrC2m" role="2OqNvi">
-              <node concept="chp4Y" id="4_ynFFOrC4M" role="cj9EA">
-                <ref role="cht4Q" to="8nhb:7wPBMAPLt3i" resolve="DegreeCourseReference" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="4_ynFFOrB7u" role="3clFbx">
-            <node concept="3clFbF" id="4_ynFFOrC8E" role="3cqZAp">
-              <node concept="2OqwBi" id="4_ynFFOrFP2" role="3clFbG">
-                <node concept="2OqwBi" id="4_ynFFOrCUB" role="2Oq$k0">
-                  <node concept="2OqwBi" id="4_ynFFOrCow" role="2Oq$k0">
-                    <node concept="1PxgMI" id="4_ynFFOrCei" role="2Oq$k0">
-                      <node concept="chp4Y" id="4_ynFFOrCf0" role="3oSUPX">
-                        <ref role="cht4Q" to="8nhb:7wPBMAPLt3i" resolve="DegreeCourseReference" />
-                      </node>
-                      <node concept="2H4GUG" id="4_ynFFOrC8D" role="1m5AlR" />
-                    </node>
-                    <node concept="3TrEf2" id="4_ynFFOrCHd" role="2OqNvi">
-                      <ref role="3Tt5mk" to="8nhb:7wPBMAPLt3j" resolve="degree_course" />
-                    </node>
-                  </node>
-                  <node concept="3Tsc0h" id="4_ynFFOrDjX" role="2OqNvi">
-                    <ref role="3TtcxE" to="8nhb:1ffmCGxTsh_" resolve="enrolled_students" />
-                  </node>
-                </node>
-                <node concept="2Ke9KJ" id="4_ynFFOrKCc" role="2OqNvi">
-                  <node concept="2ShNRf" id="4_ynFFOrKKq" role="25WWJ7">
-                    <node concept="3zrR0B" id="4_ynFFOrL8U" role="2ShVmc">
-                      <node concept="3Tqbb2" id="4_ynFFOrL8W" role="3zrR0E">
-                        <ref role="ehGHo" to="8nhb:1ffmCGxTsgj" resolve="StudentReference" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="4_ynFFOrLE8" role="3cqZAp">
-              <node concept="37vLTI" id="4_ynFFOrS$d" role="3clFbG">
-                <node concept="EsrRn" id="4_ynFFOrSQ5" role="37vLTx" />
-                <node concept="2OqwBi" id="4_ynFFOrR9L" role="37vLTJ">
-                  <node concept="2OqwBi" id="4_ynFFOrLE9" role="2Oq$k0">
-                    <node concept="2OqwBi" id="4_ynFFOrLEa" role="2Oq$k0">
-                      <node concept="2OqwBi" id="4_ynFFOrLEb" role="2Oq$k0">
-                        <node concept="1PxgMI" id="4_ynFFOrLEc" role="2Oq$k0">
-                          <node concept="chp4Y" id="4_ynFFOrLEd" role="3oSUPX">
-                            <ref role="cht4Q" to="8nhb:7wPBMAPLt3i" resolve="DegreeCourseReference" />
-                          </node>
-                          <node concept="2H4GUG" id="4_ynFFOrLEe" role="1m5AlR" />
-                        </node>
-                        <node concept="3TrEf2" id="4_ynFFOrLEf" role="2OqNvi">
-                          <ref role="3Tt5mk" to="8nhb:7wPBMAPLt3j" resolve="degree_course" />
-                        </node>
-                      </node>
-                      <node concept="3Tsc0h" id="4_ynFFOrLEg" role="2OqNvi">
-                        <ref role="3TtcxE" to="8nhb:1ffmCGxTsh_" resolve="enrolled_students" />
-                      </node>
-                    </node>
-                    <node concept="1yVyf7" id="4_ynFFOrQyM" role="2OqNvi" />
-                  </node>
-                  <node concept="3TrEf2" id="4_ynFFOrS8V" role="2OqNvi">
-                    <ref role="3Tt5mk" to="8nhb:1ffmCGxTsgk" resolve="student" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="4_ynFFOrSUV" role="3cqZAp">
-          <node concept="3clFbT" id="4_ynFFOrTcY" role="3cqZAk">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="EnEH3" id="JPurlO_KYP" role="1MhHOB">
       <ref role="EomxK" to="8nhb:7wPBMAPLsZ$" resolve="matriculation_number" />
       <node concept="QB0g5" id="JPurlO_L0x" role="QCWH9">
@@ -1141,20 +1089,15 @@
                       <ref role="3TtcxE" to="8nhb:7wPBMAPLt2V" resolve="coordinated_degree_courses" />
                     </node>
                   </node>
-                  <node concept="1aUR6E" id="76D5cwlg9I0" role="2OqNvi">
-                    <node concept="1bVj0M" id="76D5cwlg9I2" role="23t8la">
-                      <node concept="3clFbS" id="76D5cwlg9I3" role="1bW5cS">
+                  <node concept="1aUR6E" id="1g_4SAm8v6C" role="2OqNvi">
+                    <node concept="1bVj0M" id="1g_4SAm8v6E" role="23t8la">
+                      <node concept="3clFbS" id="1g_4SAm8v6F" role="1bW5cS">
                         <node concept="3clFbF" id="76D5cwlgcne" role="3cqZAp">
                           <node concept="17R0WA" id="76D5cwlgnzr" role="3clFbG">
                             <node concept="3kakTB" id="76D5cwlgoyZ" role="3uHU7w" />
                             <node concept="2OqwBi" id="76D5cwlghap" role="3uHU7B">
-                              <node concept="1PxgMI" id="76D5cwlgdNg" role="2Oq$k0">
-                                <node concept="chp4Y" id="76D5cwlggfs" role="3oSUPX">
-                                  <ref role="cht4Q" to="8nhb:7wPBMAPLt3i" resolve="DegreeCourseReference" />
-                                </node>
-                                <node concept="37vLTw" id="76D5cwlgcnd" role="1m5AlR">
-                                  <ref role="3cqZAo" node="76D5cwlg9I4" resolve="it" />
-                                </node>
+                              <node concept="37vLTw" id="76D5cwlgcnd" role="2Oq$k0">
+                                <ref role="3cqZAo" node="1g_4SAm8v6G" resolve="it" />
                               </node>
                               <node concept="3TrEf2" id="76D5cwlgkua" role="2OqNvi">
                                 <ref role="3Tt5mk" to="8nhb:7wPBMAPLt3j" resolve="degree_course" />
@@ -1163,9 +1106,9 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="Rh6nW" id="76D5cwlg9I4" role="1bW2Oz">
+                      <node concept="gl6BB" id="1g_4SAm8v6G" role="1bW2Oz">
                         <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="76D5cwlg9I5" role="1tU5fm" />
+                        <node concept="2jxLKc" id="1g_4SAm8v6H" role="1tU5fm" />
                       </node>
                     </node>
                   </node>
@@ -1185,6 +1128,495 @@
                 <node concept="3kakTB" id="76D5cwl91Rv" role="2Oq$k0" />
                 <node concept="3TrEf2" id="76D5cwl95PI" role="2OqNvi">
                   <ref role="3Tt5mk" to="8nhb:7wPBMAPLt1Y" resolve="coordinator" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1bnw5_zqRQr">
+    <ref role="1M2myG" to="8nhb:7wPBMAPLt3i" resolve="DegreeCourseReference" />
+    <node concept="1N5Pfh" id="1bnw5_zqRQs" role="1Mr941">
+      <ref role="1N5Vy1" to="8nhb:7wPBMAPLt3j" resolve="degree_course" />
+      <node concept="3k9gUc" id="1bnw5_zqRUy" role="3kmjI7">
+        <node concept="3clFbS" id="1bnw5_zqRUz" role="2VODD2">
+          <node concept="3clFbJ" id="1bnw5_zqRVZ" role="3cqZAp">
+            <node concept="2OqwBi" id="1bnw5_zqUc4" role="3clFbw">
+              <node concept="2OqwBi" id="1bnw5_zqS62" role="2Oq$k0">
+                <node concept="3kakTB" id="1bnw5_zqRWr" role="2Oq$k0" />
+                <node concept="1mfA1w" id="1bnw5_zqU32" role="2OqNvi" />
+              </node>
+              <node concept="1mIQ4w" id="1bnw5_zqUuU" role="2OqNvi">
+                <node concept="chp4Y" id="1bnw5_zqUxf" role="cj9EA">
+                  <ref role="cht4Q" to="8nhb:7wPBMAPLsZx" resolve="Student" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="1bnw5_zqRW1" role="3clFbx">
+              <node concept="3clFbF" id="1bnw5_zqU_3" role="3cqZAp">
+                <node concept="2OqwBi" id="1bnw5_zqXWs" role="3clFbG">
+                  <node concept="2OqwBi" id="1bnw5_zqUJ3" role="2Oq$k0">
+                    <node concept="3khVwk" id="1bnw5_zqU_2" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="1bnw5_zqV3p" role="2OqNvi">
+                      <ref role="3TtcxE" to="8nhb:1ffmCGxTsh_" resolve="enrolled_students" />
+                    </node>
+                  </node>
+                  <node concept="2Ke9KJ" id="1bnw5_zr2KY" role="2OqNvi">
+                    <node concept="2ShNRf" id="1bnw5_zr2T9" role="25WWJ7">
+                      <node concept="3zrR0B" id="1bnw5_zr4lJ" role="2ShVmc">
+                        <node concept="3Tqbb2" id="1bnw5_zr4lL" role="3zrR0E">
+                          <ref role="ehGHo" to="8nhb:1ffmCGxTsgj" resolve="StudentReference" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="1bnw5_zr4AQ" role="3cqZAp">
+                <node concept="37vLTI" id="1bnw5_zr6x8" role="3clFbG">
+                  <node concept="1PxgMI" id="1bnw5_zr8yQ" role="37vLTx">
+                    <node concept="chp4Y" id="1bnw5_zr8$H" role="3oSUPX">
+                      <ref role="cht4Q" to="8nhb:7wPBMAPLsZx" resolve="Student" />
+                    </node>
+                    <node concept="2OqwBi" id="1bnw5_zr6Iy" role="1m5AlR">
+                      <node concept="3kakTB" id="1bnw5_zr6$y" role="2Oq$k0" />
+                      <node concept="1mfA1w" id="1bnw5_zr6VN" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="1bnw5_zr7yX" role="37vLTJ">
+                    <node concept="2OqwBi" id="1bnw5_zr4AR" role="2Oq$k0">
+                      <node concept="2OqwBi" id="1bnw5_zr4AS" role="2Oq$k0">
+                        <node concept="3khVwk" id="1bnw5_zr4AT" role="2Oq$k0" />
+                        <node concept="3Tsc0h" id="1bnw5_zr4AU" role="2OqNvi">
+                          <ref role="3TtcxE" to="8nhb:1ffmCGxTsh_" resolve="enrolled_students" />
+                        </node>
+                      </node>
+                      <node concept="1yVyf7" id="1bnw5_zr5Ul" role="2OqNvi" />
+                    </node>
+                    <node concept="3TrEf2" id="1bnw5_zr8rw" role="2OqNvi">
+                      <ref role="3Tt5mk" to="8nhb:1ffmCGxTsgk" resolve="student" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="1bnw5_zr8EY" role="3cqZAp">
+                <node concept="3clFbS" id="1bnw5_zr8F0" role="3clFbx">
+                  <node concept="3clFbF" id="1bnw5_zr9lP" role="3cqZAp">
+                    <node concept="2OqwBi" id="1bnw5_zrbTu" role="3clFbG">
+                      <node concept="2OqwBi" id="1bnw5_zr9o1" role="2Oq$k0">
+                        <node concept="3ki8Fx" id="1bnw5_zr9lO" role="2Oq$k0" />
+                        <node concept="3Tsc0h" id="1bnw5_zr9qk" role="2OqNvi">
+                          <ref role="3TtcxE" to="8nhb:1ffmCGxTsh_" resolve="enrolled_students" />
+                        </node>
+                      </node>
+                      <node concept="1aUR6E" id="1bnw5_zrgiw" role="2OqNvi">
+                        <node concept="1bVj0M" id="1bnw5_zrgiy" role="23t8la">
+                          <node concept="3clFbS" id="1bnw5_zrgiz" role="1bW5cS">
+                            <node concept="3clFbF" id="1bnw5_zrgv7" role="3cqZAp">
+                              <node concept="17R0WA" id="1bnw5_zricT" role="3clFbG">
+                                <node concept="2OqwBi" id="1bnw5_zriZh" role="3uHU7w">
+                                  <node concept="3kakTB" id="1bnw5_zriww" role="2Oq$k0" />
+                                  <node concept="1mfA1w" id="1bnw5_zrjdv" role="2OqNvi" />
+                                </node>
+                                <node concept="2OqwBi" id="1bnw5_zrgPT" role="3uHU7B">
+                                  <node concept="37vLTw" id="1bnw5_zrgv6" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="1bnw5_zrgi$" resolve="it" />
+                                  </node>
+                                  <node concept="3TrEf2" id="1bnw5_zrhzW" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="8nhb:1ffmCGxTsgk" resolve="student" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="gl6BB" id="1bnw5_zrgi$" role="1bW2Oz">
+                            <property role="TrG5h" value="it" />
+                            <node concept="2jxLKc" id="1bnw5_zrgi_" role="1tU5fm" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1bnw5_zr8Su" role="3clFbw">
+                  <node concept="3ki8Fx" id="1bnw5_zr8I5" role="2Oq$k0" />
+                  <node concept="3x8VRR" id="1bnw5_zr9gO" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="1bnw5_zrjT1" role="3cqZAp">
+            <node concept="37vLTI" id="1bnw5_zrkCY" role="3clFbG">
+              <node concept="3khVwk" id="1bnw5_zrkFJ" role="37vLTx" />
+              <node concept="2OqwBi" id="1bnw5_zrk8A" role="37vLTJ">
+                <node concept="3kakTB" id="1bnw5_zrjT0" role="2Oq$k0" />
+                <node concept="3TrEf2" id="1bnw5_zrksd" role="2OqNvi">
+                  <ref role="3Tt5mk" to="8nhb:7wPBMAPLt3j" resolve="degree_course" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1bnw5_ztmf0">
+    <ref role="1M2myG" to="8nhb:4alpDr6kG30" resolve="CourseReference" />
+    <node concept="1N5Pfh" id="1bnw5_ztmf1" role="1Mr941">
+      <ref role="1N5Vy1" to="8nhb:4alpDr6kG31" resolve="course" />
+      <node concept="3k9gUc" id="1bnw5_ztmfI" role="3kmjI7">
+        <node concept="3clFbS" id="1bnw5_ztmfJ" role="2VODD2">
+          <node concept="3clFbJ" id="1bnw5_ztmhe" role="3cqZAp">
+            <node concept="2OqwBi" id="1bnw5_ztmKr" role="3clFbw">
+              <node concept="2OqwBi" id="1bnw5_ztmrh" role="2Oq$k0">
+                <node concept="3kakTB" id="1bnw5_ztmhE" role="2Oq$k0" />
+                <node concept="1mfA1w" id="1bnw5_ztmBJ" role="2OqNvi" />
+              </node>
+              <node concept="1mIQ4w" id="1bnw5_ztn1f" role="2OqNvi">
+                <node concept="chp4Y" id="1bnw5_ztn3$" role="cj9EA">
+                  <ref role="cht4Q" to="8nhb:7wPBMAPLsZ9" resolve="Professor" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="1bnw5_ztmhg" role="3clFbx">
+              <node concept="3clFbF" id="1bnw5_ztnla" role="3cqZAp">
+                <node concept="2OqwBi" id="1bnw5_ztr2q" role="3clFbG">
+                  <node concept="2OqwBi" id="1bnw5_ztnKh" role="2Oq$k0">
+                    <node concept="3khVwk" id="1bnw5_ztnAj" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="1bnw5_zto5L" role="2OqNvi">
+                      <ref role="3TtcxE" to="8nhb:7wPBMAPLt04" resolve="professors" />
+                    </node>
+                  </node>
+                  <node concept="2Ke9KJ" id="1bnw5_ztv3S" role="2OqNvi">
+                    <node concept="2ShNRf" id="1bnw5_ztv9b" role="25WWJ7">
+                      <node concept="3zrR0B" id="1bnw5_ztvBG" role="2ShVmc">
+                        <node concept="3Tqbb2" id="1bnw5_ztvBI" role="3zrR0E">
+                          <ref role="ehGHo" to="8nhb:7wPBMAPLt08" resolve="ProfessorReference" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="1bnw5_ztvYo" role="3cqZAp">
+                <node concept="37vLTI" id="1bnw5_ztAuh" role="3clFbG">
+                  <node concept="1PxgMI" id="1bnw5_ztB3F" role="37vLTx">
+                    <node concept="chp4Y" id="1bnw5_ztB5z" role="3oSUPX">
+                      <ref role="cht4Q" to="8nhb:7wPBMAPLsZ9" resolve="Professor" />
+                    </node>
+                    <node concept="2OqwBi" id="1bnw5_ztAGX" role="1m5AlR">
+                      <node concept="3kakTB" id="1bnw5_ztAyb" role="2Oq$k0" />
+                      <node concept="1mfA1w" id="1bnw5_ztATu" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="1bnw5_zt$YF" role="37vLTJ">
+                    <node concept="2OqwBi" id="1bnw5_ztx81" role="2Oq$k0">
+                      <node concept="2OqwBi" id="1bnw5_ztwdO" role="2Oq$k0">
+                        <node concept="3khVwk" id="1bnw5_ztvYn" role="2Oq$k0" />
+                        <node concept="3Tsc0h" id="1bnw5_ztw_j" role="2OqNvi">
+                          <ref role="3TtcxE" to="8nhb:7wPBMAPLt04" resolve="professors" />
+                        </node>
+                      </node>
+                      <node concept="1yVyf7" id="1bnw5_ztz8v" role="2OqNvi" />
+                    </node>
+                    <node concept="3TrEf2" id="1bnw5_ztA3B" role="2OqNvi">
+                      <ref role="3Tt5mk" to="8nhb:7wPBMAPLt09" resolve="professor" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="1bnw5_ztBcN" role="3cqZAp">
+                <node concept="3clFbS" id="1bnw5_ztBcP" role="3clFbx">
+                  <node concept="3clFbF" id="1bnw5_ztC18" role="3cqZAp">
+                    <node concept="2OqwBi" id="1bnw5_ztE_m" role="3clFbG">
+                      <node concept="2OqwBi" id="1bnw5_ztC3k" role="2Oq$k0">
+                        <node concept="3ki8Fx" id="1bnw5_ztC17" role="2Oq$k0" />
+                        <node concept="3Tsc0h" id="1bnw5_ztC6c" role="2OqNvi">
+                          <ref role="3TtcxE" to="8nhb:7wPBMAPLt04" resolve="professors" />
+                        </node>
+                      </node>
+                      <node concept="1aUR6E" id="1bnw5_ztJLs" role="2OqNvi">
+                        <node concept="1bVj0M" id="1bnw5_ztJLu" role="23t8la">
+                          <node concept="3clFbS" id="1bnw5_ztJLv" role="1bW5cS">
+                            <node concept="3clFbF" id="1bnw5_ztJR0" role="3cqZAp">
+                              <node concept="17R0WA" id="1bnw5_ztLwp" role="3clFbG">
+                                <node concept="2OqwBi" id="1bnw5_ztMaB" role="3uHU7w">
+                                  <node concept="3kakTB" id="1bnw5_ztLJV" role="2Oq$k0" />
+                                  <node concept="1mfA1w" id="1bnw5_ztMvV" role="2OqNvi" />
+                                </node>
+                                <node concept="2OqwBi" id="1bnw5_ztK3s" role="3uHU7B">
+                                  <node concept="37vLTw" id="1bnw5_ztJQZ" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="1bnw5_ztJLw" resolve="it" />
+                                  </node>
+                                  <node concept="3TrEf2" id="1bnw5_ztKUw" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="8nhb:7wPBMAPLt09" resolve="professor" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="gl6BB" id="1bnw5_ztJLw" role="1bW2Oz">
+                            <property role="TrG5h" value="it" />
+                            <node concept="2jxLKc" id="1bnw5_ztJLx" role="1tU5fm" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1bnw5_ztB_h" role="3clFbw">
+                  <node concept="3ki8Fx" id="1bnw5_ztBqS" role="2Oq$k0" />
+                  <node concept="3x8VRR" id="1bnw5_ztBYc" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="1bnw5_ztn7H" role="3cqZAp">
+            <node concept="37vLTI" id="1bnw5_ztn7I" role="3clFbG">
+              <node concept="3khVwk" id="1bnw5_ztn7J" role="37vLTx" />
+              <node concept="2OqwBi" id="1bnw5_ztn7K" role="37vLTJ">
+                <node concept="3kakTB" id="1bnw5_ztn7L" role="2Oq$k0" />
+                <node concept="3TrEf2" id="1bnw5_ztnit" role="2OqNvi">
+                  <ref role="3Tt5mk" to="8nhb:4alpDr6kG31" resolve="course" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="1bnw5_ztn6S" role="3cqZAp" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1bnw5_zzyWE">
+    <ref role="1M2myG" to="8nhb:7wPBMAPLt1$" resolve="Department" />
+    <node concept="9SLcT" id="1bnw5_zzAvr" role="9SGkU">
+      <node concept="3clFbS" id="1bnw5_zzAvs" role="2VODD2">
+        <node concept="Jncv_" id="1bnw5_zzAHZ" role="3cqZAp">
+          <ref role="JncvD" to="8nhb:7wPBMAPLt0$" resolve="DegreeCourse" />
+          <node concept="2H4GUG" id="1bnw5_zzAIJ" role="JncvB" />
+          <node concept="3clFbS" id="1bnw5_zzAI1" role="Jncv$">
+            <node concept="3clFbF" id="1bnw5_zzBfl" role="3cqZAp">
+              <node concept="37vLTI" id="1bnw5_zzC0e" role="3clFbG">
+                <node concept="EsrRn" id="1bnw5_zzCgF" role="37vLTx" />
+                <node concept="2OqwBi" id="1bnw5_zzBqb" role="37vLTJ">
+                  <node concept="Jnkvi" id="1bnw5_zzBfk" role="2Oq$k0">
+                    <ref role="1M0zk5" node="1bnw5_zzAI2" resolve="degree_course" />
+                  </node>
+                  <node concept="3TrEf2" id="1bnw5_zzBM$" role="2OqNvi">
+                    <ref role="3Tt5mk" to="8nhb:7wPBMAPLt23" resolve="department" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="1bnw5_zzAI2" role="JncvA">
+            <property role="TrG5h" value="degree_course" />
+            <node concept="2jxLKc" id="1bnw5_zzAI3" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="1bnw5_zzBdK" role="3cqZAp">
+          <node concept="3clFbT" id="1bnw5_zzBe4" role="3cqZAk">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1bnw5_zzyXo">
+    <ref role="1M2myG" to="8nhb:5iIdZ$0sh3H" resolve="NewsReference" />
+    <node concept="1N5Pfh" id="1bnw5_zzyXp" role="1Mr941">
+      <ref role="1N5Vy1" to="8nhb:5iIdZ$0sh3I" resolve="news" />
+      <node concept="3k9gUc" id="1bnw5_zzyYL" role="3kmjI7">
+        <node concept="3clFbS" id="1bnw5_zzyYM" role="2VODD2">
+          <node concept="3clFbH" id="1bnw5_zzyZK" role="3cqZAp" />
+          <node concept="Jncv_" id="1bnw5_zz_cm" role="3cqZAp">
+            <ref role="JncvD" to="8nhb:7wPBMAPLt1$" resolve="Department" />
+            <node concept="2OqwBi" id="1bnw5_zz_et" role="JncvB">
+              <node concept="3kakTB" id="1bnw5_zz_dL" role="2Oq$k0" />
+              <node concept="1mfA1w" id="1bnw5_zz_gk" role="2OqNvi" />
+            </node>
+            <node concept="3clFbS" id="1bnw5_zz_cq" role="Jncv$">
+              <node concept="3clFbF" id="1bnw5_zz_oq" role="3cqZAp">
+                <node concept="37vLTI" id="1bnw5_zz_or" role="3clFbG">
+                  <node concept="2OqwBi" id="1bnw5_zz_ox" role="37vLTJ">
+                    <node concept="3khVwk" id="1bnw5_zz_oy" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="1bnw5_zz_oz" role="2OqNvi">
+                      <ref role="3Tt5mk" to="8nhb:7wPBMAPLt2G" resolve="department" />
+                    </node>
+                  </node>
+                  <node concept="Jnkvi" id="1bnw5_zzAiw" role="37vLTx">
+                    <ref role="1M0zk5" node="1bnw5_zz_cs" resolve="department" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="JncvC" id="1bnw5_zz_cs" role="JncvA">
+              <property role="TrG5h" value="department" />
+              <node concept="2jxLKc" id="1bnw5_zz_ct" role="1tU5fm" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="1bnw5_zz_9A" role="3cqZAp" />
+          <node concept="3clFbF" id="1bnw5_zzzhs" role="3cqZAp">
+            <node concept="37vLTI" id="1bnw5_zz$rj" role="3clFbG">
+              <node concept="2OqwBi" id="1bnw5_zz_F7" role="37vLTJ">
+                <node concept="3kakTB" id="1bnw5_zz_wK" role="2Oq$k0" />
+                <node concept="3TrEf2" id="1bnw5_zz_Yx" role="2OqNvi">
+                  <ref role="3Tt5mk" to="8nhb:5iIdZ$0sh3I" resolve="news" />
+                </node>
+              </node>
+              <node concept="3khVwk" id="1bnw5_zzA8p" role="37vLTx" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1bnw5_z_8As">
+    <ref role="1M2myG" to="8nhb:1ffmCGxTsgG" resolve="ExaminationCallReference" />
+    <node concept="1N5Pfh" id="1bnw5_z_8At" role="1Mr941">
+      <ref role="1N5Vy1" to="8nhb:1ffmCGxTsgH" resolve="call" />
+      <node concept="3k9gUc" id="1bnw5_z_8BP" role="3kmjI7">
+        <node concept="3clFbS" id="1bnw5_z_8BQ" role="2VODD2">
+          <node concept="Jncv_" id="1bnw5_z_aAm" role="3cqZAp">
+            <ref role="JncvD" to="8nhb:7wPBMAPLsZx" resolve="Student" />
+            <node concept="2OqwBi" id="1bnw5_z_aJv" role="JncvB">
+              <node concept="3kakTB" id="1bnw5_z_aBr" role="2Oq$k0" />
+              <node concept="1mfA1w" id="1bnw5_z_b3f" role="2OqNvi" />
+            </node>
+            <node concept="3clFbS" id="1bnw5_z_aAq" role="Jncv$">
+              <node concept="3clFbF" id="1bnw5_z_9xP" role="3cqZAp">
+                <node concept="2OqwBi" id="1bnw5_z_9xQ" role="3clFbG">
+                  <node concept="2OqwBi" id="1bnw5_z_9xR" role="2Oq$k0">
+                    <node concept="3khVwk" id="1bnw5_z_9xS" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="1bnw5_z_cfe" role="2OqNvi">
+                      <ref role="3TtcxE" to="8nhb:1ffmCGxTsgm" resolve="booked_students" />
+                    </node>
+                  </node>
+                  <node concept="2Ke9KJ" id="1bnw5_z_9xU" role="2OqNvi">
+                    <node concept="2ShNRf" id="1bnw5_z_9xV" role="25WWJ7">
+                      <node concept="3zrR0B" id="1bnw5_z_9xW" role="2ShVmc">
+                        <node concept="3Tqbb2" id="1bnw5_z_9xX" role="3zrR0E">
+                          <ref role="ehGHo" to="8nhb:1ffmCGxTsgj" resolve="StudentReference" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="1bnw5_z_9xY" role="3cqZAp">
+                <node concept="37vLTI" id="1bnw5_z_9xZ" role="3clFbG">
+                  <node concept="Jnkvi" id="1bnw5_z_cz7" role="37vLTx">
+                    <ref role="1M0zk5" node="1bnw5_z_aAs" resolve="student" />
+                  </node>
+                  <node concept="2OqwBi" id="1bnw5_z_9y5" role="37vLTJ">
+                    <node concept="2OqwBi" id="1bnw5_z_9y6" role="2Oq$k0">
+                      <node concept="2OqwBi" id="1bnw5_z_9y7" role="2Oq$k0">
+                        <node concept="3khVwk" id="1bnw5_z_9y8" role="2Oq$k0" />
+                        <node concept="3Tsc0h" id="1bnw5_z_coR" role="2OqNvi">
+                          <ref role="3TtcxE" to="8nhb:1ffmCGxTsgm" resolve="booked_students" />
+                        </node>
+                      </node>
+                      <node concept="1yVyf7" id="1bnw5_z_9ya" role="2OqNvi" />
+                    </node>
+                    <node concept="3TrEf2" id="1bnw5_z_9yb" role="2OqNvi">
+                      <ref role="3Tt5mk" to="8nhb:1ffmCGxTsgk" resolve="student" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="1bnw5_z_9yc" role="3cqZAp">
+                <node concept="3clFbS" id="1bnw5_z_9yd" role="3clFbx">
+                  <node concept="3clFbF" id="1bnw5_z_9ye" role="3cqZAp">
+                    <node concept="2OqwBi" id="1bnw5_z_9yf" role="3clFbG">
+                      <node concept="2OqwBi" id="1bnw5_z_9yg" role="2Oq$k0">
+                        <node concept="3ki8Fx" id="1bnw5_z_9yh" role="2Oq$k0" />
+                        <node concept="3Tsc0h" id="1bnw5_z_d3l" role="2OqNvi">
+                          <ref role="3TtcxE" to="8nhb:1ffmCGxTsgm" resolve="booked_students" />
+                        </node>
+                      </node>
+                      <node concept="1aUR6E" id="1bnw5_z_9yj" role="2OqNvi">
+                        <node concept="1bVj0M" id="1bnw5_z_9yk" role="23t8la">
+                          <node concept="3clFbS" id="1bnw5_z_9yl" role="1bW5cS">
+                            <node concept="3clFbF" id="1bnw5_z_9ym" role="3cqZAp">
+                              <node concept="17R0WA" id="1bnw5_z_9yn" role="3clFbG">
+                                <node concept="2OqwBi" id="1bnw5_z_9yr" role="3uHU7B">
+                                  <node concept="37vLTw" id="1bnw5_z_9ys" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="1bnw5_z_9yu" resolve="it" />
+                                  </node>
+                                  <node concept="3TrEf2" id="1bnw5_z_9yt" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="8nhb:1ffmCGxTsgk" resolve="student" />
+                                  </node>
+                                </node>
+                                <node concept="Jnkvi" id="1bnw5_z_dh0" role="3uHU7w">
+                                  <ref role="1M0zk5" node="1bnw5_z_aAs" resolve="student" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="gl6BB" id="1bnw5_z_9yu" role="1bW2Oz">
+                            <property role="TrG5h" value="it" />
+                            <node concept="2jxLKc" id="1bnw5_z_9yv" role="1tU5fm" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1bnw5_z_9yw" role="3clFbw">
+                  <node concept="3ki8Fx" id="1bnw5_z_9yx" role="2Oq$k0" />
+                  <node concept="3x8VRR" id="1bnw5_z_9yy" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+            <node concept="JncvC" id="1bnw5_z_aAs" role="JncvA">
+              <property role="TrG5h" value="student" />
+              <node concept="2jxLKc" id="1bnw5_z_aAt" role="1tU5fm" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="1bnw5_z_9yz" role="3cqZAp">
+            <node concept="37vLTI" id="1bnw5_z_9y$" role="3clFbG">
+              <node concept="3khVwk" id="1bnw5_z_9y_" role="37vLTx" />
+              <node concept="2OqwBi" id="1bnw5_z_9yA" role="37vLTJ">
+                <node concept="3kakTB" id="1bnw5_z_9yB" role="2Oq$k0" />
+                <node concept="3TrEf2" id="1bnw5_z_e08" role="2OqNvi">
+                  <ref role="3Tt5mk" to="8nhb:1ffmCGxTsgH" resolve="call" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="1bnw5_zAWtZ">
+    <ref role="1M2myG" to="8nhb:7wPBMAPLsZ9" resolve="Professor" />
+  </node>
+  <node concept="1M2fIO" id="1bnw5_zBaj0">
+    <ref role="1M2myG" to="8nhb:7wPBMAPLt1H" resolve="News" />
+    <node concept="EnEH3" id="1bnw5_zBaj1" role="1MhHOB">
+      <ref role="EomxK" to="8nhb:7wPBMAPLt1K" resolve="title" />
+      <node concept="1LLf8_" id="1bnw5_zBamq" role="1LXaQT">
+        <node concept="3clFbS" id="1bnw5_zBamr" role="2VODD2">
+          <node concept="3clFbF" id="1bnw5_zBaoM" role="3cqZAp">
+            <node concept="37vLTI" id="1bnw5_zBcc6" role="3clFbG">
+              <node concept="1Wqviy" id="1bnw5_zBcGv" role="37vLTx" />
+              <node concept="2OqwBi" id="1bnw5_zBaz0" role="37vLTJ">
+                <node concept="EsrRn" id="1bnw5_zBaoL" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1bnw5_zBaTI" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="1bnw5_zBgrI" role="3cqZAp">
+            <node concept="37vLTI" id="1bnw5_zBiha" role="3clFbG">
+              <node concept="1Wqviy" id="1bnw5_zBiLu" role="37vLTx" />
+              <node concept="2OqwBi" id="1bnw5_zBgAd" role="37vLTJ">
+                <node concept="EsrRn" id="1bnw5_zBgrH" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1bnw5_zBh0K" role="2OqNvi">
+                  <ref role="3TsBF5" to="8nhb:7wPBMAPLt1K" resolve="title" />
                 </node>
               </node>
             </node>
