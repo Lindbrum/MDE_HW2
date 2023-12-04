@@ -138,6 +138,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForCareer() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("UniStudy", "Career", 0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x13cf5a8b21e5c404L);
     b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/1427459160515396612");
     b.version(3);
     b.associate("student", 0x13cf5a8b21e5c405L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfe1L).optional(false).origin("1427459160515396613").done();
@@ -224,6 +225,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForExaminationCall() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("UniStudy", "ExaminationCall", 0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c57a20L);
     b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/8662004459809110560");
     b.version(3);
     b.property("date", 0x78359f29b5c5cf75L).type(MetaIdFactory.dataTypeId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d07aL)).origin("8662004459809132405").done();
@@ -350,7 +352,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("matriculation_number", 0x78359f29b5c5cfe4L).type(MetaIdFactory.dataTypeId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4e171c53eb9e38e7L)).origin("8662004459809132516").done();
     b.aggregate("thesis_defended", 0x78359f29b5c5d0c7L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d00cL).optional(true).ordered(true).multiple(true).origin("8662004459809132743").done();
     b.aggregate("transcripts", 0x78359f29b5c5d0caL).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x13cf5a8b21e5c404L).optional(false).ordered(true).multiple(true).origin("8662004459809132746").done();
-    b.aggregate("enrolled_courses", 0x78359f29b5c5d0cdL).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d0d2L).optional(true).ordered(true).multiple(true).origin("8662004459809132749").done();
+    b.aggregate("enrolled_courses", 0x78359f29b5c5d0cdL).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d0d2L).optional(false).ordered(true).multiple(true).origin("8662004459809132749").done();
     b.aggregate("booked_calls", 0x13cf5a8b21e5c430L).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x13cf5a8b21e5c42cL).optional(true).ordered(true).multiple(true).origin("1427459160515396656").done();
     return b.create();
   }
@@ -365,6 +367,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForThesis() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("UniStudy", "Thesis", 0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d00cL);
     b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/8662004459809132556");
     b.version(3);
     b.property("type", 0x78359f29b5c5d010L).type(MetaIdFactory.dataTypeId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d012L)).origin("8662004459809132560").done();

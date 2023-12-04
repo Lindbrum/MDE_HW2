@@ -96,6 +96,9 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1ffmCGxTsgj" resolve="StudentReference" />
     </node>
+    <node concept="PrWs8" id="7swBFNlFqo" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7wPBMAPLsXO">
     <property role="EcuMT" value="8662004459809132404" />
@@ -319,7 +322,7 @@
       <property role="IQ2ns" value="8662004459809132749" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="enrolled_courses" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="7wPBMAPLt3i" resolve="DegreeCourseReference" />
     </node>
     <node concept="1TJgyj" id="1ffmCGxTsgK" role="1TKVEi">
@@ -408,6 +411,9 @@
       <property role="20kJfa" value="degree_course" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7wPBMAPLt0$" resolve="DegreeCourse" />
+    </node>
+    <node concept="PrWs8" id="7swBFNjdRL" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="25R3W" id="7wPBMAPLt0i">
@@ -755,6 +761,9 @@
       <property role="20kJfa" value="courses" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1ffmCGxTsh3" resolve="PassingGradeReference" />
+    </node>
+    <node concept="PrWs8" id="7swBFNqTzS" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="1ffmCGxTsgj">

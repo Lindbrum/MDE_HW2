@@ -740,7 +740,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     editorCell.setCellId("refNodeList_student_grades");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
-    style.set(StyleAttributes.PADDING_BOTTOM, new Padding(1, Measure.SPACES));
+    style.set(StyleAttributes.PADDING_BOTTOM, new Padding(3, Measure.SPACES));
     editorCell.getStyle().putAll(style);
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
