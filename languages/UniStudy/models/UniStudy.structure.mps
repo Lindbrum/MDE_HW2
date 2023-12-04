@@ -344,7 +344,7 @@
     <node concept="1TJgyi" id="7wPBMAPLsZD" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132521" />
       <property role="TrG5h" value="grade" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <ref role="AX2Wp" node="1nyK4oIC09U" resolve="grade" />
     </node>
     <node concept="1TJgyi" id="7wPBMAPLsZF" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132523" />
@@ -821,6 +821,11 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="7wPBMAPLt1$" resolve="Department" />
     </node>
+  </node>
+  <node concept="Az7Fb" id="1nyK4oIC09U">
+    <property role="3F6X1D" value="1577034227195576954" />
+    <property role="TrG5h" value="grade" />
+    <property role="FLfZY" value="^\\d[1,2}$|[A-D]|30L|A+" />
   </node>
 </model>
 
