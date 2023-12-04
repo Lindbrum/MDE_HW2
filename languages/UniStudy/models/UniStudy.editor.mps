@@ -72,7 +72,7 @@
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
       <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
-      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ngI" index="3F0Thp">
+      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
@@ -129,7 +129,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -899,12 +899,15 @@
         </node>
         <node concept="2iRkQZ" id="4alpDr6l9OP" role="2iSdaV" />
       </node>
-      <node concept="3F0ifn" id="44nH_EXaSMj" role="3EZMnx">
-        <property role="3F0ifm" value="Scheduled calls details" />
-        <node concept="VQ3r3" id="44nH_EXaT62" role="3F10Kt">
+      <node concept="3F0ifn" id="76D5cwlbxUo" role="3EZMnx">
+        <property role="3F0ifm" value="Scheduled calls details for this course" />
+        <node concept="VQ3r3" id="76D5cwlcUyd" role="3F10Kt">
           <property role="2USNnj" value="gtbM8PH/underlined" />
         </node>
-        <node concept="27yT$n" id="44nH_EXg0bv" role="3F10Kt">
+        <node concept="27yT$n" id="76D5cwlekjn" role="3F10Kt">
+          <property role="3$6WeP" value="1" />
+        </node>
+        <node concept="27z8qx" id="76D5cwlenJR" role="3F10Kt">
           <property role="3$6WeP" value="1" />
         </node>
       </node>
@@ -1471,6 +1474,22 @@
           </node>
         </node>
         <node concept="2iRfu4" id="5iIdZ$0sh4j" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="76D5cwl13y$" role="3EZMnx">
+        <node concept="VPM3Z" id="76D5cwl13yA" role="3F10Kt" />
+        <node concept="3F0ifn" id="76D5cwl16U5" role="3EZMnx">
+          <property role="3F0ifm" value="For the department" />
+        </node>
+        <node concept="1iCGBv" id="76D5cwl1cMz" role="3EZMnx">
+          <ref role="1NtTu8" to="8nhb:7wPBMAPLt2G" resolve="department" />
+          <node concept="1sVBvm" id="76D5cwl1cM_" role="1sWHZn">
+            <node concept="3F0A7n" id="76D5cwl1eug" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="2iRfu4" id="76D5cwl13yD" role="2iSdaV" />
       </node>
       <node concept="3EZMnI" id="5iIdZ$0sh5N" role="3EZMnx">
         <node concept="VPM3Z" id="5iIdZ$0sh5P" role="3F10Kt" />
@@ -2167,6 +2186,49 @@
       <node concept="3F0ifn" id="4_ynFFOpgMZ" role="3EZMnx">
         <property role="3F0ifm" value=";" />
         <node concept="11L4FC" id="4_ynFFOpgN0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="76D5cwl54zs">
+    <ref role="1XX52x" to="8nhb:4Sn75fF$Z0s" resolve="ThesisReference" />
+    <node concept="3EZMnI" id="76D5cwl5lzW" role="2wV5jI">
+      <node concept="l2Vlx" id="76D5cwl5lzX" role="2iSdaV" />
+      <node concept="3F0ifn" id="76D5cwl5Hoh" role="3EZMnx">
+        <property role="3F0ifm" value="-" />
+      </node>
+      <node concept="1iCGBv" id="76D5cwl5l$0" role="3EZMnx">
+        <ref role="1NtTu8" to="8nhb:4Sn75fF$Z0t" resolve="thesis" />
+        <node concept="1sVBvm" id="76D5cwl5l$1" role="1sWHZn">
+          <node concept="3F0A7n" id="76D5cwl5l$2" role="2wV5jI">
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="76D5cwl6YOi" role="3EZMnx">
+        <property role="3F0ifm" value=", by" />
+        <node concept="11L4FC" id="76D5cwl75BW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="76D5cwl791E" role="3EZMnx">
+        <ref role="1NtTu8" to="8nhb:4Sn75fF$Z0t" resolve="thesis" />
+        <node concept="1sVBvm" id="76D5cwl791G" role="1sWHZn">
+          <node concept="1iCGBv" id="76D5cwl7b_c" role="2wV5jI">
+            <ref role="1NtTu8" to="8nhb:7wPBMAPLt0u" resolve="student" />
+            <node concept="1sVBvm" id="76D5cwl7b_e" role="1sWHZn">
+              <node concept="3F0A7n" id="76D5cwl7eZ1" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="76D5cwl5l$3" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="11L4FC" id="76D5cwl5l$4" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>

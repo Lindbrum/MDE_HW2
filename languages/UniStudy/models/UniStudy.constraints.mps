@@ -143,7 +143,7 @@
       <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -156,6 +156,8 @@
       </concept>
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
       <concept id="1227022179634" name="jetbrains.mps.baseLanguage.collections.structure.AddLastElementOperation" flags="nn" index="2Ke9KJ" />
+      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
+      <concept id="3055999550620853964" name="jetbrains.mps.baseLanguage.collections.structure.RemoveWhereOperation" flags="nn" index="1aUR6E" />
       <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
     </language>
   </registry>
@@ -878,6 +880,127 @@
         <node concept="3cpWs6" id="4_ynFFOrSUV" role="3cqZAp">
           <node concept="3clFbT" id="4_ynFFOrTcY" role="3cqZAk">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="76D5cwl8SlH">
+    <ref role="1M2myG" to="8nhb:7wPBMAPLt0$" resolve="DegreeCourse" />
+    <node concept="1N5Pfh" id="76D5cwl8U3U" role="1Mr941">
+      <ref role="1N5Vy1" to="8nhb:7wPBMAPLt1Y" resolve="coordinator" />
+      <node concept="3k9gUc" id="76D5cwl8Ypr" role="3kmjI7">
+        <node concept="3clFbS" id="76D5cwl8Yps" role="2VODD2">
+          <node concept="3clFbF" id="76D5cwl9lw$" role="3cqZAp">
+            <node concept="2OqwBi" id="76D5cwl9y_R" role="3clFbG">
+              <node concept="2OqwBi" id="76D5cwl9l_4" role="2Oq$k0">
+                <node concept="1PxgMI" id="76D5cwl9paE" role="2Oq$k0">
+                  <node concept="chp4Y" id="76D5cwl9rKR" role="3oSUPX">
+                    <ref role="cht4Q" to="8nhb:7wPBMAPLsZ9" resolve="Professor" />
+                  </node>
+                  <node concept="3khVwk" id="76D5cwl9lwz" role="1m5AlR" />
+                </node>
+                <node concept="3Tsc0h" id="76D5cwl9vJl" role="2OqNvi">
+                  <ref role="3TtcxE" to="8nhb:7wPBMAPLt2V" resolve="coordinated_degree_courses" />
+                </node>
+              </node>
+              <node concept="2Ke9KJ" id="76D5cwl9Dg_" role="2OqNvi">
+                <node concept="2ShNRf" id="76D5cwl9G5K" role="25WWJ7">
+                  <node concept="3zrR0B" id="76D5cwl9NNR" role="2ShVmc">
+                    <node concept="3Tqbb2" id="76D5cwl9NNT" role="3zrR0E">
+                      <ref role="ehGHo" to="8nhb:7wPBMAPLt3i" resolve="DegreeCourseReference" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="76D5cwla3tJ" role="3cqZAp">
+            <node concept="37vLTI" id="76D5cwlaiFV" role="3clFbG">
+              <node concept="3kakTB" id="76D5cwlaku2" role="37vLTx" />
+              <node concept="2OqwBi" id="76D5cwlaemZ" role="37vLTJ">
+                <node concept="2OqwBi" id="76D5cwla6J0" role="2Oq$k0">
+                  <node concept="2OqwBi" id="76D5cwla3tL" role="2Oq$k0">
+                    <node concept="1PxgMI" id="76D5cwla3tM" role="2Oq$k0">
+                      <node concept="chp4Y" id="76D5cwla3tN" role="3oSUPX">
+                        <ref role="cht4Q" to="8nhb:7wPBMAPLsZ9" resolve="Professor" />
+                      </node>
+                      <node concept="3khVwk" id="76D5cwla3tO" role="1m5AlR" />
+                    </node>
+                    <node concept="3Tsc0h" id="76D5cwla3tP" role="2OqNvi">
+                      <ref role="3TtcxE" to="8nhb:7wPBMAPLt2V" resolve="coordinated_degree_courses" />
+                    </node>
+                  </node>
+                  <node concept="1yVyf7" id="76D5cwlacW4" role="2OqNvi" />
+                </node>
+                <node concept="3TrEf2" id="76D5cwlagzg" role="2OqNvi">
+                  <ref role="3Tt5mk" to="8nhb:7wPBMAPLt3j" resolve="degree_course" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="76D5cwlienv" role="3cqZAp">
+            <node concept="3clFbS" id="76D5cwlienx" role="3clFbx">
+              <node concept="3clFbF" id="76D5cwlfL6m" role="3cqZAp">
+                <node concept="2OqwBi" id="76D5cwlfT1N" role="3clFbG">
+                  <node concept="2OqwBi" id="76D5cwlfOLr" role="2Oq$k0">
+                    <node concept="1PxgMI" id="76D5cwlfMax" role="2Oq$k0">
+                      <node concept="chp4Y" id="76D5cwlfNTA" role="3oSUPX">
+                        <ref role="cht4Q" to="8nhb:7wPBMAPLsZ9" resolve="Professor" />
+                      </node>
+                      <node concept="3ki8Fx" id="76D5cwlfL6l" role="1m5AlR" />
+                    </node>
+                    <node concept="3Tsc0h" id="76D5cwlfQbh" role="2OqNvi">
+                      <ref role="3TtcxE" to="8nhb:7wPBMAPLt2V" resolve="coordinated_degree_courses" />
+                    </node>
+                  </node>
+                  <node concept="1aUR6E" id="76D5cwlg9I0" role="2OqNvi">
+                    <node concept="1bVj0M" id="76D5cwlg9I2" role="23t8la">
+                      <node concept="3clFbS" id="76D5cwlg9I3" role="1bW5cS">
+                        <node concept="3clFbF" id="76D5cwlgcne" role="3cqZAp">
+                          <node concept="17R0WA" id="76D5cwlgnzr" role="3clFbG">
+                            <node concept="3kakTB" id="76D5cwlgoyZ" role="3uHU7w" />
+                            <node concept="2OqwBi" id="76D5cwlghap" role="3uHU7B">
+                              <node concept="1PxgMI" id="76D5cwlgdNg" role="2Oq$k0">
+                                <node concept="chp4Y" id="76D5cwlggfs" role="3oSUPX">
+                                  <ref role="cht4Q" to="8nhb:7wPBMAPLt3i" resolve="DegreeCourseReference" />
+                                </node>
+                                <node concept="37vLTw" id="76D5cwlgcnd" role="1m5AlR">
+                                  <ref role="3cqZAo" node="76D5cwlg9I4" resolve="it" />
+                                </node>
+                              </node>
+                              <node concept="3TrEf2" id="76D5cwlgkua" role="2OqNvi">
+                                <ref role="3Tt5mk" to="8nhb:7wPBMAPLt3j" resolve="degree_course" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="Rh6nW" id="76D5cwlg9I4" role="1bW2Oz">
+                        <property role="TrG5h" value="it" />
+                        <node concept="2jxLKc" id="76D5cwlg9I5" role="1tU5fm" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="76D5cwliijE" role="3clFbw">
+              <node concept="3ki8Fx" id="76D5cwlihhA" role="2Oq$k0" />
+              <node concept="3x8VRR" id="76D5cwlikrG" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="76D5cwli3Bl" role="3cqZAp" />
+          <node concept="3clFbF" id="76D5cwl91Rw" role="3cqZAp">
+            <node concept="37vLTI" id="76D5cwl97LA" role="3clFbG">
+              <node concept="3khVwk" id="76D5cwl99yC" role="37vLTx" />
+              <node concept="2OqwBi" id="76D5cwl92UA" role="37vLTJ">
+                <node concept="3kakTB" id="76D5cwl91Rv" role="2Oq$k0" />
+                <node concept="3TrEf2" id="76D5cwl95PI" role="2OqNvi">
+                  <ref role="3Tt5mk" to="8nhb:7wPBMAPLt1Y" resolve="coordinator" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
