@@ -8,15 +8,23 @@ import jetbrains.mps.smodel.runtime.ConstraintContext_CanBeParent;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.runtime.CheckingNodeContext;
+import jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor;
+import jetbrains.mps.smodel.runtime.ConstraintsDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.SNodePointer;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import java.util.Objects;
+import java.util.Map;
+import org.jetbrains.mps.openapi.language.SProperty;
+import jetbrains.mps.smodel.runtime.PropertyConstraintsDescriptor;
+import java.util.HashMap;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.smodel.SNodePointer;
 import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 
@@ -40,6 +48,28 @@ public class Student_Constraints extends BaseConstraintsDescriptor {
       }
     };
   }
+  public static class Matriculation_number_Property extends BasePropertyConstraintsDescriptor {
+    public Matriculation_number_Property(ConstraintsDescriptor container) {
+      super(PROPS.matriculation_number$o0vo, container, false, false, true);
+    }
+    @Override
+    public boolean validateValue(SNode node, Object propertyValue, CheckingNodeContext checkingNodeContext) {
+      boolean result = staticValidateProperty(node, SPropertyOperations.castString(propertyValue));
+      if (!(result) && checkingNodeContext != null) {
+        checkingNodeContext.setBreakingNode(new SNodePointer("r:33dc6f87-d09c-4bff-860e-bccce74c2e6c(UniStudy.constraints)", "861728723963416609"));
+      }
+      return result;
+    }
+    private static boolean staticValidateProperty(SNode node, final String propertyValue) {
+      return ListSequence.fromList(SNodeOperations.getAllSiblings(node, false)).where((it) -> Objects.equals(SPropertyOperations.getString(SNodeOperations.cast(it, CONCEPTS.Student$Dd), PROPS.matriculation_number$o0vo), propertyValue)).count() < 1;
+    }
+  }
+  @Override
+  protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
+    Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
+    properties.put(PROPS.matriculation_number$o0vo, new Matriculation_number_Property(this));
+    return properties;
+  }
   private static boolean staticCanBeAParent(SNode node, SNode childNode, SAbstractConcept childConcept, SContainmentLink link) {
     if (SNodeOperations.isInstanceOf(childNode, CONCEPTS.DegreeCourseReference$8I)) {
       ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(SNodeOperations.cast(childNode, CONCEPTS.DegreeCourseReference$8I), LINKS.degree_course$vJLQ), LINKS.enrolled_students$cHU3)).addElement(SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x13cf5a8b21e5c413L, "UniStudy.structure.StudentReference")));
@@ -52,6 +82,10 @@ public class Student_Constraints extends BaseConstraintsDescriptor {
   private static final class CONCEPTS {
     /*package*/ static final SConcept Student$Dd = MetaAdapterFactory.getConcept(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfe1L, "UniStudy.structure.Student");
     /*package*/ static final SConcept DegreeCourseReference$8I = MetaAdapterFactory.getConcept(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d0d2L, "UniStudy.structure.DegreeCourseReference");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty matriculation_number$o0vo = MetaAdapterFactory.getProperty(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfe1L, 0x78359f29b5c5cfe4L, "matriculation_number");
   }
 
   private static final class LINKS {
