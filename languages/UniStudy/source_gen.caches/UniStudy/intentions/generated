@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-4pwkdajut6v0fyb2hwjo7u72dzlqkb9">
-  <files names="AddBookedCall_Intention.java:AddCourseToTranscript_Intention.java:AddDegreeCourse_Intention.java:AddEnrolledCourse_Intention.java:AddMaster_Intention.java:AddNewBookedStudent_Intention.java:AddNewCourse_Intention.java:AddNewDegreeRef_Intention.java:AddNewExaminationCall_Intention.java:AddNewStudentGrade_Intention.java:AddNewTeacherRef_Intention.java:AddNewsReference_Intention.java:AddNewsToProfessor_Intention.java:AddPhD_Intention.java:AddTranscript_Intention.java:AddUniversity_Intention.java:AddUser_Intention.java:IntentionsDescriptor.java" />
+<product version="3" modelHash="-c8rt0y6cbz5u9x18alad9o4lehwh2pt">
+  <files names="AddBookedCall_Intention.java:AddCourseToTranscript_Intention.java:AddDegreeCourse_Intention.java:AddEnrolledCourse_Intention.java:AddNewBookedStudent_Intention.java:AddNewCourse_Intention.java:AddNewDegreeRef_Intention.java:AddNewExaminationCall_Intention.java:AddNewStudentGrade_Intention.java:AddNewTeacherRef_Intention.java:AddNewsReference_Intention.java:AddNewsToProfessor_Intention.java:AddProfessor_Intention.java:AddStudent_Intention.java:AddTranscript_Intention.java:AddUniversity_Intention.java:IntentionsDescriptor.java" />
 </product>
 

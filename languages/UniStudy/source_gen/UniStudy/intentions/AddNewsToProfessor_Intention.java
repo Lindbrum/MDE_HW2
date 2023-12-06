@@ -12,10 +12,13 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 public final class AddNewsToProfessor_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
@@ -51,7 +54,8 @@ public final class AddNewsToProfessor_Intention extends AbstractIntentionDescrip
 
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SLinkOperations.addNewChild(node, LINKS.posted_news$vcBV, null);
+      ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.posted_news$vcBV)).addElement(SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d06dL, "UniStudy.structure.News")));
+      SLinkOperations.setTarget(ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.posted_news$vcBV)).last(), LINKS.author$vbaV, node);
     }
 
     @Override
@@ -70,5 +74,6 @@ public final class AddNewsToProfessor_Intention extends AbstractIntentionDescrip
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink posted_news$vcBV = MetaAdapterFactory.getContainmentLink(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfc9L, 0x78359f29b5c5d0c1L, "posted_news");
+    /*package*/ static final SReferenceLink author$vbaV = MetaAdapterFactory.getReferenceLink(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d06dL, 0x78359f29b5c5d0aaL, "author");
   }
 }

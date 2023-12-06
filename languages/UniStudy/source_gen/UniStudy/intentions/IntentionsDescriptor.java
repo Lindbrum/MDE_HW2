@@ -41,6 +41,15 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
       case 1:
         if (true) {
           // concept
+          intentions = new IntentionFactory[3];
+          intentions[0] = new AddUniversity_Intention();
+          intentions[1] = new AddStudent_Intention();
+          intentions[2] = new AddProfessor_Intention();
+        }
+        break;
+      case 2:
+        if (true) {
+          // concept
           intentions = new IntentionFactory[4];
           intentions[0] = new AddNewExaminationCall_Intention();
           intentions[1] = new AddNewTeacherRef_Intention();
@@ -48,58 +57,42 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
           intentions[3] = new AddNewDegreeRef_Intention();
         }
         break;
-      case 2:
+      case 3:
         if (true) {
           // concept
           intentions = new IntentionFactory[1];
           intentions[0] = new AddNewCourse_Intention();
         }
         break;
-      case 3:
-        if (true) {
-          // concept
-          intentions = new IntentionFactory[4];
-          intentions[0] = new AddDegreeCourse_Intention();
-          intentions[1] = new AddNewsReference_Intention();
-          intentions[2] = new AddMaster_Intention();
-          intentions[3] = new AddPhD_Intention();
-        }
-        break;
       case 4:
         if (true) {
           // concept
-          intentions = new IntentionFactory[1];
-          intentions[0] = new AddNewBookedStudent_Intention();
+          intentions = new IntentionFactory[2];
+          intentions[0] = new AddDegreeCourse_Intention();
+          intentions[1] = new AddNewsReference_Intention();
         }
         break;
       case 5:
         if (true) {
           // concept
           intentions = new IntentionFactory[1];
-          intentions[0] = new AddNewsToProfessor_Intention();
+          intentions[0] = new AddNewBookedStudent_Intention();
         }
         break;
       case 6:
+        if (true) {
+          // concept
+          intentions = new IntentionFactory[1];
+          intentions[0] = new AddNewsToProfessor_Intention();
+        }
+        break;
+      case 7:
         if (true) {
           // concept
           intentions = new IntentionFactory[3];
           intentions[0] = new AddTranscript_Intention();
           intentions[1] = new AddEnrolledCourse_Intention();
           intentions[2] = new AddBookedCall_Intention();
-        }
-        break;
-      case 7:
-        if (true) {
-          // concept
-          intentions = new IntentionFactory[1];
-          intentions[0] = new AddUniversity_Intention();
-        }
-        break;
-      case 8:
-        if (true) {
-          // concept
-          intentions = new IntentionFactory[1];
-          intentions[0] = new AddUser_Intention();
         }
         break;
       default:
@@ -111,9 +104,9 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[17];
+    IntentionFactory[] rv = new IntentionFactory[16];
     rv[0] = new AddUniversity_Intention();
-    rv[1] = new AddUser_Intention();
+    rv[1] = new AddStudent_Intention();
     rv[2] = new AddTranscript_Intention();
     rv[3] = new AddDegreeCourse_Intention();
     rv[4] = new AddNewsReference_Intention();
@@ -127,9 +120,8 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     rv[12] = new AddEnrolledCourse_Intention();
     rv[13] = new AddNewsToProfessor_Intention();
     rv[14] = new AddBookedCall_Intention();
-    rv[15] = new AddMaster_Intention();
-    rv[16] = new AddPhD_Intention();
+    rv[15] = new AddProfessor_Intention();
     return Arrays.asList(rv);
   }
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x13cf5a8b21e5c404L), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cf74L), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d024L), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d064L), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c57a20L), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfc9L), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfe1L), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4117b65abcfbf5cfL), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfccL)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x13cf5a8b21e5c404L), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x3b69734a0801c738L), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cf74L), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d024L), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d064L), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c57a20L), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfc9L), MetaIdFactory.conceptId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5cfe1L)).seal();
 }

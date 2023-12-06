@@ -12,10 +12,13 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 public final class AddDegreeCourse_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
@@ -51,7 +54,8 @@ public final class AddDegreeCourse_Intention extends AbstractIntentionDescriptor
 
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SLinkOperations.addNewChild(node, LINKS.degree_courses$v3cS, null);
+      ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.degree_courses$v3cS)).addElement(SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d024L, "UniStudy.structure.DegreeCourse")));
+      SLinkOperations.setTarget(ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.degree_courses$v3cS)).last(), LINKS.department$seYW, node);
     }
 
     @Override
@@ -70,5 +74,6 @@ public final class AddDegreeCourse_Intention extends AbstractIntentionDescriptor
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink degree_courses$v3cS = MetaAdapterFactory.getContainmentLink(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d064L, 0x78359f29b5c5d09eL, "degree_courses");
+    /*package*/ static final SReferenceLink department$seYW = MetaAdapterFactory.getReferenceLink(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d024L, 0x78359f29b5c5d083L, "department");
   }
 }

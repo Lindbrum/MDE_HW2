@@ -13,17 +13,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_CareerManagement;
   private ConceptPresentation props_Course;
   private ConceptPresentation props_CourseReference;
+  private ConceptPresentation props_CustomEnumeration;
   private ConceptPresentation props_DegreeCourse;
   private ConceptPresentation props_DegreeCourseReference;
   private ConceptPresentation props_Department;
   private ConceptPresentation props_ExaminationCall;
   private ConceptPresentation props_ExaminationCallReference;
-  private ConceptPresentation props_Master;
+  private ConceptPresentation props_ExtraInfo;
   private ConceptPresentation props_News;
   private ConceptPresentation props_NewsReference;
   private ConceptPresentation props_PassingGrade;
   private ConceptPresentation props_PassingGradeReference;
-  private ConceptPresentation props_PhD;
   private ConceptPresentation props_PostGraduateCourse;
   private ConceptPresentation props_Professor;
   private ConceptPresentation props_ProfessorReference;
@@ -69,6 +69,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_CourseReference = cpb.create();
         }
         return props_CourseReference;
+      case LanguageConceptSwitch.CustomEnumeration:
+        if (props_CustomEnumeration == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_CustomEnumeration = cpb.create();
+        }
+        return props_CustomEnumeration;
       case LanguageConceptSwitch.DegreeCourse:
         if (props_DegreeCourse == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -80,7 +87,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.DegreeCourseReference:
         if (props_DegreeCourseReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Wrapper concept for a reference to a degree course (since MPS does not allow 1..n references)");
+          cpb.shortDesc("Wrapper concept for a reference to a degree course (since MPS does not allow 1..n references). Changing this reference automatically updated the list of students of the degree course (THIS DOESN'T WORK WHEN ONLY DELETING A REFERENCE AS PER MPS SET HANDLER, which requires manual deletion.)");
           cpb.presentationByReference(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d0d2L, 0x78359f29b5c5d0d3L, "degree_course", "", "");
           props_DegreeCourseReference = cpb.create();
         }
@@ -108,14 +115,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ExaminationCallReference = cpb.create();
         }
         return props_ExaminationCallReference;
-      case LanguageConceptSwitch.Master:
-        if (props_Master == null) {
+      case LanguageConceptSwitch.ExtraInfo:
+        if (props_ExtraInfo == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("A post-graduate master. They can be first or second level (reserved to bachelor and master degree graduates, respectively).");
           cpb.presentationByName();
-          props_Master = cpb.create();
+          props_ExtraInfo = cpb.create();
         }
-        return props_Master;
+        return props_ExtraInfo;
       case LanguageConceptSwitch.News:
         if (props_News == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -147,14 +153,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_PassingGradeReference = cpb.create();
         }
         return props_PassingGradeReference;
-      case LanguageConceptSwitch.PhD:
-        if (props_PhD == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("A PhD (philosophiae doctor) course. Each PhD students do research in a specific field");
-          cpb.presentationByName();
-          props_PhD = cpb.create();
-        }
-        return props_PhD;
       case LanguageConceptSwitch.PostGraduateCourse:
         if (props_PostGraduateCourse == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

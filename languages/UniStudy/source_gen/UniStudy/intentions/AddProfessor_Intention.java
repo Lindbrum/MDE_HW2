@@ -16,18 +16,17 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SConcept;
 
-public final class AddMaster_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
+public final class AddProfessor_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
 
-  public AddMaster_Intention() {
-    super(Kind.NORMAL, true, new SNodePointer("r:8394d85f-5a71-486a-ab53-42b7678aabc0(UniStudy.intentions)", "1357694934087619944"));
+  public AddProfessor_Intention() {
+    super(Kind.NORMAL, true, new SNodePointer("r:8394d85f-5a71-486a-ab53-42b7678aabc0(UniStudy.intentions)", "1780439960264331754"));
   }
 
   @Override
   public String getPresentation() {
-    return "AddMaster";
+    return "AddProfessor";
   }
 
   @Override
@@ -47,12 +46,12 @@ public final class AddMaster_Intention extends AbstractIntentionDescriptor imple
 
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
-      return "Create post-graduate master for this department";
+      return "Create new professor model";
     }
 
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SLinkOperations.addNewChild(node, LINKS.degree_courses$v3cS, CONCEPTS.Master$W9);
+      SLinkOperations.addNewChild(node, LINKS.professors$JRjh, null);
     }
 
     @Override
@@ -64,16 +63,12 @@ public final class AddMaster_Intention extends AbstractIntentionDescriptor imple
 
     @Override
     public IntentionDescriptor getDescriptor() {
-      return AddMaster_Intention.this;
+      return AddProfessor_Intention.this;
     }
 
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink degree_courses$v3cS = MetaAdapterFactory.getContainmentLink(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d064L, 0x78359f29b5c5d09eL, "degree_courses");
-  }
-
-  private static final class CONCEPTS {
-    /*package*/ static final SConcept Master$W9 = MetaAdapterFactory.getConcept(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d048L, "UniStudy.structure.Master");
+    /*package*/ static final SContainmentLink professors$JRjh = MetaAdapterFactory.getContainmentLink(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x3b69734a0801c738L, 0x3b69734a08021c53L, "professors");
   }
 }

@@ -21,7 +21,7 @@ public final class AddTranscript_Intention extends AbstractIntentionDescriptor i
   private Collection<IntentionExecutable> myCachedExecutable;
 
   public AddTranscript_Intention() {
-    super(Kind.NORMAL, false, new SNodePointer("r:8394d85f-5a71-486a-ab53-42b7678aabc0(UniStudy.intentions)", "134125553493111432"));
+    super(Kind.NORMAL, true, new SNodePointer("r:8394d85f-5a71-486a-ab53-42b7678aabc0(UniStudy.intentions)", "134125553493111432"));
   }
 
   @Override

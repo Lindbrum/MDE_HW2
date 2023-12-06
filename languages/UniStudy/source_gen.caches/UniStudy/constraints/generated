@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="60591o8la0l2qyg4ur06rexexmza1b6">
-  <files names="Career_Constraints.java:ConstraintsAspectDescriptor.java:CourseReference_Constraints.java:Course_Constraints.java:DegreeCourseReference_Constraints.java:DegreeCourse_Constraints.java:Department_Constraints.java:ExaminationCallReference_Constraints.java:ExaminationCall_Constraints.java:Master_Constraints.java:NewsReference_Constraints.java:News_Constraints.java:PassingGradeReference_Constraints.java:PassingGrade_Constraints.java:Professor_Constraints.java:Student_Constraints.java:Thesis_Constraints.java" />
+<product version="3" modelHash="71pppdqh4aoepo6jgagdl16rc91yodl">
+  <files names="Career_Constraints.java:ConstraintsAspectDescriptor.java:CourseReference_Constraints.java:Course_Constraints.java:CustomEnumeration_Constraints.java:DegreeCourseReference_Constraints.java:DegreeCourse_Constraints.java:Department_Constraints.java:ExaminationCallReference_Constraints.java:ExaminationCall_Constraints.java:NewsReference_Constraints.java:News_Constraints.java:PassingGradeReference_Constraints.java:PassingGrade_Constraints.java:Professor_Constraints.java:Student_Constraints.java:Thesis_Constraints.java" />
 </product>
 

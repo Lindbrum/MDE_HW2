@@ -163,6 +163,13 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="7wPBMAPLt3i" resolve="DegreeCourseReference" />
     </node>
+    <node concept="1TJgyj" id="1yPpbnJpUjS" role="1TKVEi">
+      <property role="IQ2ns" value="1780439960263304440" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="extra_info" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1yPpbnJpUfV" resolve="ExtraInfo" />
+    </node>
     <node concept="PrWs8" id="1ffmCGxTsfR" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -344,7 +351,7 @@
     <node concept="1TJgyi" id="7wPBMAPLsZD" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132521" />
       <property role="TrG5h" value="grade" />
-      <ref role="AX2Wp" node="1nyK4oIC09U" resolve="grade" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="7wPBMAPLsZF" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132523" />
@@ -468,11 +475,6 @@
       <property role="TrG5h" value="duration" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyi" id="1ffmCGxTsfB" role="1TKVEl">
-      <property role="IQ2nx" value="1427459160515396583" />
-      <property role="TrG5h" value="type" />
-      <ref role="AX2Wp" node="1ffmCGxTsfI" resolve="DegreeCourseType" />
-    </node>
     <node concept="1TJgyi" id="7wPBMAPLt0I" role="1TKVEl">
       <property role="IQ2nx" value="8662004459809132590" />
       <property role="TrG5h" value="language" />
@@ -502,6 +504,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1ffmCGxTsgj" resolve="StudentReference" />
     </node>
+    <node concept="1TJgyj" id="1yPpbnJpUjJ" role="1TKVEi">
+      <property role="IQ2ns" value="1780439960263304431" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="extra_info" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1yPpbnJpUfV" resolve="ExtraInfo" />
+    </node>
     <node concept="PrWs8" id="1ffmCGxTsfw" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -518,20 +527,6 @@
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="7wPBMAPLt0$" resolve="DegreeCourse" />
   </node>
-  <node concept="1TIwiD" id="7wPBMAPLt18">
-    <property role="EcuMT" value="8662004459809132616" />
-    <property role="TrG5h" value="Master" />
-    <property role="R4oN_" value="A post-graduate master. They can be first or second level (reserved to bachelor and master degree graduates, respectively)." />
-    <ref role="1TJDcQ" node="7wPBMAPLt16" resolve="PostGraduateCourse" />
-    <node concept="1TJgyi" id="7wPBMAPLt1a" role="1TKVEl">
-      <property role="IQ2nx" value="8662004459809132618" />
-      <property role="TrG5h" value="level" />
-      <ref role="AX2Wp" node="7wPBMAPLt1h" resolve="PostGraduateLevel" />
-    </node>
-    <node concept="PrWs8" id="1ffmCGxTsgu" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
   <node concept="25R3W" id="7wPBMAPLt1h">
     <property role="3F6X1D" value="8662004459809132625" />
     <property role="TrG5h" value="PostGraduateLevel" />
@@ -543,20 +538,6 @@
     <node concept="25R33" id="7wPBMAPLt1k" role="25R1y">
       <property role="3tVfz5" value="8662004459809132628" />
       <property role="TrG5h" value="SECOND" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7wPBMAPLt1t">
-    <property role="EcuMT" value="8662004459809132637" />
-    <property role="TrG5h" value="PhD" />
-    <property role="R4oN_" value="A PhD (philosophiae doctor) course. Each PhD students do research in a specific field" />
-    <ref role="1TJDcQ" node="7wPBMAPLt16" resolve="PostGraduateCourse" />
-    <node concept="1TJgyi" id="7wPBMAPLt1v" role="1TKVEl">
-      <property role="IQ2nx" value="8662004459809132639" />
-      <property role="TrG5h" value="research_field" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="1ffmCGxTsg$" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="7wPBMAPLt1$">
@@ -630,7 +611,7 @@
   <node concept="1TIwiD" id="7wPBMAPLt3i">
     <property role="EcuMT" value="8662004459809132754" />
     <property role="TrG5h" value="DegreeCourseReference" />
-    <property role="R4oN_" value="Wrapper concept for a reference to a degree course (since MPS does not allow 1..n references)" />
+    <property role="R4oN_" value="Wrapper concept for a reference to a degree course (since MPS does not allow 1..n references). Changing this reference automatically updated the list of students of the degree course (THIS DOESN'T WORK WHEN ONLY DELETING A REFERENCE AS PER MPS SET HANDLER, which requires manual deletion.)" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyj" id="7wPBMAPLt3j" role="1TKVEi">
       <property role="IQ2ns" value="8662004459809132755" />
@@ -825,10 +806,92 @@
       <ref role="20lvS9" node="7wPBMAPLt1$" resolve="Department" />
     </node>
   </node>
-  <node concept="Az7Fb" id="1nyK4oIC09U">
-    <property role="3F6X1D" value="1577034227195576954" />
-    <property role="TrG5h" value="grade" />
-    <property role="FLfZY" value="^\\d[1,2}$|[A-D]|30L|A+" />
+  <node concept="1TIwiD" id="1yPpbnJpUfV">
+    <property role="EcuMT" value="1780439960263304187" />
+    <property role="TrG5h" value="ExtraInfo" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="1yPpbnJpUfW" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="1yPpbnJpUfY" role="1TKVEl">
+      <property role="IQ2nx" value="1780439960263304190" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1yPpbnJpUg0" role="1TKVEl">
+      <property role="IQ2nx" value="1780439960263304192" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="1yPpbnJpUg3" resolve="ExtraInfoType" />
+    </node>
+    <node concept="1TJgyi" id="1yPpbnJpUgx" role="1TKVEl">
+      <property role="IQ2nx" value="1780439960263304225" />
+      <property role="TrG5h" value="lower_multiplicity" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="1yPpbnJpUg_" role="1TKVEl">
+      <property role="IQ2nx" value="1780439960263304229" />
+      <property role="TrG5h" value="higher_multiplicity" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="1yPpbnJpUgX" role="1TKVEi">
+      <property role="IQ2ns" value="1780439960263304253" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="custom_enum" />
+      <ref role="20lvS9" node="1yPpbnJpUgK" resolve="CustomEnumeration" />
+    </node>
+  </node>
+  <node concept="25R3W" id="1yPpbnJpUg3">
+    <property role="3F6X1D" value="1780439960263304195" />
+    <property role="TrG5h" value="ExtraInfoType" />
+    <ref role="1H5jkz" node="1yPpbnJpUg4" resolve="STRING" />
+    <node concept="25R33" id="1yPpbnJpUg4" role="25R1y">
+      <property role="3tVfz5" value="1780439960263304196" />
+      <property role="TrG5h" value="STRING" />
+      <property role="1L1pqM" value="string" />
+    </node>
+    <node concept="25R33" id="1yPpbnJpUg5" role="25R1y">
+      <property role="3tVfz5" value="1780439960263304197" />
+      <property role="TrG5h" value="INTEGER" />
+      <property role="1L1pqM" value="integer" />
+    </node>
+    <node concept="25R33" id="1yPpbnJpUg8" role="25R1y">
+      <property role="3tVfz5" value="1780439960263304200" />
+      <property role="TrG5h" value="FLOAT" />
+      <property role="1L1pqM" value="float" />
+    </node>
+    <node concept="25R33" id="1yPpbnJpUgc" role="25R1y">
+      <property role="3tVfz5" value="1780439960263304204" />
+      <property role="TrG5h" value="DOUBLE" />
+      <property role="1L1pqM" value="double" />
+    </node>
+    <node concept="25R33" id="1yPpbnJpUgh" role="25R1y">
+      <property role="3tVfz5" value="1780439960263304209" />
+      <property role="TrG5h" value="BOOLEAN" />
+      <property role="1L1pqM" value="bool" />
+    </node>
+    <node concept="25R33" id="1yPpbnJpUgn" role="25R1y">
+      <property role="3tVfz5" value="1780439960263304215" />
+      <property role="TrG5h" value="ENUMERATION" />
+      <property role="1L1pqM" value="enum" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1yPpbnJpUgK">
+    <property role="EcuMT" value="1780439960263304240" />
+    <property role="TrG5h" value="CustomEnumeration" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="1yPpbnJpUgL" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="1yPpbnJpUgN" role="1TKVEl">
+      <property role="IQ2nx" value="1780439960263304243" />
+      <property role="TrG5h" value="values" />
+      <ref role="AX2Wp" node="1yPpbnJpUgQ" resolve="CustomEnumValues" />
+    </node>
+  </node>
+  <node concept="Az7Fb" id="1yPpbnJpUgQ">
+    <property role="3F6X1D" value="1780439960263304246" />
+    <property role="TrG5h" value="CustomEnumValues" />
+    <property role="FLfZY" value="([,]?[0-9a-zA-Z_]*)+" />
   </node>
 </model>
 
