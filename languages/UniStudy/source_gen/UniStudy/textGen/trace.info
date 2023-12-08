@@ -11,8 +11,8 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TextGenAspectDescriptor.java">
-      <unit at="52,0,55,0" name="UniStudy.textGen.TextGenAspectDescriptor$CONCEPTS" />
-      <unit at="16,0,56,0" name="UniStudy.textGen.TextGenAspectDescriptor" />
+      <unit at="54,0,57,0" name="UniStudy.textGen.TextGenAspectDescriptor$CONCEPTS" />
+      <unit at="16,0,58,0" name="UniStudy.textGen.TextGenAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:5cb62399-6184-4a56-b43a-d687cbe16330(UniStudy.textGen)/1357694934089362567">
@@ -54,25 +54,25 @@
     </file>
     <file name="TextGenAspectDescriptor.java">
       <node id="1357694934089362567" at="26,50,27,46" concept="6" />
-      <node id="1357694934089362567" at="37,67,38,58" concept="5" />
-      <node id="1357694934089362567" at="38,58,39,61" concept="5" />
-      <node id="1357694934089362567" at="39,61,40,84" concept="1" />
-      <node id="1357694934089362567" at="40,84,41,17" concept="0" />
-      <node id="1357694934089362567" at="45,66,46,26" concept="6" />
-      <node id="1357694934089363665" at="48,71,49,18" concept="6" />
-      <node id="1357694934089362567" at="45,0,48,0" concept="8" trace="getFileName_CareerManagement#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="1357694934089362567" at="48,0,51,0" concept="8" trace="getFileExtension_CareerManagement#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="1357694934089362567" at="36,58,42,7" concept="3" />
+      <node id="1357694934089362567" at="39,67,40,58" concept="5" />
+      <node id="1357694934089362567" at="40,58,41,61" concept="5" />
+      <node id="1357694934089362567" at="41,61,42,84" concept="1" />
+      <node id="1357694934089362567" at="42,84,43,17" concept="0" />
+      <node id="1357694934089362567" at="47,66,48,26" concept="6" />
+      <node id="1357694934089363665" at="50,71,51,18" concept="6" />
+      <node id="1357694934089362567" at="47,0,50,0" concept="8" trace="getFileName_CareerManagement#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1357694934089362567" at="50,0,53,0" concept="8" trace="getFileExtension_CareerManagement#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1357694934089362567" at="38,58,44,7" concept="3" />
       <scope id="1357694934089362567" at="26,50,27,46" />
-      <scope id="1357694934089362567" at="45,66,46,26" />
-      <scope id="1357694934089362567" at="48,71,49,18" />
-      <scope id="1357694934089362567" at="45,0,48,0">
+      <scope id="1357694934089362567" at="47,66,48,26" />
+      <scope id="1357694934089362567" at="50,71,51,18" />
+      <scope id="1357694934089362567" at="47,0,50,0">
         <var name="node" id="1357694934089362567" />
       </scope>
-      <scope id="1357694934089362567" at="48,0,51,0">
+      <scope id="1357694934089362567" at="50,0,53,0">
         <var name="node" id="1357694934089362567" />
       </scope>
-      <scope id="1357694934089362567" at="37,67,41,17">
+      <scope id="1357694934089362567" at="39,67,43,17">
         <var name="ext" id="1357694934089362567" />
         <var name="fname" id="1357694934089362567" />
       </scope>
@@ -80,22 +80,59 @@
   </root>
   <root nodeRef="r:5cb62399-6184-4a56-b43a-d687cbe16330(UniStudy.textGen)/1357694934089362572">
     <file name="TextGenAspectDescriptor.java">
-      <node id="1357694934089362572" at="28,44,29,40" concept="6" />
-      <scope id="1357694934089362572" at="28,44,29,40" />
+      <node id="1357694934089362572" at="30,44,31,40" concept="6" />
+      <scope id="1357694934089362572" at="30,44,31,40" />
     </file>
     <file name="University_TextGen.java">
-      <node id="1357694934089362572" at="14,54,15,55" concept="5" />
-      <node id="1357694934090271075" at="15,55,16,86" concept="1" />
-      <node id="1357694934089362572" at="20,0,21,0" concept="7" trace="name$MnvL" />
-      <node id="1357694934089362572" at="13,0,18,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="1357694934089362572" at="14,54,16,86">
+      <node id="1357694934089362572" at="17,54,18,55" concept="5" />
+      <node id="1357694934090271075" at="18,55,19,86" concept="1" />
+      <node id="1777674112125388565" at="19,86,20,18" concept="1" />
+      <node id="1777674112125409716" at="20,18,21,39" concept="1" />
+      <node id="1777674112125409718" at="21,39,22,18" concept="1" />
+      <node id="1777674112125409719" at="23,99,24,27" concept="1" />
+      <node id="1357694934089362572" at="29,0,30,0" concept="7" trace="name$MnvL" />
+      <node id="1357694934089362572" at="33,0,34,0" concept="7" trace="departments$BazU" />
+      <node id="1777674112125409719" at="22,18,25,5" concept="2" />
+      <node id="1357694934089362572" at="16,0,27,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1777674112125409719" at="23,99,24,27" />
+      <scope id="1777674112125409719" at="22,18,25,5">
+        <var name="item" id="1777674112125409719" />
+      </scope>
+      <scope id="1357694934089362572" at="17,54,25,5">
         <var name="tgs" id="1357694934089362572" />
       </scope>
-      <scope id="1357694934089362572" at="13,0,18,0">
+      <scope id="1357694934089362572" at="16,0,27,0">
         <var name="ctx" id="1357694934089362572" />
       </scope>
-      <unit id="1357694934089362572" at="19,0,22,0" name="UniStudy.textGen.University_TextGen$PROPS" />
-      <unit id="1357694934089362572" at="12,0,23,0" name="UniStudy.textGen.University_TextGen" />
+      <unit id="1357694934089362572" at="28,0,31,0" name="UniStudy.textGen.University_TextGen$PROPS" />
+      <unit id="1357694934089362572" at="32,0,35,0" name="UniStudy.textGen.University_TextGen$LINKS" />
+      <unit id="1357694934089362572" at="15,0,36,0" name="UniStudy.textGen.University_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:5cb62399-6184-4a56-b43a-d687cbe16330(UniStudy.textGen)/1777674112125362993">
+    <file name="Department_TextGen.java">
+      <node id="1777674112125362993" at="14,54,15,55" concept="5" />
+      <node id="1777674112125363207" at="15,55,16,86" concept="1" />
+      <node id="1777674112125416324" at="16,86,17,25" concept="1" />
+      <node id="1777674112125363534" at="17,25,18,22" concept="1" />
+      <node id="1777674112125364818" at="18,22,19,93" concept="1" />
+      <node id="1777674112125391983" at="19,93,20,23" concept="1" />
+      <node id="1777674112125373692" at="20,23,21,18" concept="1" />
+      <node id="1777674112125362993" at="25,0,26,0" concept="7" trace="name$MnvL" />
+      <node id="1777674112125362993" at="26,0,27,0" concept="7" trace="website_url$s0eT" />
+      <node id="1777674112125362993" at="13,0,23,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1777674112125362993" at="14,54,21,18">
+        <var name="tgs" id="1777674112125362993" />
+      </scope>
+      <scope id="1777674112125362993" at="13,0,23,0">
+        <var name="ctx" id="1777674112125362993" />
+      </scope>
+      <unit id="1777674112125362993" at="24,0,28,0" name="UniStudy.textGen.Department_TextGen$PROPS" />
+      <unit id="1777674112125362993" at="12,0,29,0" name="UniStudy.textGen.Department_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="1777674112125362993" at="28,44,29,40" concept="6" />
+      <scope id="1777674112125362993" at="28,44,29,40" />
     </file>
   </root>
 </debug-info>
