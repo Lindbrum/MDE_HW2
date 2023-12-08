@@ -25,6 +25,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     switch (myIndex.index(concept)) {
       case LanguageConceptSwitch.CareerManagement:
         return new CareerManagement_TextGen();
+      case LanguageConceptSwitch.DegreeCourse:
+        return new DegreeCourse_TextGen();
       case LanguageConceptSwitch.Department:
         return new Department_TextGen();
       case LanguageConceptSwitch.University:

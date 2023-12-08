@@ -28,12 +28,15 @@ public class CareerManagement_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.append("<h1>Universities</h1>");
     tgs.newLine();
+    tgs.increaseIndent();
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.universities$MlEO)) {
       tgs.appendNode(item);
     }
+    tgs.decreaseIndent();
     tgs.append("</body>");
     tgs.newLine();
     tgs.append("</html>");
+    tgs.newLine();
   }
 
   private static final class LINKS {

@@ -5,24 +5,83 @@ package UniStudy.textGen;
 import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 public class Department_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$MnvL));
-    tgs.append("&nbsp;");
-    tgs.append("<p>");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.website_url$s0eT));
-    tgs.append("</p>");
+    tgs.indent();
+    tgs.append("<li>");
     tgs.newLine();
+    tgs.indent();
+    tgs.append("<h3>Department #" + (SNodeOperations.getIndexInParent(ctx.getPrimaryInput()) + 1) + ": " + SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$MnvL) + " - " + SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.website_url$s0eT) + "</h3>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("<ul>");
+    tgs.newLine();
+    tgs.increaseIndent();
+    tgs.indent();
+    tgs.append("<li>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("<h5>Degree courses offered:</h5>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("<ul>");
+    tgs.newLine();
+    tgs.increaseIndent();
+    tgs.indent();
+    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.degree_courses$v3cS)) {
+      tgs.appendNode(item);
+    }
+    tgs.decreaseIndent();
+    tgs.indent();
+    tgs.append("</ul>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("</li>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("<li>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("<h5>Department news:</h5>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("<ul>");
+    tgs.newLine();
+    tgs.increaseIndent();
+    tgs.indent();
+    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.news_list$v48W)) {
+      tgs.appendNode(item);
+    }
+    tgs.decreaseIndent();
+    tgs.indent();
+    tgs.append("</ul>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("</li>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("</ul>");
+    tgs.newLine();
+
   }
 
   private static final class PROPS {
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
     /*package*/ static final SProperty website_url$s0eT = MetaAdapterFactory.getProperty(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d064L, 0x78359f29b5c5d068L, "website_url");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink degree_courses$v3cS = MetaAdapterFactory.getContainmentLink(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d064L, 0x78359f29b5c5d09eL, "degree_courses");
+    /*package*/ static final SContainmentLink news_list$v48W = MetaAdapterFactory.getContainmentLink(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x78359f29b5c5d064L, 0x78359f29b5c5d0a2L, "news_list");
   }
 }

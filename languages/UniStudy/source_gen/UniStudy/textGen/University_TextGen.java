@@ -5,6 +5,7 @@ package UniStudy.textGen;
 import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
@@ -16,13 +17,26 @@ public class University_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
+    tgs.indent();
+    tgs.append("<h2>");
+    tgs.append("University #" + (SNodeOperations.getIndexInParent(ctx.getPrimaryInput()) + 1) + ": ");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$MnvL));
+    tgs.append("</h2>");
     tgs.newLine();
-    tgs.append("<h1>Departments</h1>");
+    tgs.indent();
+    tgs.append("<h3>Departments</h3>");
     tgs.newLine();
+    tgs.indent();
+    tgs.append("<ul>");
+    tgs.newLine();
+    tgs.increaseIndent();
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.departments$BazU)) {
       tgs.appendNode(item);
     }
+    tgs.decreaseIndent();
+    tgs.indent();
+    tgs.append("</ul>");
+    tgs.newLine();
   }
 
   private static final class PROPS {
