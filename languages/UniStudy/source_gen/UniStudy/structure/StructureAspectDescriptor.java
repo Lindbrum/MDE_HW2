@@ -189,11 +189,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForCustomEnumeration() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("UniStudy", "CustomEnumeration", 0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x18b564b5ef67a430L);
-    b.class_(false, false, false);
+    b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:3cf796c9-a780-4278-b34f-67670fa92009(UniStudy.structure)/1780439960263304240");
     b.version(3);
     b.property("values", 0x18b564b5ef67a433L).type(MetaIdFactory.dataTypeId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x18b564b5ef67a436L)).origin("1780439960263304243").done();
+    b.alias("enum");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDegreeCourse() {
@@ -267,7 +268,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("type", 0x18b564b5ef67a400L).type(MetaIdFactory.dataTypeId(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x18b564b5ef67a403L)).origin("1780439960263304192").done();
     b.property("lower_multiplicity", 0x18b564b5ef67a421L).type(PrimitiveTypeId.INTEGER).origin("1780439960263304225").done();
     b.property("higher_multiplicity", 0x18b564b5ef67a425L).type(PrimitiveTypeId.INTEGER).origin("1780439960263304229").done();
-    b.aggregate("custom_enum", 0x18b564b5ef67a43dL).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x18b564b5ef67a430L).optional(true).ordered(true).multiple(false).origin("1780439960263304253").done();
+    b.associate("custom_enum", 0x18b564b5ef67a43dL).target(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x18b564b5ef67a430L).optional(true).origin("1780439960263304253").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForNews() {

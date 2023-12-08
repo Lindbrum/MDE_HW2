@@ -835,7 +835,6 @@
     </node>
     <node concept="1TJgyj" id="1yPpbnJpUgX" role="1TKVEi">
       <property role="IQ2ns" value="1780439960263304253" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="custom_enum" />
       <ref role="20lvS9" node="1yPpbnJpUgK" resolve="CustomEnumeration" />
     </node>
@@ -878,6 +877,8 @@
   <node concept="1TIwiD" id="1yPpbnJpUgK">
     <property role="EcuMT" value="1780439960263304240" />
     <property role="TrG5h" value="CustomEnumeration" />
+    <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="enum" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="1yPpbnJpUgL" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

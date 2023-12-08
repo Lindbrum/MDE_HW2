@@ -84,8 +84,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.addEditorCell(createConstant_14());
     editorCell.addEditorCell(createCollection_9());
     editorCell.addEditorCell(createConstant_15());
-    editorCell.addEditorCell(createRefNodeList_1());
     editorCell.addEditorCell(createConstant_16());
+    editorCell.addEditorCell(createRefNodeList_1());
+    editorCell.addEditorCell(createConstant_17());
     editorCell.addEditorCell(createRefNodeList_2());
     return editorCell;
   }
@@ -686,17 +687,24 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createConstant_15() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Course Catalogue");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, " ");
     editorCell.setCellId("Constant_4f46kr_j0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_16() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Course Catalogue");
+    editorCell.setCellId("Constant_4f46kr_k0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.UNDERLINED, true);
+    style.set(StyleAttributes.PADDING_TOP, new Padding(2, Measure.SPACES));
     style.set(StyleAttributes.PADDING_BOTTOM, new Padding(1, Measure.SPACES));
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createRefNodeList_1() {
-    AbstractCellListHandler handler = new course_catalogueListHandler_4f46kr_k0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new course_catalogueListHandler_4f46kr_l0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
     editorCell.setCellId("DCC_refNodeList_course_catalogue");
     Style style = new StyleImpl();
@@ -706,11 +714,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class course_catalogueListHandler_4f46kr_k0 extends RefNodeListHandler {
+  private static class course_catalogueListHandler_4f46kr_l0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public course_catalogueListHandler_4f46kr_k0(SNode ownerNode, EditorContext context) {
+    public course_catalogueListHandler_4f46kr_l0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -733,7 +741,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(course_catalogueListHandler_4f46kr_k0.this.getNode(), LINKS.course_catalogue$stKV));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(course_catalogueListHandler_4f46kr_l0.this.getNode(), LINKS.course_catalogue$stKV));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -773,9 +781,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
       }
     }
   }
-  private EditorCell createConstant_16() {
+  private EditorCell createConstant_17() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Enrolled students");
-    editorCell.setCellId("Constant_4f46kr_l0");
+    editorCell.setCellId("Constant_4f46kr_m0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PADDING_TOP, new Padding(2, Measure.SPACES));
     style.set(StyleAttributes.PADDING_BOTTOM, new Padding(1, Measure.SPACES));
@@ -784,7 +792,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefNodeList_2() {
-    AbstractCellListHandler handler = new enrolled_studentsListHandler_4f46kr_m0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new enrolled_studentsListHandler_4f46kr_n0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
     editorCell.setCellId("DCC_refNodeList_enrolled_students");
     Style style = new StyleImpl();
@@ -793,11 +801,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class enrolled_studentsListHandler_4f46kr_m0 extends RefNodeListHandler {
+  private static class enrolled_studentsListHandler_4f46kr_n0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public enrolled_studentsListHandler_4f46kr_m0(SNode ownerNode, EditorContext context) {
+    public enrolled_studentsListHandler_4f46kr_n0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -820,10 +828,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(enrolled_studentsListHandler_4f46kr_m0.this.getNode(), LINKS.enrolled_students$cHU3));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(enrolled_studentsListHandler_4f46kr_n0.this.getNode(), LINKS.enrolled_students$cHU3));
       try {
         EditorCell emptyCell = null;
-        emptyCell = createConstant_17();
+        emptyCell = createConstant_18();
         installElementCellActions(null, emptyCell, true);
         setCellContext(emptyCell);
         return emptyCell;
@@ -859,9 +867,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
         }
       }
     }
-    private EditorCell createConstant_17() {
+    private EditorCell createConstant_18() {
       EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "No enrolled student yet");
-      editorCell.setCellId("Constant_4f46kr_a21a");
+      editorCell.setCellId("Constant_4f46kr_a31a");
       Style style = new StyleImpl();
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
       editorCell.getStyle().putAll(style);

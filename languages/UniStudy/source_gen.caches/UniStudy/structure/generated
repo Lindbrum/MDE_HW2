@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="7m87y21h5taeoq8g0voft0b0kjg0ld2">
+<product version="3" modelHash="39x79rei6m69p1olq6couyjjqh57sj8">
   <files names="ConceptPresentationAspectImpl.java:EnumerationDescriptor_CoursePeriod.java:EnumerationDescriptor_CreditType.java:EnumerationDescriptor_DegreeCourseType.java:EnumerationDescriptor_ExamType.java:EnumerationDescriptor_ExtraInfoType.java:EnumerationDescriptor_PostGraduateLevel.java:EnumerationDescriptor_ThesisType.java:LanguageConceptSwitch.java:StructureAspectDescriptor.java" />
 </product>
 

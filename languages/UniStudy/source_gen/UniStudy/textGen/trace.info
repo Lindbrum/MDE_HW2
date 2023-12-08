@@ -18,43 +18,68 @@
   </root>
   <root nodeRef="r:5cb62399-6184-4a56-b43a-d687cbe16330(UniStudy.textGen)/1357694934089362567">
     <file name="CareerManagement_TextGen.java">
-      <node id="1357694934089362567" at="15,54,16,55" concept="5" />
-      <node id="1357694934090240831" at="16,55,17,34" concept="1" />
-      <node id="1357694934090241000" at="17,34,18,18" concept="1" />
-      <node id="1357694934090241189" at="18,18,19,25" concept="1" />
-      <node id="1357694934090241270" at="19,25,20,18" concept="1" />
-      <node id="1357694934090241330" at="20,18,21,25" concept="1" />
-      <node id="1357694934090241461" at="21,25,22,18" concept="1" />
-      <node id="1357694934090241525" at="22,18,23,49" concept="1" />
-      <node id="1357694934090241821" at="23,49,24,18" concept="1" />
-      <node id="1357694934090243140" at="24,18,25,26" concept="1" />
-      <node id="1357694934090243309" at="25,26,26,18" concept="1" />
-      <node id="1357694934090243365" at="26,18,27,25" concept="1" />
-      <node id="1357694934090243469" at="27,25,28,18" concept="1" />
-      <node id="1357694934089368747" at="28,18,29,40" concept="1" />
-      <node id="1357694934090264884" at="29,40,30,18" concept="1" />
-      <node id="5303438170062946481" at="30,18,31,25" concept="1" />
-      <node id="5303438170062946728" at="32,100,33,27" concept="1" />
-      <node id="5303438170062946623" at="34,5,35,25" concept="1" />
-      <node id="1357694934090243662" at="35,25,36,26" concept="1" />
-      <node id="1357694934090243762" at="36,26,37,18" concept="1" />
-      <node id="1357694934090243818" at="37,18,38,26" concept="1" />
-      <node id="5303438170063230615" at="38,26,39,18" concept="1" />
-      <node id="1357694934089362567" at="43,0,44,0" concept="8" trace="universities$MlEO" />
-      <node id="5303438170062946728" at="31,25,34,5" concept="2" />
-      <node id="1357694934089362567" at="14,0,41,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="5303438170062946728" at="32,100,33,27" />
-      <scope id="5303438170062946728" at="31,25,34,5">
+      <node id="1357694934089362567" at="17,54,18,55" concept="5" />
+      <node id="1357694934090240831" at="18,55,19,34" concept="1" />
+      <node id="1357694934090241000" at="19,34,20,18" concept="1" />
+      <node id="1357694934090241189" at="20,18,21,25" concept="1" />
+      <node id="1357694934090241270" at="21,25,22,18" concept="1" />
+      <node id="1357694934090241330" at="22,18,23,25" concept="1" />
+      <node id="1357694934090241461" at="23,25,24,18" concept="1" />
+      <node id="1357694934090241525" at="24,18,25,26" concept="1" />
+      <node id="8642064510071944204" at="25,26,26,105" concept="1" />
+      <node id="1357694934090241821" at="26,105,27,18" concept="1" />
+      <node id="1357694934090243140" at="27,18,28,26" concept="1" />
+      <node id="1357694934090243309" at="28,26,29,18" concept="1" />
+      <node id="1357694934090243365" at="29,18,30,25" concept="1" />
+      <node id="1357694934090243469" at="30,25,31,18" concept="1" />
+      <node id="1357694934089368747" at="31,18,32,40" concept="1" />
+      <node id="1357694934090264884" at="32,40,33,18" concept="1" />
+      <node id="5303438170062946481" at="33,18,34,25" concept="1" />
+      <node id="5303438170062946728" at="35,100,36,27" concept="1" />
+      <node id="5303438170062946623" at="37,5,38,25" concept="1" />
+      <node id="8642064510071961588" at="38,25,39,36" concept="1" />
+      <node id="8642064510071961590" at="39,36,40,18" concept="1" />
+      <node id="8642064510071961842" at="40,18,41,25" concept="1" />
+      <node id="8642064510071961844" at="42,96,43,27" concept="1" />
+      <node id="8642064510071961848" at="44,5,45,25" concept="1" />
+      <node id="8642064510071964382" at="45,25,46,38" concept="1" />
+      <node id="8642064510071964384" at="46,38,47,18" concept="1" />
+      <node id="8642064510071964385" at="47,18,48,25" concept="1" />
+      <node id="8642064510071964387" at="49,98,50,27" concept="1" />
+      <node id="8642064510071964391" at="51,5,52,25" concept="1" />
+      <node id="1357694934090243662" at="52,25,53,26" concept="1" />
+      <node id="1357694934090243762" at="53,26,54,18" concept="1" />
+      <node id="1357694934090243818" at="54,18,55,26" concept="1" />
+      <node id="5303438170063230615" at="55,26,56,18" concept="1" />
+      <node id="1357694934089362567" at="60,0,61,0" concept="8" trace="name$MnvL" />
+      <node id="1357694934089362567" at="64,0,65,0" concept="8" trace="universities$MlEO" />
+      <node id="1357694934089362567" at="65,0,66,0" concept="8" trace="students$JQPf" />
+      <node id="1357694934089362567" at="66,0,67,0" concept="8" trace="professors$JRjh" />
+      <node id="5303438170062946728" at="34,25,37,5" concept="2" />
+      <node id="8642064510071961844" at="41,25,44,5" concept="2" />
+      <node id="8642064510071964387" at="48,25,51,5" concept="2" />
+      <node id="1357694934089362567" at="16,0,58,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="5303438170062946728" at="35,100,36,27" />
+      <scope id="8642064510071961844" at="42,96,43,27" />
+      <scope id="8642064510071964387" at="49,98,50,27" />
+      <scope id="5303438170062946728" at="34,25,37,5">
         <var name="item" id="5303438170062946728" />
       </scope>
-      <scope id="1357694934089362567" at="15,54,39,18">
+      <scope id="8642064510071961844" at="41,25,44,5">
+        <var name="item" id="8642064510071961844" />
+      </scope>
+      <scope id="8642064510071964387" at="48,25,51,5">
+        <var name="item" id="8642064510071964387" />
+      </scope>
+      <scope id="1357694934089362567" at="17,54,56,18">
         <var name="tgs" id="1357694934089362567" />
       </scope>
-      <scope id="1357694934089362567" at="14,0,41,0">
+      <scope id="1357694934089362567" at="16,0,58,0">
         <var name="ctx" id="1357694934089362567" />
       </scope>
-      <unit id="1357694934089362567" at="42,0,45,0" name="UniStudy.textGen.CareerManagement_TextGen$LINKS" />
-      <unit id="1357694934089362567" at="13,0,46,0" name="UniStudy.textGen.CareerManagement_TextGen" />
+      <unit id="1357694934089362567" at="59,0,62,0" name="UniStudy.textGen.CareerManagement_TextGen$PROPS" />
+      <unit id="1357694934089362567" at="63,0,68,0" name="UniStudy.textGen.CareerManagement_TextGen$LINKS" />
+      <unit id="1357694934089362567" at="15,0,69,0" name="UniStudy.textGen.CareerManagement_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
       <node id="1357694934089362567" at="26,50,27,46" concept="6" />
@@ -257,12 +282,12 @@
       <node id="5303438170063301298" at="56,49,57,91" concept="1" />
       <node id="5303438170063318450" at="57,91,58,24" concept="1" />
       <node id="5303438170063301302" at="58,24,59,18" concept="1" />
-      <node id="5303438170063316972" at="59,18,60,25" concept="1" />
-      <node id="5303438170063317312" at="60,25,61,17" concept="1" />
-      <node id="5303438170063317313" at="61,17,62,24" concept="1" />
-      <node id="5303438170063317314" at="62,24,63,18" concept="1" />
-      <node id="5303438170063300412" at="63,18,64,0" concept="7" />
-      <node id="5303438170063297045" at="64,0,65,0" concept="7" />
+      <node id="8642064510071942278" at="59,18,60,0" concept="7" />
+      <node id="5303438170063316972" at="60,0,61,25" concept="1" />
+      <node id="5303438170063317312" at="61,25,62,17" concept="1" />
+      <node id="5303438170063317313" at="62,17,63,24" concept="1" />
+      <node id="5303438170063317314" at="63,24,64,18" concept="1" />
+      <node id="8642064510071937938" at="64,18,65,0" concept="7" />
       <node id="5303438170063176960" at="69,0,70,0" concept="8" trace="name$MnvL" />
       <node id="5303438170063176960" at="70,0,71,0" concept="8" trace="code$oNQm" />
       <node id="5303438170063176960" at="71,0,72,0" concept="8" trace="reference_year$9QcO" />

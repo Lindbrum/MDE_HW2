@@ -5,7 +5,9 @@
     <use id="6d0cfce3-b6ce-4188-a634-93977a58376f" name="UniStudy" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="rjsx" ref="r:d8966e1f-9b53-4c98-a06a-50cdc531cc4b(UniStudy.CustomEnumeration)" implicit="true" />
+  </imports>
   <registry>
     <language id="6d0cfce3-b6ce-4188-a634-93977a58376f" name="UniStudy">
       <concept id="4797853775791571136" name="UniStudy.structure.CourseReference" flags="ng" index="24LUpm">
@@ -116,15 +118,12 @@
       <concept id="6101876087727395053" name="UniStudy.structure.NewsReference" flags="ng" index="1kRMsk">
         <reference id="6101876087727395054" name="news" index="1kRMsn" />
       </concept>
-      <concept id="1780439960263304240" name="UniStudy.structure.CustomEnumeration" flags="ng" index="3ROG25">
-        <property id="1780439960263304243" name="values" index="3ROG26" />
-      </concept>
       <concept id="1780439960263304187" name="UniStudy.structure.ExtraInfo" flags="ng" index="3ROGte">
         <property id="1780439960263304229" name="higher_multiplicity" index="3ROG2g" />
         <property id="1780439960263304225" name="lower_multiplicity" index="3ROG2k" />
         <property id="1780439960263304192" name="type" index="3ROG2P" />
         <property id="1780439960263304190" name="value" index="3ROGtb" />
-        <child id="1780439960263304253" name="custom_enum" index="3ROG28" />
+        <reference id="1780439960263304253" name="custom_enum" index="3ROG28" />
       </concept>
       <concept id="4690418037763601871" name="UniStudy.structure.University" flags="ng" index="3XV4el">
         <reference id="4690418037763601874" name="rector" index="3XV4e8" />
@@ -182,16 +181,13 @@
           <property role="3dW4Wv" value="djiasdiasudasyduaosdas" />
           <ref role="3dW4Xn" node="1yPpbnJEJj2" resolve="Henry Muccini" />
           <ref role="3dW4YE" node="1yPpbnJ$71W" resolve="Disim" />
-          <node concept="3ROGte" id="1yPpbnJEJj6" role="3ROG1q">
+          <node concept="3ROGte" id="9i5DckgmO9" role="3ROG1q">
             <property role="TrG5h" value="DegreeType" />
-            <property role="3ROGtb" value="bachelor_degree" />
-            <property role="3ROG2P" value="1yPpbnJpUgn/ENUMERATION" />
             <property role="3ROG2k" value="1" />
             <property role="3ROG2g" value="1" />
-            <node concept="3ROG25" id="1yPpbnJEJj8" role="3ROG28">
-              <property role="TrG5h" value="DegreeType" />
-              <property role="3ROG26" value="bachelor_degree,master_degree,phd,post_graduate" />
-            </node>
+            <property role="3ROG2P" value="1yPpbnJpUgn/ENUMERATION" />
+            <property role="3ROGtb" value="bachelor_degree" />
+            <ref role="3ROG28" to="rjsx:7vILY9wSKs1" resolve="DegreeCourseType" />
           </node>
           <node concept="3dW51t" id="1yPpbnJ$71Y" role="3dW4YL">
             <property role="3dW52y" value="F3423838823" />
@@ -241,16 +237,13 @@
           <property role="3dW4Wv" value="Master degre bla bla bla" />
           <ref role="3dW4YE" node="1yPpbnJ$71W" resolve="Disim" />
           <ref role="3dW4Xn" node="1yPpbnJEJj2" resolve="Henry Muccini" />
-          <node concept="3ROGte" id="1yPpbnJGfIz" role="3ROG1q">
+          <node concept="3ROGte" id="7ELr5mXEhYT" role="3ROG1q">
             <property role="TrG5h" value="DegreeType" />
             <property role="3ROGtb" value="master_degree" />
-            <property role="3ROG2P" value="1yPpbnJpUgn/ENUMERATION" />
             <property role="3ROG2k" value="1" />
-            <property role="3ROG2g" value="1" />
-            <node concept="3ROG25" id="1yPpbnJGfI_" role="3ROG28">
-              <property role="TrG5h" value="DegreeType" />
-              <property role="3ROG26" value="bachelor_degree,master_degree,phd,post_graduate" />
-            </node>
+            <property role="3ROG2g" value="2147483" />
+            <property role="3ROG2P" value="1yPpbnJpUgn/ENUMERATION" />
+            <ref role="3ROG28" to="rjsx:7vILY9wSKs1" resolve="DegreeCourseType" />
           </node>
           <node concept="3dW51t" id="1yPpbnJRi_y" role="3dW4YL">
             <property role="3dW52y" value="F4N5870" />

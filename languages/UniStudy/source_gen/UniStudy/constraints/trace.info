@@ -1,57 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081855346303:jetbrains.mps.baseLanguage.structure.BreakStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1732176556423009631:jetbrains.mps.baseLanguage.structure.MultiLineComment" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="13,0,59,0" name="UniStudy.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,61,0" name="UniStudy.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:33dc6f87-d09c-4bff-860e-bccce74c2e6c(UniStudy.constraints)/134125553493496680">
     <file name="Thesis_Constraints.java">
-      <node id="134125553493496680" at="27,31,28,30" concept="10" />
-      <node id="134125553493795702" at="32,60,33,61" concept="10" />
-      <node id="134125553493795702" at="36,68,37,82" concept="2" />
-      <node id="134125553493796468" at="39,82,40,71" concept="2" />
-      <node id="134125553493805135" at="40,71,41,72" concept="2" />
-      <node id="134125553493496680" at="45,84,46,119" concept="5" />
-      <node id="134125553493795702" at="46,119,47,63" concept="2" />
-      <node id="134125553493496680" at="47,63,48,22" concept="6" />
-      <node id="134125553493496681" at="54,116,55,20" concept="6" />
-      <node id="134125553493572060" at="61,98,62,45" concept="2" />
-      <node id="134125553493496943" at="65,9,66,283" concept="2" />
-      <node id="134125553493624293" at="66,283,67,174" concept="2" />
-      <node id="134125553493496680" at="69,6,70,131" concept="5" />
-      <node id="134125553493496681" at="70,131,71,42" concept="2" />
-      <node id="134125553493496680" at="71,42,72,22" concept="6" />
-      <node id="134125553493496680" at="76,0,77,0" concept="8" trace="Thesis$AI" />
-      <node id="134125553493496680" at="80,0,81,0" concept="8" trace="title$oFUI" />
-      <node id="134125553493496680" at="81,0,82,0" concept="8" trace="name$MnvL" />
-      <node id="134125553493496680" at="85,0,86,0" concept="8" trace="supervisor$oHkO" />
-      <node id="134125553493496680" at="86,0,87,0" concept="8" trace="thesis_supervised$v57r" />
-      <node id="134125553493496680" at="87,0,88,0" concept="8" trace="thesis$hYDQ" />
-      <node id="134125553493496680" at="27,0,30,0" concept="1" trace="Thesis_Constraints#()V" />
-      <node id="134125553493795702" at="32,0,35,0" concept="1" trace="Title_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
-      <node id="134125553493571871" at="60,126,63,13" concept="3" />
-      <node id="134125553493795702" at="35,0,39,0" concept="4" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
-      <node id="134125553493795702" at="39,0,43,0" concept="9" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
-      <node id="134125553493496681" at="53,0,57,0" concept="4" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="134125553493501608" at="59,40,64,13" concept="2" />
-      <node id="134125553493496680" at="44,0,50,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
-      <node id="134125553493501072" at="58,119,65,9" concept="3" />
-      <node id="134125553493496681" at="57,0,69,0" concept="4" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="134125553493496681" at="51,90,69,6" concept="5" />
-      <node id="134125553493496680" at="50,0,74,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <node id="134125553493496680" at="27,31,28,30" concept="13" />
+      <node id="134125553493795702" at="32,60,33,61" concept="13" />
+      <node id="134125553493795702" at="36,68,37,82" concept="3" />
+      <node id="134125553493796468" at="39,82,40,71" concept="3" />
+      <node id="134125553493805135" at="40,71,41,72" concept="3" />
+      <node id="134125553493496680" at="45,84,46,119" concept="7" />
+      <node id="134125553493795702" at="46,119,47,63" concept="3" />
+      <node id="134125553493496680" at="47,63,48,22" concept="9" />
+      <node id="134125553493496681" at="54,116,55,20" concept="9" />
+      <node id="134125553493572060" at="61,98,62,45" concept="3" />
+      <node id="134125553493496943" at="65,9,66,283" concept="3" />
+      <node id="134125553493624293" at="66,283,67,174" concept="3" />
+      <node id="134125553493496680" at="69,6,70,131" concept="7" />
+      <node id="134125553493496681" at="70,131,71,42" concept="3" />
+      <node id="134125553493496680" at="71,42,72,22" concept="9" />
+      <node id="134125553493496680" at="76,0,77,0" concept="11" trace="Thesis$AI" />
+      <node id="134125553493496680" at="80,0,81,0" concept="11" trace="title$oFUI" />
+      <node id="134125553493496680" at="81,0,82,0" concept="11" trace="name$MnvL" />
+      <node id="134125553493496680" at="85,0,86,0" concept="11" trace="supervisor$oHkO" />
+      <node id="134125553493496680" at="86,0,87,0" concept="11" trace="thesis_supervised$v57r" />
+      <node id="134125553493496680" at="87,0,88,0" concept="11" trace="thesis$hYDQ" />
+      <node id="134125553493496680" at="27,0,30,0" concept="2" trace="Thesis_Constraints#()V" />
+      <node id="134125553493795702" at="32,0,35,0" concept="2" trace="Title_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="134125553493571871" at="60,126,63,13" concept="5" />
+      <node id="134125553493795702" at="35,0,39,0" concept="6" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="134125553493795702" at="39,0,43,0" concept="12" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="134125553493496681" at="53,0,57,0" concept="6" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="134125553493501608" at="59,40,64,13" concept="3" />
+      <node id="134125553493496680" at="44,0,50,0" concept="6" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="134125553493501072" at="58,119,65,9" concept="5" />
+      <node id="134125553493496681" at="57,0,69,0" concept="6" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="134125553493496681" at="51,90,69,6" concept="7" />
+      <node id="134125553493496680" at="50,0,74,0" concept="6" trace="getSpecifiedReferences#()Ljava/util/Map;" />
       <scope id="134125553493496680" at="27,31,28,30" />
       <scope id="134125553493795702" at="32,60,33,61" />
       <scope id="134125553493795702" at="36,68,37,82" />
@@ -102,35 +106,35 @@
   </root>
   <root nodeRef="r:33dc6f87-d09c-4bff-860e-bccce74c2e6c(UniStudy.constraints)/134125553494439578">
     <file name="ExaminationCall_Constraints.java">
-      <node id="134125553494439578" at="22,40,23,39" concept="10" />
-      <node id="134125553494439579" at="27,59,28,60" concept="10" />
-      <node id="134125553494439579" at="31,68,32,82" concept="2" />
-      <node id="134125553494439774" at="34,82,35,180" concept="2" />
-      <node id="134125553494479356" at="35,180,36,71" concept="2" />
-      <node id="134125553494439578" at="40,84,41,119" concept="5" />
-      <node id="134125553494439579" at="41,119,42,61" concept="2" />
-      <node id="134125553494439578" at="42,61,43,22" concept="6" />
-      <node id="134125553494496258" at="49,116,50,20" concept="6" />
-      <node id="134125553494508966" at="54,40,55,146" concept="2" />
-      <node id="134125553494537578" at="56,16,57,206" concept="2" />
-      <node id="134125553494439578" at="60,6,61,131" concept="5" />
-      <node id="134125553494496258" at="61,131,62,42" concept="2" />
-      <node id="134125553494439578" at="62,42,63,22" concept="6" />
-      <node id="134125553494439578" at="67,0,68,0" concept="8" trace="ExaminationCall$LP" />
-      <node id="134125553494439578" at="71,0,72,0" concept="8" trace="date$MUDv" />
-      <node id="134125553494439578" at="72,0,73,0" concept="8" trace="name$MnvL" />
-      <node id="134125553494439578" at="76,0,77,0" concept="8" trace="course$N8Ir" />
+      <node id="134125553494439578" at="22,40,23,39" concept="13" />
+      <node id="134125553494439579" at="27,59,28,60" concept="13" />
+      <node id="134125553494439579" at="31,68,32,82" concept="3" />
+      <node id="134125553494439774" at="34,82,35,180" concept="3" />
+      <node id="134125553494479356" at="35,180,36,71" concept="3" />
+      <node id="134125553494439578" at="40,84,41,119" concept="7" />
+      <node id="134125553494439579" at="41,119,42,61" concept="3" />
+      <node id="134125553494439578" at="42,61,43,22" concept="9" />
+      <node id="134125553494496258" at="49,116,50,20" concept="9" />
+      <node id="134125553494508966" at="54,40,55,146" concept="3" />
+      <node id="134125553494537578" at="56,16,57,206" concept="3" />
+      <node id="134125553494439578" at="60,6,61,131" concept="7" />
+      <node id="134125553494496258" at="61,131,62,42" concept="3" />
+      <node id="134125553494439578" at="62,42,63,22" concept="9" />
+      <node id="134125553494439578" at="67,0,68,0" concept="11" trace="ExaminationCall$LP" />
+      <node id="134125553494439578" at="71,0,72,0" concept="11" trace="date$MUDv" />
+      <node id="134125553494439578" at="72,0,73,0" concept="11" trace="name$MnvL" />
+      <node id="134125553494439578" at="76,0,77,0" concept="11" trace="course$N8Ir" />
       <node id="134125553494534333" at="56,14,58,9" concept="0" />
-      <node id="134125553494439578" at="22,0,25,0" concept="1" trace="ExaminationCall_Constraints#()V" />
-      <node id="134125553494439579" at="27,0,30,0" concept="1" trace="Date_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
-      <node id="134125553494439579" at="30,0,34,0" concept="4" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
-      <node id="134125553494439579" at="34,0,38,0" concept="9" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
-      <node id="134125553494496258" at="48,0,52,0" concept="4" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="134125553494497879" at="53,119,58,9" concept="3" />
-      <node id="134125553494439578" at="39,0,45,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
-      <node id="134125553494496258" at="52,0,60,0" concept="4" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="134125553494496258" at="46,90,60,6" concept="5" />
-      <node id="134125553494439578" at="45,0,65,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <node id="134125553494439578" at="22,0,25,0" concept="2" trace="ExaminationCall_Constraints#()V" />
+      <node id="134125553494439579" at="27,0,30,0" concept="2" trace="Date_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="134125553494439579" at="30,0,34,0" concept="6" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="134125553494439579" at="34,0,38,0" concept="12" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="134125553494496258" at="48,0,52,0" concept="6" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="134125553494497879" at="53,119,58,9" concept="5" />
+      <node id="134125553494439578" at="39,0,45,0" concept="6" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="134125553494496258" at="52,0,60,0" concept="6" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="134125553494496258" at="46,90,60,6" concept="7" />
+      <node id="134125553494439578" at="45,0,65,0" concept="6" trace="getSpecifiedReferences#()Ljava/util/Map;" />
       <scope id="134125553494439578" at="22,40,23,39" />
       <scope id="134125553494439579" at="27,59,28,60" />
       <scope id="134125553494439579" at="31,68,32,82" />
@@ -180,27 +184,27 @@
   </root>
   <root nodeRef="r:33dc6f87-d09c-4bff-860e-bccce74c2e6c(UniStudy.constraints)/1357694934083927451">
     <file name="DegreeCourseReference_Constraints.java">
-      <node id="1357694934083927451" at="22,46,23,45" concept="10" />
-      <node id="1357694934083927452" at="30,116,31,20" concept="6" />
-      <node id="1357694934083938627" at="35,106,36,286" concept="2" />
-      <node id="1357694934083979702" at="36,286,37,247" concept="2" />
-      <node id="1357694934083999093" at="38,42,39,239" concept="2" />
-      <node id="1357694934084042305" at="41,9,42,92" concept="2" />
-      <node id="1357694934083927451" at="44,6,45,131" concept="5" />
-      <node id="1357694934083927452" at="45,131,46,42" concept="2" />
-      <node id="1357694934083927451" at="46,42,47,22" concept="6" />
-      <node id="1357694934083927451" at="51,0,52,0" concept="8" trace="DegreeCourseReference$8I" />
-      <node id="1357694934083927451" at="52,0,53,0" concept="8" trace="Student$Dd" />
-      <node id="1357694934083927451" at="56,0,57,0" concept="8" trace="degree_course$vJLQ" />
-      <node id="1357694934083927451" at="57,0,58,0" concept="8" trace="enrolled_students$cHU3" />
-      <node id="1357694934083927451" at="58,0,59,0" concept="8" trace="student$_OLQ" />
-      <node id="1357694934083927451" at="22,0,25,0" concept="1" trace="DegreeCourseReference_Constraints#()V" />
-      <node id="1357694934083996350" at="37,247,40,11" concept="3" />
-      <node id="1357694934083927452" at="29,0,33,0" concept="4" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="1357694934083927807" at="34,119,41,9" concept="3" />
-      <node id="1357694934083927452" at="33,0,44,0" concept="4" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="1357694934083927452" at="27,90,44,6" concept="5" />
-      <node id="1357694934083927451" at="26,0,49,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <node id="1357694934083927451" at="22,46,23,45" concept="13" />
+      <node id="1357694934083927452" at="30,116,31,20" concept="9" />
+      <node id="1357694934083938627" at="35,106,36,286" concept="3" />
+      <node id="1357694934083979702" at="36,286,37,247" concept="3" />
+      <node id="1357694934083999093" at="38,42,39,239" concept="3" />
+      <node id="1357694934084042305" at="41,9,42,92" concept="3" />
+      <node id="1357694934083927451" at="44,6,45,131" concept="7" />
+      <node id="1357694934083927452" at="45,131,46,42" concept="3" />
+      <node id="1357694934083927451" at="46,42,47,22" concept="9" />
+      <node id="1357694934083927451" at="51,0,52,0" concept="11" trace="DegreeCourseReference$8I" />
+      <node id="1357694934083927451" at="52,0,53,0" concept="11" trace="Student$Dd" />
+      <node id="1357694934083927451" at="56,0,57,0" concept="11" trace="degree_course$vJLQ" />
+      <node id="1357694934083927451" at="57,0,58,0" concept="11" trace="enrolled_students$cHU3" />
+      <node id="1357694934083927451" at="58,0,59,0" concept="11" trace="student$_OLQ" />
+      <node id="1357694934083927451" at="22,0,25,0" concept="2" trace="DegreeCourseReference_Constraints#()V" />
+      <node id="1357694934083996350" at="37,247,40,11" concept="5" />
+      <node id="1357694934083927452" at="29,0,33,0" concept="6" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1357694934083927807" at="34,119,41,9" concept="5" />
+      <node id="1357694934083927452" at="33,0,44,0" concept="6" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1357694934083927452" at="27,90,44,6" concept="7" />
+      <node id="1357694934083927451" at="26,0,49,0" concept="6" trace="getSpecifiedReferences#()Ljava/util/Map;" />
       <scope id="1357694934083927451" at="22,46,23,45" />
       <scope id="1357694934083927452" at="30,116,31,20" />
       <scope id="1357694934083996352" at="38,42,39,239" />
@@ -230,28 +234,28 @@
   </root>
   <root nodeRef="r:33dc6f87-d09c-4bff-860e-bccce74c2e6c(UniStudy.constraints)/1357694934084576192">
     <file name="CourseReference_Constraints.java">
-      <node id="1357694934084576192" at="22,40,23,39" concept="10" />
-      <node id="1357694934084576193" at="30,116,31,20" concept="6" />
-      <node id="1357694934084580682" at="35,108,36,281" concept="2" />
-      <node id="1357694934084616088" at="36,281,37,244" concept="2" />
-      <node id="1357694934084649032" at="38,42,39,234" concept="2" />
-      <node id="1357694934084579821" at="41,9,42,85" concept="2" />
-      <node id="1357694934084579768" at="42,85,43,0" concept="7" />
-      <node id="1357694934084576192" at="45,6,46,131" concept="5" />
-      <node id="1357694934084576193" at="46,131,47,42" concept="2" />
-      <node id="1357694934084576192" at="47,42,48,22" concept="6" />
-      <node id="1357694934084576192" at="52,0,53,0" concept="8" trace="CourseReference$wz" />
-      <node id="1357694934084576192" at="53,0,54,0" concept="8" trace="Professor$3J" />
-      <node id="1357694934084576192" at="57,0,58,0" concept="8" trace="course$irGm" />
-      <node id="1357694934084576192" at="58,0,59,0" concept="8" trace="professors$ofhQ" />
-      <node id="1357694934084576192" at="59,0,60,0" concept="8" trace="professor$otNQ" />
-      <node id="1357694934084576192" at="22,0,25,0" concept="1" trace="CourseReference_Constraints#()V" />
-      <node id="1357694934084645683" at="37,244,40,11" concept="3" />
-      <node id="1357694934084576193" at="29,0,33,0" concept="4" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="1357694934084576334" at="34,119,41,9" concept="3" />
-      <node id="1357694934084576193" at="33,0,45,0" concept="4" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="1357694934084576193" at="27,90,45,6" concept="5" />
-      <node id="1357694934084576192" at="26,0,50,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <node id="1357694934084576192" at="22,40,23,39" concept="13" />
+      <node id="1357694934084576193" at="30,116,31,20" concept="9" />
+      <node id="1357694934084580682" at="35,108,36,281" concept="3" />
+      <node id="1357694934084616088" at="36,281,37,244" concept="3" />
+      <node id="1357694934084649032" at="38,42,39,234" concept="3" />
+      <node id="1357694934084579821" at="41,9,42,85" concept="3" />
+      <node id="1357694934084579768" at="42,85,43,0" concept="10" />
+      <node id="1357694934084576192" at="45,6,46,131" concept="7" />
+      <node id="1357694934084576193" at="46,131,47,42" concept="3" />
+      <node id="1357694934084576192" at="47,42,48,22" concept="9" />
+      <node id="1357694934084576192" at="52,0,53,0" concept="11" trace="CourseReference$wz" />
+      <node id="1357694934084576192" at="53,0,54,0" concept="11" trace="Professor$3J" />
+      <node id="1357694934084576192" at="57,0,58,0" concept="11" trace="course$irGm" />
+      <node id="1357694934084576192" at="58,0,59,0" concept="11" trace="professors$ofhQ" />
+      <node id="1357694934084576192" at="59,0,60,0" concept="11" trace="professor$otNQ" />
+      <node id="1357694934084576192" at="22,0,25,0" concept="2" trace="CourseReference_Constraints#()V" />
+      <node id="1357694934084645683" at="37,244,40,11" concept="5" />
+      <node id="1357694934084576193" at="29,0,33,0" concept="6" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1357694934084576334" at="34,119,41,9" concept="5" />
+      <node id="1357694934084576193" at="33,0,45,0" concept="6" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1357694934084576193" at="27,90,45,6" concept="7" />
+      <node id="1357694934084576192" at="26,0,50,0" concept="6" trace="getSpecifiedReferences#()Ljava/util/Map;" />
       <scope id="1357694934084576192" at="22,40,23,39" />
       <scope id="1357694934084576193" at="30,116,31,20" />
       <scope id="1357694934084645685" at="38,42,39,234" />
@@ -281,9 +285,9 @@
   </root>
   <root nodeRef="r:33dc6f87-d09c-4bff-860e-bccce74c2e6c(UniStudy.constraints)/1357694934086201130">
     <file name="Department_Constraints.java">
-      <node id="1357694934086201130" at="10,35,11,34" concept="10" />
-      <node id="1357694934086201130" at="15,0,16,0" concept="8" trace="Department$Ce" />
-      <node id="1357694934086201130" at="10,0,13,0" concept="1" trace="Department_Constraints#()V" />
+      <node id="1357694934086201130" at="10,35,11,34" concept="13" />
+      <node id="1357694934086201130" at="15,0,16,0" concept="11" trace="Department$Ce" />
+      <node id="1357694934086201130" at="10,0,13,0" concept="2" trace="Department_Constraints#()V" />
       <scope id="1357694934086201130" at="10,35,11,34" />
       <scope id="1357694934086201130" at="10,0,13,0" />
       <unit id="1357694934086201130" at="14,0,17,0" name="UniStudy.constraints.Department_Constraints$CONCEPTS" />
@@ -292,27 +296,27 @@
   </root>
   <root nodeRef="r:33dc6f87-d09c-4bff-860e-bccce74c2e6c(UniStudy.constraints)/1357694934086201176">
     <file name="NewsReference_Constraints.java">
-      <node id="1357694934086201176" at="18,38,19,37" concept="10" />
-      <node id="1357694934086201177" at="26,116,27,20" concept="6" />
-      <node id="1357694934086201328" at="30,119,31,0" concept="7" />
-      <node id="1357694934086210326" at="32,9,33,76" concept="5" />
-      <node id="1357694934086211098" at="34,81,35,90" concept="2" />
-      <node id="1357694934086210150" at="37,9,38,0" concept="7" />
-      <node id="1357694934086202460" at="38,0,39,83" concept="2" />
-      <node id="1357694934086201176" at="41,6,42,131" concept="5" />
-      <node id="1357694934086201177" at="42,131,43,42" concept="2" />
-      <node id="1357694934086201176" at="43,42,44,22" concept="6" />
-      <node id="1357694934086201176" at="48,0,49,0" concept="8" trace="NewsReference$6K" />
-      <node id="1357694934086201176" at="49,0,50,0" concept="8" trace="Department$Ce" />
-      <node id="1357694934086201176" at="53,0,54,0" concept="8" trace="news$QeMQ" />
-      <node id="1357694934086201176" at="54,0,55,0" concept="8" trace="department$vbCX" />
-      <node id="1357694934086201176" at="18,0,21,0" concept="1" trace="NewsReference_Constraints#()V" />
-      <node id="1357694934086210326" at="33,76,36,11" concept="3" />
-      <node id="1357694934086201177" at="25,0,29,0" concept="4" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1357694934086201176" at="18,38,19,37" concept="13" />
+      <node id="1357694934086201177" at="26,116,27,20" concept="9" />
+      <node id="1357694934086201328" at="30,119,31,0" concept="10" />
+      <node id="1357694934086210326" at="32,9,33,76" concept="7" />
+      <node id="1357694934086211098" at="34,81,35,90" concept="3" />
+      <node id="1357694934086210150" at="37,9,38,0" concept="10" />
+      <node id="1357694934086202460" at="38,0,39,83" concept="3" />
+      <node id="1357694934086201176" at="41,6,42,131" concept="7" />
+      <node id="1357694934086201177" at="42,131,43,42" concept="3" />
+      <node id="1357694934086201176" at="43,42,44,22" concept="9" />
+      <node id="1357694934086201176" at="48,0,49,0" concept="11" trace="NewsReference$6K" />
+      <node id="1357694934086201176" at="49,0,50,0" concept="11" trace="Department$Ce" />
+      <node id="1357694934086201176" at="53,0,54,0" concept="11" trace="news$QeMQ" />
+      <node id="1357694934086201176" at="54,0,55,0" concept="11" trace="department$vbCX" />
+      <node id="1357694934086201176" at="18,0,21,0" concept="2" trace="NewsReference_Constraints#()V" />
+      <node id="1357694934086210326" at="33,76,36,11" concept="5" />
+      <node id="1357694934086201177" at="25,0,29,0" concept="6" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="1357694934086210326" at="31,0,37,9" concept="0" />
-      <node id="1357694934086201177" at="29,0,41,0" concept="4" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="1357694934086201177" at="23,90,41,6" concept="5" />
-      <node id="1357694934086201176" at="22,0,46,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <node id="1357694934086201177" at="29,0,41,0" concept="6" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1357694934086201177" at="23,90,41,6" concept="7" />
+      <node id="1357694934086201176" at="22,0,46,0" concept="6" trace="getSpecifiedReferences#()Ljava/util/Map;" />
       <scope id="1357694934086201176" at="18,38,19,37" />
       <scope id="1357694934086201177" at="26,116,27,20" />
       <scope id="1357694934086210330" at="34,81,35,90" />
@@ -344,29 +348,29 @@
   </root>
   <root nodeRef="r:33dc6f87-d09c-4bff-860e-bccce74c2e6c(UniStudy.constraints)/1357694934086617500">
     <file name="ExaminationCallReference_Constraints.java">
-      <node id="1357694934086617500" at="22,49,23,48" concept="10" />
-      <node id="1357694934086617501" at="30,116,31,20" concept="6" />
-      <node id="1357694934086625686" at="35,9,36,73" concept="5" />
-      <node id="1357694934086621301" at="37,75,38,286" concept="2" />
-      <node id="1357694934086621310" at="38,286,39,171" concept="2" />
-      <node id="1357694934086621326" at="40,44,41,206" concept="2" />
-      <node id="1357694934086621347" at="44,9,45,83" concept="2" />
-      <node id="1357694934086617500" at="47,6,48,131" concept="5" />
-      <node id="1357694934086617501" at="48,131,49,42" concept="2" />
-      <node id="1357694934086617500" at="49,42,50,22" concept="6" />
-      <node id="1357694934086617500" at="54,0,55,0" concept="8" trace="ExaminationCallReference$Xm" />
-      <node id="1357694934086617500" at="55,0,56,0" concept="8" trace="Student$Dd" />
-      <node id="1357694934086617500" at="59,0,60,0" concept="8" trace="call$Aa5Q" />
-      <node id="1357694934086617500" at="60,0,61,0" concept="8" trace="booked_students$C1Ek" />
-      <node id="1357694934086617500" at="61,0,62,0" concept="8" trace="student$_OLQ" />
-      <node id="1357694934086617500" at="22,0,25,0" concept="1" trace="ExaminationCallReference_Constraints#()V" />
-      <node id="1357694934086621324" at="39,171,42,13" concept="3" />
-      <node id="1357694934086617501" at="29,0,33,0" concept="4" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="1357694934086625686" at="36,73,43,11" concept="3" />
+      <node id="1357694934086617500" at="22,49,23,48" concept="13" />
+      <node id="1357694934086617501" at="30,116,31,20" concept="9" />
+      <node id="1357694934086625686" at="35,9,36,73" concept="7" />
+      <node id="1357694934086621301" at="37,75,38,286" concept="3" />
+      <node id="1357694934086621310" at="38,286,39,171" concept="3" />
+      <node id="1357694934086621326" at="40,44,41,206" concept="3" />
+      <node id="1357694934086621347" at="44,9,45,83" concept="3" />
+      <node id="1357694934086617500" at="47,6,48,131" concept="7" />
+      <node id="1357694934086617501" at="48,131,49,42" concept="3" />
+      <node id="1357694934086617500" at="49,42,50,22" concept="9" />
+      <node id="1357694934086617500" at="54,0,55,0" concept="11" trace="ExaminationCallReference$Xm" />
+      <node id="1357694934086617500" at="55,0,56,0" concept="11" trace="Student$Dd" />
+      <node id="1357694934086617500" at="59,0,60,0" concept="11" trace="call$Aa5Q" />
+      <node id="1357694934086617500" at="60,0,61,0" concept="11" trace="booked_students$C1Ek" />
+      <node id="1357694934086617500" at="61,0,62,0" concept="11" trace="student$_OLQ" />
+      <node id="1357694934086617500" at="22,0,25,0" concept="2" trace="ExaminationCallReference_Constraints#()V" />
+      <node id="1357694934086621324" at="39,171,42,13" concept="5" />
+      <node id="1357694934086617501" at="29,0,33,0" concept="6" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1357694934086625686" at="36,73,43,11" concept="5" />
       <node id="1357694934086625686" at="34,119,44,9" concept="0" />
-      <node id="1357694934086617501" at="33,0,47,0" concept="4" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="1357694934086617501" at="27,90,47,6" concept="5" />
-      <node id="1357694934086617500" at="26,0,52,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <node id="1357694934086617501" at="33,0,47,0" concept="6" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1357694934086617501" at="27,90,47,6" concept="7" />
+      <node id="1357694934086617500" at="26,0,52,0" concept="6" trace="getSpecifiedReferences#()Ljava/util/Map;" />
       <scope id="1357694934086617500" at="22,49,23,48" />
       <scope id="1357694934086617501" at="30,116,31,20" />
       <scope id="1357694934086621325" at="40,44,41,206" />
@@ -399,9 +403,9 @@
   </root>
   <root nodeRef="r:33dc6f87-d09c-4bff-860e-bccce74c2e6c(UniStudy.constraints)/1357694934087092095">
     <file name="Professor_Constraints.java">
-      <node id="1357694934087092095" at="10,34,11,33" concept="10" />
-      <node id="1357694934087092095" at="15,0,16,0" concept="8" trace="Professor$3J" />
-      <node id="1357694934087092095" at="10,0,13,0" concept="1" trace="Professor_Constraints#()V" />
+      <node id="1357694934087092095" at="10,34,11,33" concept="13" />
+      <node id="1357694934087092095" at="15,0,16,0" concept="11" trace="Professor$3J" />
+      <node id="1357694934087092095" at="10,0,13,0" concept="2" trace="Professor_Constraints#()V" />
       <scope id="1357694934087092095" at="10,34,11,33" />
       <scope id="1357694934087092095" at="10,0,13,0" />
       <unit id="1357694934087092095" at="14,0,17,0" name="UniStudy.constraints.Professor_Constraints$CONCEPTS" />
@@ -410,22 +414,22 @@
   </root>
   <root nodeRef="r:33dc6f87-d09c-4bff-860e-bccce74c2e6c(UniStudy.constraints)/1357694934087148736">
     <file name="News_Constraints.java">
-      <node id="1357694934087148736" at="18,29,19,28" concept="10" />
-      <node id="1357694934087148737" at="23,60,24,61" concept="10" />
-      <node id="1357694934087148737" at="27,68,28,82" concept="2" />
-      <node id="1357694934087149106" at="30,82,31,71" concept="2" />
-      <node id="1357694934087173870" at="31,71,32,72" concept="2" />
-      <node id="1357694934087148736" at="36,84,37,119" concept="5" />
-      <node id="1357694934087148737" at="37,119,38,63" concept="2" />
-      <node id="1357694934087148736" at="38,63,39,22" concept="6" />
-      <node id="1357694934087148736" at="43,0,44,0" concept="8" trace="News$QK" />
-      <node id="1357694934087148736" at="47,0,48,0" concept="8" trace="title$s7gS" />
-      <node id="1357694934087148736" at="48,0,49,0" concept="8" trace="name$MnvL" />
-      <node id="1357694934087148736" at="18,0,21,0" concept="1" trace="News_Constraints#()V" />
-      <node id="1357694934087148737" at="23,0,26,0" concept="1" trace="Title_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
-      <node id="1357694934087148737" at="26,0,30,0" concept="4" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
-      <node id="1357694934087148737" at="30,0,34,0" concept="9" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
-      <node id="1357694934087148736" at="35,0,41,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="1357694934087148736" at="18,29,19,28" concept="13" />
+      <node id="1357694934087148737" at="23,60,24,61" concept="13" />
+      <node id="1357694934087148737" at="27,68,28,82" concept="3" />
+      <node id="1357694934087149106" at="30,82,31,71" concept="3" />
+      <node id="1357694934087173870" at="31,71,32,72" concept="3" />
+      <node id="1357694934087148736" at="36,84,37,119" concept="7" />
+      <node id="1357694934087148737" at="37,119,38,63" concept="3" />
+      <node id="1357694934087148736" at="38,63,39,22" concept="9" />
+      <node id="1357694934087148736" at="43,0,44,0" concept="11" trace="News$QK" />
+      <node id="1357694934087148736" at="47,0,48,0" concept="11" trace="title$s7gS" />
+      <node id="1357694934087148736" at="48,0,49,0" concept="11" trace="name$MnvL" />
+      <node id="1357694934087148736" at="18,0,21,0" concept="2" trace="News_Constraints#()V" />
+      <node id="1357694934087148737" at="23,0,26,0" concept="2" trace="Title_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="1357694934087148737" at="26,0,30,0" concept="6" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="1357694934087148737" at="30,0,34,0" concept="12" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="1357694934087148736" at="35,0,41,0" concept="6" trace="getSpecifiedProperties#()Ljava/util/Map;" />
       <scope id="1357694934087148736" at="18,29,19,28" />
       <scope id="1357694934087148737" at="23,60,24,61" />
       <scope id="1357694934087148737" at="27,68,28,82" />
@@ -454,9 +458,9 @@
   </root>
   <root nodeRef="r:33dc6f87-d09c-4bff-860e-bccce74c2e6c(UniStudy.constraints)/1780439960263305336">
     <file name="CustomEnumeration_Constraints.java">
-      <node id="1780439960263305336" at="10,42,11,41" concept="10" />
-      <node id="1780439960263305336" at="15,0,16,0" concept="8" trace="CustomEnumeration$EC" />
-      <node id="1780439960263305336" at="10,0,13,0" concept="1" trace="CustomEnumeration_Constraints#()V" />
+      <node id="1780439960263305336" at="10,42,11,41" concept="13" />
+      <node id="1780439960263305336" at="15,0,16,0" concept="11" trace="CustomEnumeration$EC" />
+      <node id="1780439960263305336" at="10,0,13,0" concept="2" trace="CustomEnumeration_Constraints#()V" />
       <scope id="1780439960263305336" at="10,42,11,41" />
       <scope id="1780439960263305336" at="10,0,13,0" />
       <unit id="1780439960263305336" at="14,0,17,0" name="UniStudy.constraints.CustomEnumeration_Constraints$CONCEPTS" />
@@ -465,31 +469,31 @@
   </root>
   <root nodeRef="r:33dc6f87-d09c-4bff-860e-bccce74c2e6c(UniStudy.constraints)/4690418037760276962">
     <file name="Career_Constraints.java">
-      <node id="4690418037760276962" at="19,31,20,30" concept="10" />
-      <node id="134125553495792389" at="27,116,28,20" concept="6" />
-      <node id="134125553495824802" at="31,119,32,257" concept="2" />
-      <node id="1357694934084567709" at="32,257,33,86" concept="2" />
-      <node id="5287893069543390592" at="33,86,34,0" concept="7" />
-      <node id="134125553495836508" at="39,116,40,20" concept="6" />
-      <node id="134125553495842117" at="43,119,44,251" concept="2" />
-      <node id="1357694934084571614" at="44,251,45,92" concept="2" />
-      <node id="5287893069543392374" at="45,92,46,0" concept="7" />
-      <node id="4690418037760276962" at="48,6,49,131" concept="5" />
-      <node id="134125553495792389" at="49,131,50,42" concept="2" />
-      <node id="134125553495836508" at="50,42,51,42" concept="2" />
-      <node id="4690418037760276962" at="51,42,52,22" concept="6" />
-      <node id="4690418037760276962" at="56,0,57,0" concept="8" trace="Career$1i" />
-      <node id="4690418037760276962" at="60,0,61,0" concept="8" trace="student$_G3Q" />
-      <node id="4690418037760276962" at="61,0,62,0" concept="8" trace="degree_course$_Nll" />
-      <node id="4690418037760276962" at="65,0,66,0" concept="8" trace="name$MnvL" />
-      <node id="4690418037760276962" at="19,0,22,0" concept="1" trace="Career_Constraints#()V" />
-      <node id="134125553495792389" at="26,0,30,0" concept="4" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="134125553495836508" at="38,0,42,0" concept="4" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="134125553495792389" at="30,0,36,0" concept="4" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="134125553495836508" at="42,0,48,0" concept="4" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="134125553495792389" at="24,90,36,6" concept="5" />
-      <node id="134125553495836508" at="36,6,48,6" concept="5" />
-      <node id="4690418037760276962" at="23,0,54,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <node id="4690418037760276962" at="19,31,20,30" concept="13" />
+      <node id="134125553495792389" at="27,116,28,20" concept="9" />
+      <node id="134125553495824802" at="31,119,32,257" concept="3" />
+      <node id="1357694934084567709" at="32,257,33,86" concept="3" />
+      <node id="5287893069543390592" at="33,86,34,0" concept="10" />
+      <node id="134125553495836508" at="39,116,40,20" concept="9" />
+      <node id="134125553495842117" at="43,119,44,251" concept="3" />
+      <node id="1357694934084571614" at="44,251,45,92" concept="3" />
+      <node id="5287893069543392374" at="45,92,46,0" concept="10" />
+      <node id="4690418037760276962" at="48,6,49,131" concept="7" />
+      <node id="134125553495792389" at="49,131,50,42" concept="3" />
+      <node id="134125553495836508" at="50,42,51,42" concept="3" />
+      <node id="4690418037760276962" at="51,42,52,22" concept="9" />
+      <node id="4690418037760276962" at="56,0,57,0" concept="11" trace="Career$1i" />
+      <node id="4690418037760276962" at="60,0,61,0" concept="11" trace="student$_G3Q" />
+      <node id="4690418037760276962" at="61,0,62,0" concept="11" trace="degree_course$_Nll" />
+      <node id="4690418037760276962" at="65,0,66,0" concept="11" trace="name$MnvL" />
+      <node id="4690418037760276962" at="19,0,22,0" concept="2" trace="Career_Constraints#()V" />
+      <node id="134125553495792389" at="26,0,30,0" concept="6" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="134125553495836508" at="38,0,42,0" concept="6" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="134125553495792389" at="30,0,36,0" concept="6" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="134125553495836508" at="42,0,48,0" concept="6" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="134125553495792389" at="24,90,36,6" concept="7" />
+      <node id="134125553495836508" at="36,6,48,6" concept="7" />
+      <node id="4690418037760276962" at="23,0,54,0" concept="6" trace="getSpecifiedReferences#()Ljava/util/Map;" />
       <scope id="4690418037760276962" at="19,31,20,30" />
       <scope id="134125553495792389" at="27,116,28,20" />
       <scope id="134125553495836508" at="39,116,40,20" />
@@ -532,9 +536,9 @@
   </root>
   <root nodeRef="r:33dc6f87-d09c-4bff-860e-bccce74c2e6c(UniStudy.constraints)/4690418037760323013">
     <file name="PassingGradeReference_Constraints.java">
-      <node id="4690418037760323013" at="10,46,11,45" concept="10" />
-      <node id="4690418037760323013" at="15,0,16,0" concept="8" trace="PassingGradeReference$sP" />
-      <node id="4690418037760323013" at="10,0,13,0" concept="1" trace="PassingGradeReference_Constraints#()V" />
+      <node id="4690418037760323013" at="10,46,11,45" concept="13" />
+      <node id="4690418037760323013" at="15,0,16,0" concept="11" trace="PassingGradeReference$sP" />
+      <node id="4690418037760323013" at="10,0,13,0" concept="2" trace="PassingGradeReference_Constraints#()V" />
       <scope id="4690418037760323013" at="10,46,11,45" />
       <scope id="4690418037760323013" at="10,0,13,0" />
       <unit id="4690418037760323013" at="14,0,17,0" name="UniStudy.constraints.PassingGradeReference_Constraints$CONCEPTS" />
@@ -543,65 +547,65 @@
   </root>
   <root nodeRef="r:33dc6f87-d09c-4bff-860e-bccce74c2e6c(UniStudy.constraints)/4690418037761237272">
     <file name="PassingGrade_Constraints.java">
-      <node id="4690418037761237272" at="24,37,25,36" concept="10" />
-      <node id="5287893069543501698" at="29,59,30,60" concept="10" />
-      <node id="5287893069543501698" at="33,68,34,82" concept="2" />
-      <node id="5287893069543505901" at="36,82,37,360" concept="2" />
-      <node id="5287893069543538142" at="37,360,38,71" concept="2" />
-      <node id="861728723963599667" at="42,60,43,59" concept="10" />
-      <node id="1780439960267521658" at="46,40,47,81" concept="6" />
-      <node id="861728723963599667" at="50,68,51,82" concept="2" />
-      <node id="1780439960267524295" at="53,82,54,72" concept="2" />
-      <node id="861728723963599667" at="57,109,58,99" concept="5" />
-      <node id="861728723963599667" at="59,53,60,149" concept="2" />
-      <node id="861728723963599667" at="61,7,62,20" concept="6" />
-      <node id="1780439960267279517" at="65,11,66,94" concept="6" />
-      <node id="1780439960267406275" at="67,42,68,0" concept="7" />
-      <node id="1780439960267398152" at="68,0,69,98" concept="6" />
-      <node id="4690418037761237272" at="74,84,75,119" concept="5" />
-      <node id="5287893069543501698" at="75,119,76,61" concept="2" />
-      <node id="861728723963599667" at="76,61,77,63" concept="2" />
-      <node id="4690418037761237272" at="77,63,78,22" concept="6" />
-      <node id="134125553495517754" at="84,116,85,20" concept="6" />
-      <node id="5287893069543242377" at="88,119,89,0" concept="7" />
-      <node id="134125553495554435" at="89,0,90,393" concept="2" />
-      <node id="5287893069543239681" at="90,393,91,0" concept="7" />
-      <node id="134125553495709739" at="96,116,97,20" concept="6" />
-      <node id="5287893069543354551" at="100,119,101,0" concept="7" />
-      <node id="134125553495710364" at="101,0,102,385" concept="2" />
-      <node id="5287893069543241722" at="102,385,103,0" concept="7" />
-      <node id="4690418037761237272" at="105,6,106,131" concept="5" />
-      <node id="134125553495517754" at="106,131,107,42" concept="2" />
-      <node id="134125553495709739" at="107,42,108,42" concept="2" />
-      <node id="4690418037761237272" at="108,42,109,22" concept="6" />
-      <node id="4690418037761237272" at="113,0,114,0" concept="8" trace="PassingGrade$G7" />
-      <node id="4690418037761237272" at="117,0,118,0" concept="8" trace="date$o76I" />
-      <node id="4690418037761237272" at="118,0,119,0" concept="8" trace="name$MnvL" />
-      <node id="4690418037761237272" at="119,0,120,0" concept="8" trace="matriculation_number$o0vo" />
-      <node id="4690418037761237272" at="120,0,121,0" concept="8" trace="grade$o6CG" />
-      <node id="4690418037761237272" at="124,0,125,0" concept="8" trace="course$oeod" />
-      <node id="4690418037761237272" at="125,0,126,0" concept="8" trace="student_career$oeQf" />
-      <node id="4690418037761237272" at="126,0,127,0" concept="8" trace="student$_G3Q" />
-      <node id="4690418037761237272" at="24,0,27,0" concept="1" trace="PassingGrade_Constraints#()V" />
-      <node id="5287893069543501698" at="29,0,32,0" concept="1" trace="Date_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
-      <node id="861728723963599667" at="42,0,45,0" concept="1" trace="Grade_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
-      <node id="861728723963599667" at="53,0,56,0" concept="9" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
-      <node id="861728723963599667" at="58,99,61,7" concept="3" />
-      <node id="5287893069543501698" at="32,0,36,0" concept="4" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
-      <node id="5287893069543501698" at="36,0,40,0" concept="9" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
-      <node id="861728723963599667" at="45,0,49,0" concept="4" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
-      <node id="861728723963599667" at="49,0,53,0" concept="4" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
-      <node id="134125553495517754" at="83,0,87,0" concept="4" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="134125553495709739" at="95,0,99,0" concept="4" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="1780439960267276138" at="64,85,70,7" concept="11" />
-      <node id="134125553495517754" at="87,0,93,0" concept="4" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="134125553495709739" at="99,0,105,0" concept="4" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="4690418037761237272" at="73,0,80,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
-      <node id="861728723963599667" at="56,0,64,0" concept="4" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
-      <node id="861728723963599667" at="64,0,72,0" concept="9" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
-      <node id="134125553495517754" at="81,90,93,6" concept="5" />
-      <node id="134125553495709739" at="93,6,105,6" concept="5" />
-      <node id="4690418037761237272" at="80,0,111,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <node id="4690418037761237272" at="24,37,25,36" concept="13" />
+      <node id="5287893069543501698" at="29,59,30,60" concept="13" />
+      <node id="5287893069543501698" at="33,68,34,82" concept="3" />
+      <node id="5287893069543505901" at="36,82,37,360" concept="3" />
+      <node id="5287893069543538142" at="37,360,38,71" concept="3" />
+      <node id="861728723963599667" at="42,60,43,59" concept="13" />
+      <node id="1780439960267521658" at="46,40,47,81" concept="9" />
+      <node id="861728723963599667" at="50,68,51,82" concept="3" />
+      <node id="1780439960267524295" at="53,82,54,72" concept="3" />
+      <node id="861728723963599667" at="57,109,58,99" concept="7" />
+      <node id="861728723963599667" at="59,53,60,149" concept="3" />
+      <node id="861728723963599667" at="61,7,62,20" concept="9" />
+      <node id="1780439960267279517" at="65,11,66,94" concept="9" />
+      <node id="1780439960267406275" at="67,42,68,0" concept="10" />
+      <node id="1780439960267398152" at="68,0,69,98" concept="9" />
+      <node id="4690418037761237272" at="74,84,75,119" concept="7" />
+      <node id="5287893069543501698" at="75,119,76,61" concept="3" />
+      <node id="861728723963599667" at="76,61,77,63" concept="3" />
+      <node id="4690418037761237272" at="77,63,78,22" concept="9" />
+      <node id="134125553495517754" at="84,116,85,20" concept="9" />
+      <node id="5287893069543242377" at="88,119,89,0" concept="10" />
+      <node id="134125553495554435" at="89,0,90,393" concept="3" />
+      <node id="5287893069543239681" at="90,393,91,0" concept="10" />
+      <node id="134125553495709739" at="96,116,97,20" concept="9" />
+      <node id="5287893069543354551" at="100,119,101,0" concept="10" />
+      <node id="134125553495710364" at="101,0,102,385" concept="3" />
+      <node id="5287893069543241722" at="102,385,103,0" concept="10" />
+      <node id="4690418037761237272" at="105,6,106,131" concept="7" />
+      <node id="134125553495517754" at="106,131,107,42" concept="3" />
+      <node id="134125553495709739" at="107,42,108,42" concept="3" />
+      <node id="4690418037761237272" at="108,42,109,22" concept="9" />
+      <node id="4690418037761237272" at="113,0,114,0" concept="11" trace="PassingGrade$G7" />
+      <node id="4690418037761237272" at="117,0,118,0" concept="11" trace="date$o76I" />
+      <node id="4690418037761237272" at="118,0,119,0" concept="11" trace="name$MnvL" />
+      <node id="4690418037761237272" at="119,0,120,0" concept="11" trace="matriculation_number$o0vo" />
+      <node id="4690418037761237272" at="120,0,121,0" concept="11" trace="grade$o6CG" />
+      <node id="4690418037761237272" at="124,0,125,0" concept="11" trace="course$oeod" />
+      <node id="4690418037761237272" at="125,0,126,0" concept="11" trace="student_career$oeQf" />
+      <node id="4690418037761237272" at="126,0,127,0" concept="11" trace="student$_G3Q" />
+      <node id="4690418037761237272" at="24,0,27,0" concept="2" trace="PassingGrade_Constraints#()V" />
+      <node id="5287893069543501698" at="29,0,32,0" concept="2" trace="Date_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="861728723963599667" at="42,0,45,0" concept="2" trace="Grade_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="861728723963599667" at="53,0,56,0" concept="12" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="861728723963599667" at="58,99,61,7" concept="5" />
+      <node id="5287893069543501698" at="32,0,36,0" concept="6" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="5287893069543501698" at="36,0,40,0" concept="12" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="861728723963599667" at="45,0,49,0" concept="6" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="861728723963599667" at="49,0,53,0" concept="6" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="134125553495517754" at="83,0,87,0" concept="6" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="134125553495709739" at="95,0,99,0" concept="6" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1780439960267276138" at="64,85,70,7" concept="15" />
+      <node id="134125553495517754" at="87,0,93,0" concept="6" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="134125553495709739" at="99,0,105,0" concept="6" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4690418037761237272" at="73,0,80,0" concept="6" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="861728723963599667" at="56,0,64,0" concept="6" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="861728723963599667" at="64,0,72,0" concept="12" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="134125553495517754" at="81,90,93,6" concept="7" />
+      <node id="134125553495709739" at="93,6,105,6" concept="7" />
+      <node id="4690418037761237272" at="80,0,111,0" concept="6" trace="getSpecifiedReferences#()Ljava/util/Map;" />
       <scope id="4690418037761237272" at="24,37,25,36" />
       <scope id="5287893069543501698" at="29,59,30,60" />
       <scope id="5287893069543501698" at="33,68,34,82" />
@@ -701,34 +705,34 @@
   </root>
   <root nodeRef="r:33dc6f87-d09c-4bff-860e-bccce74c2e6c(UniStudy.constraints)/4690418037761237353">
     <file name="Course_Constraints.java">
-      <node id="4690418037761237353" at="23,31,24,30" concept="10" />
-      <node id="861728723963632123" at="28,57,29,58" concept="10" />
-      <node id="861728723963632123" at="32,109,33,99" concept="5" />
-      <node id="861728723963632123" at="34,53,35,148" concept="2" />
-      <node id="861728723963632123" at="36,7,37,20" concept="6" />
-      <node id="861728723963632427" at="39,91,40,229" concept="6" />
-      <node id="861728723963724891" at="44,58,45,59" concept="10" />
-      <node id="861728723963724891" at="48,109,49,100" concept="5" />
-      <node id="861728723963724891" at="50,53,51,148" concept="2" />
-      <node id="861728723963724891" at="52,7,53,20" concept="6" />
-      <node id="861728723963727997" at="55,82,56,31" concept="6" />
-      <node id="4690418037761237353" at="60,84,61,119" concept="5" />
-      <node id="861728723963632123" at="61,119,62,57" concept="2" />
-      <node id="861728723963724891" at="62,57,63,59" concept="2" />
-      <node id="4690418037761237353" at="63,59,64,22" concept="6" />
-      <node id="4690418037761237353" at="68,0,69,0" concept="8" trace="Course$9c" />
-      <node id="4690418037761237353" at="72,0,73,0" concept="8" trace="id$kv1Q" />
-      <node id="4690418037761237353" at="73,0,74,0" concept="8" trace="cfu$kA4k" />
-      <node id="4690418037761237353" at="23,0,26,0" concept="1" trace="Course_Constraints#()V" />
-      <node id="861728723963632123" at="28,0,31,0" concept="1" trace="Id_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
-      <node id="861728723963632123" at="33,99,36,7" concept="3" />
-      <node id="861728723963632123" at="39,0,42,0" concept="9" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
-      <node id="861728723963724891" at="44,0,47,0" concept="1" trace="Cfu_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
-      <node id="861728723963724891" at="49,100,52,7" concept="3" />
-      <node id="861728723963724891" at="55,0,58,0" concept="9" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
-      <node id="4690418037761237353" at="59,0,66,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
-      <node id="861728723963632123" at="31,0,39,0" concept="4" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
-      <node id="861728723963724891" at="47,0,55,0" concept="4" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="4690418037761237353" at="23,31,24,30" concept="13" />
+      <node id="861728723963632123" at="28,57,29,58" concept="13" />
+      <node id="861728723963632123" at="32,109,33,99" concept="7" />
+      <node id="861728723963632123" at="34,53,35,148" concept="3" />
+      <node id="861728723963632123" at="36,7,37,20" concept="9" />
+      <node id="861728723963632427" at="39,91,40,229" concept="9" />
+      <node id="861728723963724891" at="44,58,45,59" concept="13" />
+      <node id="861728723963724891" at="48,109,49,100" concept="7" />
+      <node id="861728723963724891" at="50,53,51,148" concept="3" />
+      <node id="861728723963724891" at="52,7,53,20" concept="9" />
+      <node id="861728723963727997" at="55,82,56,31" concept="9" />
+      <node id="4690418037761237353" at="60,84,61,119" concept="7" />
+      <node id="861728723963632123" at="61,119,62,57" concept="3" />
+      <node id="861728723963724891" at="62,57,63,59" concept="3" />
+      <node id="4690418037761237353" at="63,59,64,22" concept="9" />
+      <node id="4690418037761237353" at="68,0,69,0" concept="11" trace="Course$9c" />
+      <node id="4690418037761237353" at="72,0,73,0" concept="11" trace="id$kv1Q" />
+      <node id="4690418037761237353" at="73,0,74,0" concept="11" trace="cfu$kA4k" />
+      <node id="4690418037761237353" at="23,0,26,0" concept="2" trace="Course_Constraints#()V" />
+      <node id="861728723963632123" at="28,0,31,0" concept="2" trace="Id_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="861728723963632123" at="33,99,36,7" concept="5" />
+      <node id="861728723963632123" at="39,0,42,0" concept="12" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="861728723963724891" at="44,0,47,0" concept="2" trace="Cfu_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="861728723963724891" at="49,100,52,7" concept="5" />
+      <node id="861728723963724891" at="55,0,58,0" concept="12" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
+      <node id="4690418037761237353" at="59,0,66,0" concept="6" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="861728723963632123" at="31,0,39,0" concept="6" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="861728723963724891" at="47,0,55,0" concept="6" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
       <scope id="4690418037761237353" at="23,31,24,30" />
       <scope id="861728723963632123" at="28,57,29,58" />
       <scope id="861728723963632123" at="34,53,35,148" />
@@ -780,23 +784,23 @@
   </root>
   <root nodeRef="r:33dc6f87-d09c-4bff-860e-bccce74c2e6c(UniStudy.constraints)/5287893069544189491">
     <file name="Student_Constraints.java">
-      <node id="5287893069544189491" at="23,32,24,31" concept="10" />
-      <node id="861728723963416501" at="28,75,29,76" concept="10" />
-      <node id="861728723963416501" at="32,109,33,99" concept="5" />
-      <node id="861728723963416501" at="34,53,35,148" concept="2" />
-      <node id="861728723963416501" at="36,7,37,20" concept="6" />
-      <node id="861728723963459733" at="39,91,40,248" concept="6" />
-      <node id="5287893069544189491" at="44,84,45,119" concept="5" />
-      <node id="861728723963416501" at="45,119,46,93" concept="2" />
-      <node id="5287893069544189491" at="46,93,47,22" concept="6" />
-      <node id="5287893069544189491" at="51,0,52,0" concept="8" trace="Student$Dd" />
-      <node id="5287893069544189491" at="55,0,56,0" concept="8" trace="matriculation_number$o0vo" />
-      <node id="5287893069544189491" at="23,0,26,0" concept="1" trace="Student_Constraints#()V" />
-      <node id="861728723963416501" at="28,0,31,0" concept="1" trace="Matriculation_number_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
-      <node id="861728723963416501" at="33,99,36,7" concept="3" />
-      <node id="861728723963416501" at="39,0,42,0" concept="9" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
-      <node id="5287893069544189491" at="43,0,49,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
-      <node id="861728723963416501" at="31,0,39,0" concept="4" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="5287893069544189491" at="23,32,24,31" concept="13" />
+      <node id="861728723963416501" at="28,75,29,76" concept="13" />
+      <node id="861728723963416501" at="32,109,33,99" concept="7" />
+      <node id="861728723963416501" at="34,53,35,148" concept="3" />
+      <node id="861728723963416501" at="36,7,37,20" concept="9" />
+      <node id="861728723963459733" at="39,91,40,248" concept="9" />
+      <node id="5287893069544189491" at="44,84,45,119" concept="7" />
+      <node id="861728723963416501" at="45,119,46,93" concept="3" />
+      <node id="5287893069544189491" at="46,93,47,22" concept="9" />
+      <node id="5287893069544189491" at="51,0,52,0" concept="11" trace="Student$Dd" />
+      <node id="5287893069544189491" at="55,0,56,0" concept="11" trace="matriculation_number$o0vo" />
+      <node id="5287893069544189491" at="23,0,26,0" concept="2" trace="Student_Constraints#()V" />
+      <node id="861728723963416501" at="28,0,31,0" concept="2" trace="Matriculation_number_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="861728723963416501" at="33,99,36,7" concept="5" />
+      <node id="861728723963416501" at="39,0,42,0" concept="12" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="5287893069544189491" at="43,0,49,0" concept="6" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="861728723963416501" at="31,0,39,0" concept="6" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
       <scope id="5287893069544189491" at="23,32,24,31" />
       <scope id="861728723963416501" at="28,75,29,76" />
       <scope id="861728723963416501" at="34,53,35,148" />
@@ -829,27 +833,27 @@
   </root>
   <root nodeRef="r:33dc6f87-d09c-4bff-860e-bccce74c2e6c(UniStudy.constraints)/8190100246930621805">
     <file name="DegreeCourse_Constraints.java">
-      <node id="8190100246930621805" at="22,37,23,36" concept="10" />
-      <node id="8190100246930628858" at="30,116,31,20" concept="6" />
-      <node id="8190100246930741284" at="34,119,35,343" concept="2" />
-      <node id="8190100246930929519" at="35,343,36,235" concept="2" />
-      <node id="8190100246932427158" at="37,40,38,270" concept="2" />
-      <node id="8190100246933027285" at="39,9,40,0" concept="7" />
-      <node id="8190100246930660832" at="40,0,41,90" concept="2" />
-      <node id="8190100246930621805" at="43,6,44,131" concept="5" />
-      <node id="8190100246930628858" at="44,131,45,42" concept="2" />
-      <node id="8190100246930621805" at="45,42,46,22" concept="6" />
-      <node id="8190100246930621805" at="50,0,51,0" concept="8" trace="DegreeCourse$gR" />
-      <node id="8190100246930621805" at="51,0,52,0" concept="8" trace="Professor$3J" />
-      <node id="8190100246930621805" at="55,0,56,0" concept="8" trace="coordinator$sdNR" />
-      <node id="8190100246930621805" at="56,0,57,0" concept="8" trace="coordinated_degree_courses$vbdP" />
-      <node id="8190100246930621805" at="57,0,58,0" concept="8" trace="degree_course$vJLQ" />
-      <node id="8190100246930621805" at="22,0,25,0" concept="1" trace="DegreeCourse_Constraints#()V" />
-      <node id="8190100246933071327" at="36,235,39,9" concept="3" />
-      <node id="8190100246930628858" at="29,0,33,0" concept="4" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="8190100246930628858" at="33,0,43,0" concept="4" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="8190100246930628858" at="27,90,43,6" concept="5" />
-      <node id="8190100246930621805" at="26,0,48,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <node id="8190100246930621805" at="22,37,23,36" concept="13" />
+      <node id="8190100246930628858" at="30,116,31,20" concept="9" />
+      <node id="8190100246930741284" at="34,119,35,343" concept="3" />
+      <node id="8190100246930929519" at="35,343,36,235" concept="3" />
+      <node id="8190100246932427158" at="37,40,38,270" concept="3" />
+      <node id="8190100246933027285" at="39,9,40,0" concept="10" />
+      <node id="8190100246930660832" at="40,0,41,90" concept="3" />
+      <node id="8190100246930621805" at="43,6,44,131" concept="7" />
+      <node id="8190100246930628858" at="44,131,45,42" concept="3" />
+      <node id="8190100246930621805" at="45,42,46,22" concept="9" />
+      <node id="8190100246930621805" at="50,0,51,0" concept="11" trace="DegreeCourse$gR" />
+      <node id="8190100246930621805" at="51,0,52,0" concept="11" trace="Professor$3J" />
+      <node id="8190100246930621805" at="55,0,56,0" concept="11" trace="coordinator$sdNR" />
+      <node id="8190100246930621805" at="56,0,57,0" concept="11" trace="coordinated_degree_courses$vbdP" />
+      <node id="8190100246930621805" at="57,0,58,0" concept="11" trace="degree_course$vJLQ" />
+      <node id="8190100246930621805" at="22,0,25,0" concept="2" trace="DegreeCourse_Constraints#()V" />
+      <node id="8190100246933071327" at="36,235,39,9" concept="5" />
+      <node id="8190100246930628858" at="29,0,33,0" concept="6" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="8190100246930628858" at="33,0,43,0" concept="6" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8190100246930628858" at="27,90,43,6" concept="7" />
+      <node id="8190100246930621805" at="26,0,48,0" concept="6" trace="getSpecifiedReferences#()Ljava/util/Map;" />
       <scope id="8190100246930621805" at="22,37,23,36" />
       <scope id="8190100246930628858" at="30,116,31,20" />
       <scope id="8190100246933071329" at="37,40,38,270" />
@@ -874,6 +878,212 @@
       <unit id="8190100246930621805" at="54,0,59,0" name="UniStudy.constraints.DegreeCourse_Constraints$LINKS" />
       <unit id="8190100246930628858" at="28,48,43,5" name="UniStudy.constraints.DegreeCourse_Constraints$1" />
       <unit id="8190100246930621805" at="21,0,60,0" name="UniStudy.constraints.DegreeCourse_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:33dc6f87-d09c-4bff-860e-bccce74c2e6c(UniStudy.constraints)/8642064510072588035">
+    <file name="ExtraInfo_Constraints.java">
+      <node id="8642064510072588035" at="25,0,26,0" concept="11" trace="LOG" />
+      <node id="8642064510072588035" at="26,34,27,33" concept="13" />
+      <node id="8642064510072588036" at="31,60,32,61" concept="13" />
+      <node id="8642064510072588036" at="35,109,36,99" concept="7" />
+      <node id="8642064510072588036" at="37,53,38,149" concept="3" />
+      <node id="8642064510072588036" at="39,7,40,20" concept="9" />
+      <node id="8642064510072914625" at="42,85,43,0" concept="10" />
+      <node id="8642064510072923490" at="43,0,44,35" concept="7" />
+      <node id="8642064510072876808" at="44,35,45,0" concept="10" />
+      <node id="8642064510072620368" at="46,142,47,21" concept="9" />
+      <node id="167220957118964856" at="48,7,49,19" concept="7" />
+      <node id="167220957118962186" at="49,19,50,0" concept="10" />
+      <node id="167220957118980880" at="51,11,52,45" concept="3" />
+      <node id="8642064510073031546" at="53,96,54,23" concept="9" />
+      <node id="8642064510072866960" at="55,9,56,0" concept="10" />
+      <node id="8840966659014998882" at="59,36,60,42" concept="3" />
+      <node id="8642064510073070173" at="61,13,62,18" concept="1" />
+      <node id="8840966659015007087" at="64,36,65,39" concept="3" />
+      <node id="8642064510072881409" at="68,40,69,40" concept="3" />
+      <node id="8642064510072884851" at="71,48,72,27" concept="9" />
+      <node id="8642064510072864725" at="73,13,74,18" concept="1" />
+      <node id="8642064510073084242" at="77,40,78,40" concept="3" />
+      <node id="8642064510073091606" at="80,48,81,27" concept="9" />
+      <node id="8642064510073079194" at="82,13,83,18" concept="1" />
+      <node id="8642064510073103399" at="86,40,87,42" concept="3" />
+      <node id="8642064510073112227" at="89,48,90,27" concept="9" />
+      <node id="8642064510073100532" at="91,13,92,18" concept="1" />
+      <node id="8642064510073237513" at="95,92,96,29" concept="9" />
+      <node id="8642064510073123963" at="98,13,99,18" concept="1" />
+      <node id="8642064510073273370" at="101,13,102,96" concept="7" />
+      <node id="8642064510073319041" at="102,96,103,122" concept="7" />
+      <node id="8642064510073388547" at="103,122,104,28" concept="7" />
+      <node id="8642064510073390617" at="105,40,106,30" concept="3" />
+      <node id="8642064510073405347" at="108,56,109,33" concept="3" />
+      <node id="8642064510073410797" at="109,33,110,26" concept="1" />
+      <node id="8642064510073411347" at="113,31,114,31" concept="9" />
+      <node id="8642064510073248984" at="116,15,117,20" concept="1" />
+      <node id="8642064510073428090" at="119,18,120,25" concept="9" />
+      <node id="167220957119036407" at="121,9,122,0" concept="10" />
+      <node id="167220957119021032" at="128,0,129,21" concept="9" />
+      <node id="167220957119026402" at="130,7,131,0" concept="10" />
+      <node id="167220957119030852" at="131,0,132,0" concept="10" />
+      <node id="8642064510073432962" at="132,0,133,18" concept="9" />
+      <node id="8642064510072722684" at="137,74,138,75" concept="13" />
+      <node id="8642064510072722684" at="141,68,142,83" concept="3" />
+      <node id="8642064510072753390" at="145,31,146,92" concept="3" />
+      <node id="8840966659014932688" at="147,14,148,88" concept="3" />
+      <node id="8642064510072588035" at="153,84,154,119" concept="7" />
+      <node id="8642064510072588036" at="154,119,155,63" concept="3" />
+      <node id="8642064510072722684" at="155,63,156,91" concept="3" />
+      <node id="8642064510072588035" at="156,91,157,22" concept="9" />
+      <node id="8642064510072588035" at="159,0,160,0" concept="11" trace="enumSwitchIndex" />
+      <node id="8642064510072588035" at="162,0,163,0" concept="11" trace="ExtraInfo$oA" />
+      <node id="8642064510072588035" at="166,0,167,0" concept="11" trace="value$7X7d" />
+      <node id="8642064510072588035" at="167,0,168,0" concept="11" trace="lower_multiplicity$aGPU" />
+      <node id="8642064510072588035" at="168,0,169,0" concept="11" trace="higher_multiplicity$aHLY" />
+      <node id="8642064510072588035" at="169,0,170,0" concept="11" trace="values$b1cS" />
+      <node id="8642064510072588035" at="170,0,171,0" concept="11" trace="type$7X_f" />
+      <node id="8642064510072588035" at="174,0,175,0" concept="11" trace="custom_enum$b2cl" />
+      <node id="8840966659014932501" at="147,12,149,7" concept="0" />
+      <node id="8642064510072588035" at="26,0,29,0" concept="2" trace="ExtraInfo_Constraints#()V" />
+      <node id="8642064510072588036" at="31,0,34,0" concept="2" trace="Value_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="8642064510072588036" at="36,99,39,7" concept="5" />
+      <node id="8642064510072592765" at="45,0,48,7" concept="5" />
+      <node id="8642064510072992243" at="52,45,55,9" concept="5" />
+      <node id="8840966659014998882" at="58,17,61,13" concept="5" />
+      <node id="8840966659015007087" at="63,17,66,13" concept="5" />
+      <node id="8642064510072974108" at="67,17,70,15" concept="4" />
+      <node id="8642064510073084238" at="76,17,79,15" concept="4" />
+      <node id="8642064510073103395" at="85,17,88,15" concept="4" />
+      <node id="8642064510073149186" at="94,38,97,15" concept="5" />
+      <node id="8642064510073411043" at="112,17,115,17" concept="5" />
+      <node id="8642064510072722684" at="137,0,140,0" concept="2" trace="Higher_multiplicity_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="8642064510073368954" at="107,53,111,19" concept="5" />
+      <node id="8642064510072722684" at="140,0,144,0" concept="6" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="8642064510073136751" at="93,17,98,13" concept="4" />
+      <node id="167220957119016855" at="123,41,128,0" concept="8" />
+      <node id="8642064510072724838" at="144,79,149,7" concept="5" />
+      <node id="8642064510073367893" at="106,30,112,17" concept="4" />
+      <node id="8642064510072880287" at="66,13,73,13" concept="15" />
+      <node id="8642064510073082666" at="75,17,82,13" concept="15" />
+      <node id="8642064510073101786" at="84,17,91,13" concept="15" />
+      <node id="8642064510072722684" at="144,0,151,0" concept="12" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;I)V" />
+      <node id="8642064510072588035" at="152,0,159,0" concept="6" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="8642064510072588036" at="34,0,42,0" concept="6" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="8642064510073343939" at="104,28,116,15" concept="4" />
+      <node id="8642064510073248984" at="100,17,118,13" concept="0" />
+      <node id="8642064510072589148" at="56,0,121,9" concept="14" />
+      <node id="167220957118959180" at="50,0,130,7" concept="15" />
+      <node id="8642064510072588036" at="42,0,135,0" concept="12" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <scope id="8642064510072588035" at="26,34,27,33" />
+      <scope id="8642064510072588036" at="31,60,32,61" />
+      <scope id="8642064510072588036" at="37,53,38,149" />
+      <scope id="8642064510072592767" at="46,142,47,21" />
+      <scope id="8642064510072992245" at="53,96,54,23" />
+      <scope id="8840966659014998882" at="59,36,60,42" />
+      <scope id="8840966659015007087" at="64,36,65,39" />
+      <scope id="8642064510072974114" at="68,40,69,40" />
+      <scope id="8642064510072883241" at="71,48,72,27" />
+      <scope id="8642064510073084241" at="77,40,78,40" />
+      <scope id="8642064510073084747" at="80,48,81,27" />
+      <scope id="8642064510073103398" at="86,40,87,42" />
+      <scope id="8642064510073105094" at="89,48,90,27" />
+      <scope id="8642064510073149188" at="95,92,96,29" />
+      <scope id="8642064510073411045" at="113,31,114,31" />
+      <scope id="8642064510073426229" at="119,18,120,25" />
+      <scope id="8642064510072722684" at="137,74,138,75" />
+      <scope id="8642064510072722684" at="141,68,142,83" />
+      <scope id="8642064510072724840" at="145,31,146,92" />
+      <scope id="8840966659014932502" at="147,14,148,88" />
+      <scope id="8642064510072883238" at="71,13,73,13">
+        <var name="ex" id="8642064510072883239" />
+      </scope>
+      <scope id="8642064510073084744" at="80,13,82,13">
+        <var name="ex" id="8642064510073084745" />
+      </scope>
+      <scope id="8642064510073105091" at="89,13,91,13">
+        <var name="ex" id="8642064510073105092" />
+      </scope>
+      <scope id="8642064510073368956" at="108,56,110,26" />
+      <scope id="8642064510072588035" at="26,0,29,0" />
+      <scope id="8642064510072588036" at="31,0,34,0">
+        <var name="container" id="8642064510072588036" />
+      </scope>
+      <scope id="8642064510072880288" at="67,17,70,15" />
+      <scope id="8642064510072974108" at="67,17,70,15">
+        <var name="value" id="8642064510072974110" />
+      </scope>
+      <scope id="8642064510073082667" at="76,17,79,15" />
+      <scope id="8642064510073084238" at="76,17,79,15">
+        <var name="value" id="8642064510073084239" />
+      </scope>
+      <scope id="8642064510073101787" at="85,17,88,15" />
+      <scope id="8642064510073103395" at="85,17,88,15">
+        <var name="value" id="8642064510073103396" />
+      </scope>
+      <scope id="8642064510073136754" at="94,38,97,15" />
+      <scope id="8642064510072722684" at="137,0,140,0">
+        <var name="container" id="8642064510072722684" />
+      </scope>
+      <scope id="8642064510073070173" at="58,17,62,18" />
+      <scope id="8642064510073367896" at="107,53,111,19" />
+      <scope id="8642064510072722684" at="140,0,144,0">
+        <var name="node" id="8642064510072722684" />
+        <var name="propertyValue" id="8642064510072722684" />
+      </scope>
+      <scope id="8642064510072588035" at="153,84,157,22">
+        <var name="properties" id="8642064510072588035" />
+      </scope>
+      <scope id="8642064510072588036" at="35,109,40,20">
+        <var name="result" id="8642064510072588036" />
+      </scope>
+      <scope id="8642064510073136751" at="93,17,98,13">
+        <var name="value" id="8642064510073136752" />
+      </scope>
+      <scope id="8642064510072724713" at="144,79,149,7" />
+      <scope id="8642064510073123963" at="93,17,99,18" />
+      <scope id="8642064510073367893" at="106,30,112,17">
+        <var name="enum_val" id="8642064510073367894" />
+      </scope>
+      <scope id="167220957119008895" at="123,41,129,21" />
+      <scope id="167220957119008892" at="123,7,130,7">
+        <var name="ex" id="167220957119008893" />
+      </scope>
+      <scope id="8642064510072722684" at="144,0,151,0">
+        <var name="node" id="8642064510072722684" />
+        <var name="propertyValue" id="8642064510072722684" />
+      </scope>
+      <scope id="8642064510072588035" at="152,0,159,0" />
+      <scope id="8642064510072588036" at="34,0,42,0">
+        <var name="checkingNodeContext" id="8642064510072588036" />
+        <var name="node" id="8642064510072588036" />
+        <var name="propertyValue" id="8642064510072588036" />
+      </scope>
+      <scope id="8642064510073079194" at="75,17,83,18" />
+      <scope id="8642064510073100532" at="84,17,92,18" />
+      <scope id="8642064510073343945" at="105,40,115,17" />
+      <scope id="8642064510072864725" at="63,17,74,18" />
+      <scope id="8642064510073343939" at="104,28,116,15">
+        <var name="value" id="8642064510073343941" />
+      </scope>
+      <scope id="8642064510073248984" at="101,13,117,20">
+        <var name="customEnumeration" id="8642064510073273373" />
+        <var name="enum_values" id="8642064510073319042" />
+        <var name="found" id="8642064510073388550" />
+      </scope>
+      <scope id="8642064510073248984" at="100,17,118,13" />
+      <scope id="167220957118959182" at="51,11,122,0" />
+      <scope id="8642064510072588133" at="42,85,133,18">
+        <var name="SEPARATOR" id="8642064510072923491" />
+        <var name="arr" id="167220957118964859" />
+      </scope>
+      <scope id="8642064510072588036" at="42,0,135,0">
+        <var name="node" id="8642064510072588036" />
+        <var name="propertyValue" id="8642064510072588036" />
+      </scope>
+      <unit id="8642064510072588035" at="161,0,164,0" name="UniStudy.constraints.ExtraInfo_Constraints$CONCEPTS" />
+      <unit id="8642064510072588035" at="173,0,176,0" name="UniStudy.constraints.ExtraInfo_Constraints$LINKS" />
+      <unit id="8642064510072588035" at="165,0,172,0" name="UniStudy.constraints.ExtraInfo_Constraints$PROPS" />
+      <unit id="8642064510072722684" at="136,0,152,0" name="UniStudy.constraints.ExtraInfo_Constraints$Higher_multiplicity_Property" />
+      <unit id="8642064510072588036" at="30,0,136,0" name="UniStudy.constraints.ExtraInfo_Constraints$Value_Property" />
+      <unit id="8642064510072588035" at="24,0,177,0" name="UniStudy.constraints.ExtraInfo_Constraints" />
     </file>
   </root>
 </debug-info>

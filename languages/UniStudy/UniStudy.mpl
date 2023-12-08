@@ -10,7 +10,9 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <accessoryModels />
+  <accessoryModels>
+    <model modelUID="r:d8966e1f-9b53-4c98-a06a-50cdc531cc4b(UniStudy.CustomEnumeration)" />
+  </accessoryModels>
   <generators>
     <generator alias="main" namespace="UniStudy.generator" uuid="24662386-213a-43a0-98e9-bf23cf6407bb">
       <models>
