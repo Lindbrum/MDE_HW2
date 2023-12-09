@@ -47,10 +47,10 @@ public class Student_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("<h3>Thesis defended:</h3>");
     tgs.newLine();
-    tgs.increaseIndent();
     tgs.indent();
     tgs.append("<ul>");
     tgs.newLine();
+    tgs.increaseIndent();
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.thesis_defended$voyO)) {
       tgs.appendNode(item);
     }
@@ -67,10 +67,10 @@ public class Student_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("<h3>Student's Transcript(s):</h3>");
     tgs.newLine();
-    tgs.increaseIndent();
     tgs.indent();
     tgs.append("<ul>");
     tgs.newLine();
+    tgs.increaseIndent();
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.transcripts$vpfR)) {
       tgs.appendNode(item);
     }
@@ -87,10 +87,10 @@ public class Student_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("<h3>Booked call(s):</h3>");
     tgs.newLine();
-    tgs.increaseIndent();
     tgs.indent();
     tgs.append("<ul>");
     tgs.newLine();
+    tgs.increaseIndent();
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.booked_calls$9IuK)) {
       tgs.appendNode(item);
     }

@@ -9,6 +9,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -72,17 +73,23 @@ public class Professor_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("<h3>Supervised thesis:</h3>");
     tgs.newLine();
-    tgs.increaseIndent();
-    tgs.indent();
-    tgs.append("<ul>");
-    tgs.newLine();
-    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.thesis_supervised$v57r)) {
-      tgs.appendNode(item);
+    if (ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.thesis_supervised$v57r)).count() == 0) {
+      tgs.indent();
+      tgs.append("No thesis yet");
+      tgs.newLine();
+    } else {
+      tgs.increaseIndent();
+      tgs.indent();
+      tgs.append("<ul>");
+      tgs.newLine();
+      for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.thesis_supervised$v57r)) {
+        tgs.appendNode(item);
+      }
+      tgs.decreaseIndent();
+      tgs.indent();
+      tgs.append("</ul>");
+      tgs.newLine();
     }
-    tgs.decreaseIndent();
-    tgs.indent();
-    tgs.append("</ul>");
-    tgs.newLine();
     tgs.indent();
     tgs.append("</li>");
     tgs.newLine();
@@ -92,17 +99,23 @@ public class Professor_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("<h3>Coordinated courses:</h3>");
     tgs.newLine();
-    tgs.increaseIndent();
-    tgs.indent();
-    tgs.append("<ul>");
-    tgs.newLine();
-    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.coordinated_degree_courses$vbdP)) {
-      tgs.appendNode(item);
+    if (ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.coordinated_degree_courses$vbdP)).count() == 0) {
+      tgs.indent();
+      tgs.append("No coordinated course");
+      tgs.newLine();
+    } else {
+      tgs.increaseIndent();
+      tgs.indent();
+      tgs.append("<ul>");
+      tgs.newLine();
+      for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.coordinated_degree_courses$vbdP)) {
+        tgs.appendNode(item);
+      }
+      tgs.decreaseIndent();
+      tgs.indent();
+      tgs.append("</ul>");
+      tgs.newLine();
     }
-    tgs.decreaseIndent();
-    tgs.indent();
-    tgs.append("</ul>");
-    tgs.newLine();
     tgs.indent();
     tgs.append("</li>");
     tgs.newLine();
@@ -112,17 +125,23 @@ public class Professor_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("<h3>News posted by this professor:</h3>");
     tgs.newLine();
-    tgs.increaseIndent();
-    tgs.indent();
-    tgs.append("<ul>");
-    tgs.newLine();
-    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.posted_news$vcBV)) {
-      tgs.appendNode(item);
+    if (ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.posted_news$vcBV)).count() == 0) {
+      tgs.indent();
+      tgs.append("No posted news yet");
+      tgs.newLine();
+    } else {
+      tgs.increaseIndent();
+      tgs.indent();
+      tgs.append("<ul>");
+      tgs.newLine();
+      for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.posted_news$vcBV)) {
+        tgs.appendNode(item);
+      }
+      tgs.decreaseIndent();
+      tgs.indent();
+      tgs.append("</ul>");
+      tgs.newLine();
     }
-    tgs.decreaseIndent();
-    tgs.indent();
-    tgs.append("</ul>");
-    tgs.newLine();
     tgs.indent();
     tgs.append("</li>");
     tgs.newLine();

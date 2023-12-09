@@ -18,7 +18,10 @@ public class ExaminationCall_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.indent();
-    tgs.append("<li><h4>Call #" + (SNodeOperations.getIndexInParent(ctx.getPrimaryInput()) + 1) + "</h4>");
+    tgs.append("<li>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("<h3>Call #" + (SNodeOperations.getIndexInParent(ctx.getPrimaryInput()) + 1) + "</h3>");
     tgs.newLine();
     tgs.indent();
     tgs.append("<ul>");
@@ -54,10 +57,10 @@ public class ExaminationCall_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("<h3>Booked students:</h3>");
     tgs.newLine();
-    tgs.increaseIndent();
     tgs.indent();
     tgs.append("<ul>");
     tgs.newLine();
+    tgs.increaseIndent();
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.booked_students$C1Ek)) {
       tgs.appendNode(item);
     }
@@ -68,10 +71,11 @@ public class ExaminationCall_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("</li>");
     tgs.newLine();
+    tgs.decreaseIndent();
     tgs.indent();
     tgs.append("</ul>");
     tgs.newLine();
-    tgs.decreaseIndent();
+
   }
 
   private static final class PROPS {

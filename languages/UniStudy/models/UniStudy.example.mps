@@ -161,8 +161,19 @@
       <node concept="3dW4ZV" id="1yPpbnJEJje" role="3dW4Z$">
         <ref role="3dW4ZU" node="1yPpbnJ$71X" resolve="CS" />
       </node>
+      <node concept="3dW4ZV" id="6Vx$_aY6oOM" role="3dW4Z$">
+        <ref role="3dW4ZU" node="1yPpbnJGfIk" resolve="Master Degree in Computer Science (ASE)" />
+      </node>
       <node concept="MaDUB" id="1yPpbnJFnhe" role="MaDUV">
         <ref role="MaDUA" node="1yPpbnJFnhc" resolve="SE - 26/12/2023" />
+      </node>
+      <node concept="MaDUf" id="6Vx$_aY6oOX" role="3dW4Zz">
+        <property role="TrG5h" value="Dario D'Ercole - Master Degree in Computer Science (ASE)" />
+        <ref role="MaDUe" node="1yPpbnJ$71S" resolve="Dario D'Ercole" />
+        <ref role="MaDU4" node="1yPpbnJGfIk" resolve="Master Degree in Computer Science (ASE)" />
+        <node concept="MaDV8" id="6Vx$_aY6oP1" role="MaDU7">
+          <ref role="MaDVf" node="6Vx$_aY6oOK" resolve="Model-Driven Engineering - 288643 - 28/01/2024" />
+        </node>
       </node>
     </node>
     <node concept="3XV4el" id="1yPpbnJ$71V" role="NqQWs">
@@ -172,13 +183,13 @@
         <property role="TrG5h" value="Disim" />
         <property role="3dW4X1" value="www.disim.it" />
         <node concept="3dW4Wd" id="1yPpbnJ$71X" role="3dW4YR">
-          <property role="TrG5h" value="CS" />
+          <property role="TrG5h" value="Computer Science" />
           <property role="3dW4Wc" value="34324" />
           <property role="MaDUY" value="2023/2024" />
           <property role="3dW4W7" value="Italian" />
           <property role="3dW4W3" value="3" />
           <property role="3dW4Wl" value="180" />
-          <property role="3dW4Wv" value="djiasdiasudasyduaosdas" />
+          <property role="3dW4Wv" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tortor luctus, ornare ex feugiat, ullamcorper mauris. Sed et libero." />
           <ref role="3dW4Xn" node="1yPpbnJEJj2" resolve="Henry Muccini" />
           <ref role="3dW4YE" node="1yPpbnJ$71W" resolve="Disim" />
           <node concept="3ROGte" id="9i5DckgmO9" role="3ROG1q">
@@ -191,7 +202,7 @@
           </node>
           <node concept="3dW51t" id="1yPpbnJ$71Y" role="3dW4YL">
             <property role="3dW52y" value="F3423838823" />
-            <property role="TrG5h" value="SE" />
+            <property role="TrG5h" value="Software Engineering" />
             <property role="3dW52T" value="Italian" />
             <property role="3dW52X" value="6" />
             <property role="3dW53D" value="2" />
@@ -213,7 +224,7 @@
               <property role="3dW51s" value="26/12/2023" />
               <property role="3dW51u" value="A1.6" />
               <property role="3dW51j" value="7wPBMAPLsY3/PROJECT" />
-              <property role="191swn" value="nbdoiajdaiosjasidkaskp" />
+              <property role="191swn" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tortor luctus, ornare ex feugiat, ullamcorper mauris. Sed et libero." />
               <ref role="3dW52I" node="1yPpbnJ$71Y" resolve="SE" />
               <node concept="MaDUo" id="1yPpbnJFnhg" role="MaDUt">
                 <ref role="MaDUv" node="1yPpbnJ$71S" resolve="Dario D'Ercole" />
@@ -229,12 +240,12 @@
         </node>
         <node concept="3dW4Wd" id="1yPpbnJGfIk" role="3dW4YR">
           <property role="3dW4Wc" value="F-321" />
-          <property role="TrG5h" value="Master Degree in CS (ASE)" />
+          <property role="TrG5h" value="Master Degree in Computer Science (ASE)" />
           <property role="MaDUY" value="2023/2024" />
           <property role="3dW4W7" value="English" />
           <property role="3dW4W3" value="2" />
           <property role="3dW4Wl" value="120" />
-          <property role="3dW4Wv" value="Master degre bla bla bla" />
+          <property role="3dW4Wv" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed nisi sit amet turpis mattis rhoncus. In tincidunt neque est, eu ultrices mi porta vitae. Ut ligula urna, volutpat dignissim rutrum non, faucibus in odio." />
           <ref role="3dW4YE" node="1yPpbnJ$71W" resolve="Disim" />
           <ref role="3dW4Xn" node="1yPpbnJEJj2" resolve="Henry Muccini" />
           <node concept="3ROGte" id="7ELr5mXEhYT" role="3ROG1q">
@@ -264,7 +275,20 @@
               <property role="3dW51j" value="7wPBMAPLsY3/PROJECT" />
               <property role="191swn" value="Last deliverable for MDE" />
               <ref role="3dW52I" node="1yPpbnJRi_y" resolve="Model-Driven Engineering" />
+              <node concept="MaDUo" id="6Vx$_aY6oOR" role="MaDUt">
+                <ref role="MaDUv" node="1yPpbnJ$71S" resolve="Dario D'Ercole" />
+              </node>
             </node>
+            <node concept="3dW53e" id="6Vx$_aY6oOK" role="MaDUO">
+              <property role="TrG5h" value="Model-Driven Engineering - 288643 - 28/01/2024" />
+              <property role="3dW530" value="30" />
+              <property role="3dW532" value="28/01/2024" />
+              <ref role="3dW53s" node="1yPpbnJRi_y" resolve="Model-Driven Engineering" />
+              <ref role="3dW53u" node="1yPpbnJ$71T" resolve="Dario D'Ercole - CS" />
+            </node>
+          </node>
+          <node concept="MaDUo" id="6Vx$_aY6oOP" role="MaDVI">
+            <ref role="MaDUv" node="1yPpbnJ$71S" resolve="Dario D'Ercole" />
           </node>
         </node>
       </node>
@@ -288,7 +312,7 @@
         <property role="TrG5h" value="Ciao" />
         <property role="3dW4Xp" value="Ciao" />
         <property role="3dW4Xs" value="03/12/2023" />
-        <property role="3dW4Xr" value="CIAOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO" />
+        <property role="3dW4Xr" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed nisi sit amet turpis mattis rhoncus. In tincidunt neque est, eu ultrices mi porta vitae. Ut ligula urna, volutpat dignissim rutrum non, faucibus in odio." />
         <ref role="3dW4Y3" node="1yPpbnJEJj2" resolve="Henry Muccini" />
         <ref role="3dW4Y5" node="1yPpbnJ$71W" resolve="Disim" />
       </node>

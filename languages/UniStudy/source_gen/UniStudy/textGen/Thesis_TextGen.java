@@ -42,7 +42,7 @@ public class Thesis_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.indent();
     tgs.append("<li>Referenced degree course: ");
-    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.degree_course$9CaM));
+    tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.degree_course$9CaM), PROPS.name$MnvL));
     tgs.append("</li>");
     tgs.newLine();
     tgs.decreaseIndent();

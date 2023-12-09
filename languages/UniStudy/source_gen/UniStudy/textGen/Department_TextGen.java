@@ -31,7 +31,7 @@ public class Department_TextGen extends TextGenDescriptorBase {
     tgs.append("<li>");
     tgs.newLine();
     tgs.indent();
-    tgs.append("<h5>Degree courses offered:</h5>");
+    tgs.append("<h3>Degree courses offered:</h3>");
     tgs.newLine();
     tgs.indent();
     tgs.append("<ul>");
@@ -52,7 +52,7 @@ public class Department_TextGen extends TextGenDescriptorBase {
     tgs.append("<li>");
     tgs.newLine();
     tgs.indent();
-    tgs.append("<h5>Department news:</h5>");
+    tgs.append("<h3>Department news:</h3>");
     tgs.newLine();
     tgs.indent();
     tgs.append("<ul>");

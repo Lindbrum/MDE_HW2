@@ -23,22 +23,46 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public TextGenDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     switch (myIndex.index(concept)) {
+      case LanguageConceptSwitch.Career:
+        return new Career_TextGen();
       case LanguageConceptSwitch.CareerManagement:
         return new CareerManagement_TextGen();
       case LanguageConceptSwitch.Course:
         return new Course_TextGen();
+      case LanguageConceptSwitch.CourseReference:
+        return new CourseReference_TextGen();
       case LanguageConceptSwitch.DegreeCourse:
         return new DegreeCourse_TextGen();
+      case LanguageConceptSwitch.DegreeCourseReference:
+        return new DegreeCourseReference_TextGen();
       case LanguageConceptSwitch.Department:
         return new Department_TextGen();
       case LanguageConceptSwitch.ExaminationCall:
         return new ExaminationCall_TextGen();
+      case LanguageConceptSwitch.ExaminationCallReference:
+        return new ExaminationCallReference_TextGen();
+      case LanguageConceptSwitch.ExtraInfo:
+        return new ExtraInfo_TextGen();
+      case LanguageConceptSwitch.News:
+        return new News_TextGen();
+      case LanguageConceptSwitch.NewsReference:
+        return new NewsReference_TextGen();
+      case LanguageConceptSwitch.PassingGrade:
+        return new PassingGrade_TextGen();
+      case LanguageConceptSwitch.PassingGradeReference:
+        return new PassingGradeReference_TextGen();
       case LanguageConceptSwitch.Professor:
         return new Professor_TextGen();
+      case LanguageConceptSwitch.ProfessorReference:
+        return new ProfessorReference_TextGen();
       case LanguageConceptSwitch.Student:
         return new Student_TextGen();
+      case LanguageConceptSwitch.StudentReference:
+        return new StudentReference_TextGen();
       case LanguageConceptSwitch.Thesis:
         return new Thesis_TextGen();
+      case LanguageConceptSwitch.ThesisReference:
+        return new ThesisReference_TextGen();
       case LanguageConceptSwitch.University:
         return new University_TextGen();
     }

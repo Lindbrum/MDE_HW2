@@ -26,9 +26,13 @@ public class CareerManagement_TextGen extends TextGenDescriptorBase {
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$MnvL) + " generated doc");
     tgs.append("</title>");
     tgs.newLine();
+    tgs.append("<!--BOOTSTRAP IMPORT-->");
+    tgs.append("<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN\" crossorigin=\"anonymous\">\n<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL\" crossorigin=\"anonymous\"></script>");
     tgs.append("</head>");
     tgs.newLine();
     tgs.append("<body>");
+    tgs.newLine();
+    tgs.append("<main class=\"container>\"");
     tgs.newLine();
     tgs.append("<h1>Universities</h1>");
     tgs.newLine();
@@ -51,6 +55,8 @@ public class CareerManagement_TextGen extends TextGenDescriptorBase {
       tgs.appendNode(item);
     }
     tgs.decreaseIndent();
+    tgs.append("</main>");
+    tgs.newLine();
     tgs.append("</body>");
     tgs.newLine();
     tgs.append("</html>");

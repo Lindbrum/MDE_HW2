@@ -9,6 +9,8 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -18,7 +20,7 @@ public class Course_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.indent();
-    tgs.append("<h3>Course #" + (SNodeOperations.getIndexInParent(ctx.getPrimaryInput()) + 1) + ": ");
+    tgs.append("<li><h3>Course #" + (SNodeOperations.getIndexInParent(ctx.getPrimaryInput()) + 1) + ": ");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$MnvL));
     tgs.append("</h3>");
     tgs.newLine();
@@ -38,14 +40,21 @@ public class Course_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.indent();
     tgs.append("<li>Professor(s): ");
-    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.professors$ofhQ)) {
-      tgs.appendNode(item);
+    {
+      Iterable<SNode> collection = SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.professors$ofhQ);
+      final SNode lastItem = Sequence.fromIterable(collection).last();
+      for (SNode item : collection) {
+        tgs.appendNode(item);
+        if (item != lastItem) {
+          tgs.append(",");
+        }
+      }
     }
     tgs.append("</li>");
     tgs.newLine();
     tgs.indent();
     tgs.append("<li>CFU (type): ");
-    tgs.append(SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.cfu$kA4k) + "(" + SPropertyOperations.getEnum(ctx.getPrimaryInput(), PROPS.credit_type$kGaI) + ")");
+    tgs.append(SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.cfu$kA4k) + " (" + SPropertyOperations.getEnum(ctx.getPrimaryInput(), PROPS.credit_type$kGaI) + ")");
     tgs.append("</li>");
     tgs.newLine();
     tgs.indent();
@@ -54,22 +63,24 @@ public class Course_TextGen extends TextGenDescriptorBase {
     tgs.append("</li>");
     tgs.newLine();
     tgs.indent();
-    tgs.append("<li>Offered in the following degree course(s): ");
-    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.degree_courses$a4LI)) {
-      tgs.appendNode(item);
-    }
-    tgs.append("</li>");
+    tgs.append("<li>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("Offered in the following degree course(s): ");
     tgs.newLine();
     tgs.indent();
     tgs.append("<ul>");
     tgs.newLine();
     tgs.increaseIndent();
-    for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.degree_courses$a4LI)) {
-      tgs.appendNode(item);
+    for (SNode course : ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.degree_courses$a4LI))) {
+      tgs.appendNode(course);
     }
     tgs.decreaseIndent();
     tgs.indent();
     tgs.append("</ul>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("</li>");
     tgs.newLine();
     tgs.indent();
     tgs.append("<li>");
@@ -77,10 +88,10 @@ public class Course_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("<h3>Extended information:</h3>");
     tgs.newLine();
-    tgs.increaseIndent();
     tgs.indent();
     tgs.append("<ul>");
     tgs.newLine();
+    tgs.increaseIndent();
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.extra_info$slUr)) {
       tgs.appendNode(item);
     }
@@ -97,10 +108,10 @@ public class Course_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("<h3>Available examination calls:</h3>");
     tgs.newLine();
-    tgs.increaseIndent();
     tgs.indent();
     tgs.append("<ul>");
     tgs.newLine();
+    tgs.increaseIndent();
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.calls$oelM)) {
       tgs.appendNode(item);
     }
@@ -117,26 +128,65 @@ public class Course_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("<h3>Students' grades:</h3>");
     tgs.newLine();
+    tgs.indent();
+    tgs.append("<table class=\"table table-bordered w-auto\" style=\"border-color:black;\">");
+    tgs.newLine();
     tgs.increaseIndent();
     tgs.indent();
-    tgs.append("<ul>");
+    tgs.append("<thead>");
     tgs.newLine();
+    tgs.increaseIndent();
+    tgs.indent();
+    tgs.append("<tr>");
+    tgs.newLine();
+    tgs.increaseIndent();
+    tgs.indent();
+    tgs.append("<th>");
+    tgs.append("Student");
+    tgs.append("</th>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("<th>");
+    tgs.append("Grade");
+    tgs.append("</th>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("<th>");
+    tgs.append("Date");
+    tgs.append("</th>");
+    tgs.newLine();
+    tgs.decreaseIndent();
+    tgs.indent();
+    tgs.append("</tr>");
+    tgs.newLine();
+    tgs.decreaseIndent();
+    tgs.indent();
+    tgs.append("</thead>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("<tbody>");
+    tgs.newLine();
+    tgs.increaseIndent();
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.student_grades$9OmC)) {
       tgs.appendNode(item);
     }
+    tgs.decreaseIndent();
+    tgs.indent();
+    tgs.append("</tbody>");
+    tgs.newLine();
+    tgs.decreaseIndent();
+    tgs.indent();
+    tgs.append("</table>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("</li>");
+    tgs.newLine();
     tgs.decreaseIndent();
     tgs.indent();
     tgs.append("</ul>");
     tgs.newLine();
     tgs.indent();
     tgs.append("</li>");
-    tgs.newLine();
-
-
-
-    tgs.decreaseIndent();
-    tgs.indent();
-    tgs.append("</ul>");
     tgs.newLine();
   }
 
