@@ -24,6 +24,7 @@ public class CareerManagement_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.append("<title>");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$MnvL) + " generated doc");
+    tgs.append("</title>");
     tgs.newLine();
     tgs.append("</head>");
     tgs.newLine();
