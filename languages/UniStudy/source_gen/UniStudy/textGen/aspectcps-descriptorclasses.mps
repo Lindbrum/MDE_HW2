@@ -16901,7 +16901,7 @@
                 <node concept="3cpWs3" id="1c2" role="3uHU7B">
                   <uo k="s:originTrace" v="n:167220957122487160" />
                   <node concept="Xl_RD" id="1c4" role="3uHU7B">
-                    <property role="Xl_RC" value="&lt;h3&gt;Thesis #" />
+                    <property role="Xl_RC" value="&lt;li&gt;&lt;h3&gt;Thesis #" />
                     <uo k="s:originTrace" v="n:167220957122487161" />
                   </node>
                   <node concept="1eOMI4" id="1c5" role="3uHU7w">
@@ -17504,7 +17504,7 @@
               <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence)" resolve="append" />
               <uo k="s:originTrace" v="n:167220957122510033" />
               <node concept="Xl_RD" id="1ei" role="37wK5m">
-                <property role="Xl_RC" value="&lt;/ul&gt;" />
+                <property role="Xl_RC" value="&lt;/ul&gt;&lt;/li&gt;" />
                 <uo k="s:originTrace" v="n:167220957122510033" />
               </node>
             </node>

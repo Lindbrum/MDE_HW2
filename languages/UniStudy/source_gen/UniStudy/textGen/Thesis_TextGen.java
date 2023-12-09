@@ -17,7 +17,7 @@ public class Thesis_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.indent();
-    tgs.append("<h3>Thesis #" + (SNodeOperations.getIndexInParent(ctx.getPrimaryInput()) + 1) + ": ");
+    tgs.append("<li><h3>Thesis #" + (SNodeOperations.getIndexInParent(ctx.getPrimaryInput()) + 1) + ": ");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$MnvL));
     tgs.append("</h3>");
     tgs.newLine();
@@ -47,7 +47,7 @@ public class Thesis_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.decreaseIndent();
     tgs.indent();
-    tgs.append("</ul>");
+    tgs.append("</ul></li>");
     tgs.newLine();
   }
 

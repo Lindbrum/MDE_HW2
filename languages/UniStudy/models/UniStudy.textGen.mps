@@ -2270,7 +2270,7 @@
             <node concept="3cpWs3" id="9i5DckimdR" role="lb14g">
               <node concept="3cpWs3" id="9i5DckimdS" role="3uHU7B">
                 <node concept="Xl_RD" id="9i5DckimdT" role="3uHU7B">
-                  <property role="Xl_RC" value="&lt;h3&gt;Thesis #" />
+                  <property role="Xl_RC" value="&lt;li&gt;&lt;h3&gt;Thesis #" />
                 </node>
                 <node concept="1eOMI4" id="9i5DckimdU" role="3uHU7w">
                   <node concept="3cpWs3" id="9i5DckimdV" role="1eOMHV">
@@ -2406,7 +2406,7 @@
         <node concept="lc7rE" id="9i5DckirNf" role="3cqZAp">
           <node concept="2BGw6n" id="9i5DckirNg" role="lcghm" />
           <node concept="la8eA" id="9i5DckirNh" role="lcghm">
-            <property role="lacIc" value="&lt;/ul&gt;" />
+            <property role="lacIc" value="&lt;/ul&gt;&lt;/li&gt;" />
           </node>
           <node concept="l8MVK" id="9i5DckirNi" role="lcghm" />
         </node>
