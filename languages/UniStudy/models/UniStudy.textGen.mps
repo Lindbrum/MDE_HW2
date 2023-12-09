@@ -210,7 +210,7 @@
         </node>
         <node concept="lc7rE" id="6Vx$_aY6QHS" role="3cqZAp">
           <node concept="la8eA" id="6Vx$_aY6QKn" role="lcghm">
-            <property role="lacIc" value="&lt;main class=&quot;container&gt;&quot;" />
+            <property role="lacIc" value="&lt;main class=&quot;container&quot;&gt;" />
           </node>
           <node concept="l8MVK" id="6Vx$_aY6QNn" role="lcghm" />
         </node>
@@ -567,7 +567,7 @@
             <node concept="3cpWs3" id="4ApAeEQRG9o" role="lb14g">
               <node concept="3cpWs3" id="4ApAeEQRG9p" role="3uHU7B">
                 <node concept="Xl_RD" id="4ApAeEQRG9q" role="3uHU7B">
-                  <property role="Xl_RC" value="&lt;h3&gt;Degree course #" />
+                  <property role="Xl_RC" value="&lt;li&gt;&lt;h3&gt;Degree course #" />
                 </node>
                 <node concept="1eOMI4" id="4ApAeEQRG9r" role="3uHU7w">
                   <node concept="3cpWs3" id="4ApAeEQRG9s" role="1eOMHV">
@@ -885,7 +885,6 @@
           </node>
           <node concept="l8MVK" id="9i5DckgQIs" role="lcghm" />
         </node>
-        <node concept="11p84A" id="9i5DckgQIt" role="3cqZAp" />
         <node concept="lc7rE" id="9i5DckgQIu" role="3cqZAp">
           <node concept="2BGw6n" id="9i5DckgQIv" role="lcghm" />
           <node concept="la8eA" id="9i5DckgQIw" role="lcghm">
@@ -893,6 +892,7 @@
           </node>
           <node concept="l8MVK" id="9i5DckgQIx" role="lcghm" />
         </node>
+        <node concept="11p84A" id="9i5DckgQIt" role="3cqZAp" />
         <node concept="lc7rE" id="9i5DckgQIy" role="3cqZAp">
           <node concept="l9S2W" id="9i5DckgQIz" role="lcghm">
             <node concept="2OqwBi" id="9i5DckgQI$" role="lbANJ">
@@ -922,7 +922,7 @@
         <node concept="lc7rE" id="4ApAeEQRM$Z" role="3cqZAp">
           <node concept="2BGw6n" id="4ApAeEQRM_0" role="lcghm" />
           <node concept="la8eA" id="4ApAeEQRM_1" role="lcghm">
-            <property role="lacIc" value="&lt;/ul&gt;" />
+            <property role="lacIc" value="&lt;/ul&gt;&lt;/li&gt;" />
           </node>
           <node concept="l8MVK" id="4ApAeEQRM_2" role="lcghm" />
         </node>

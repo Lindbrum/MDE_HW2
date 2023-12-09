@@ -572,7 +572,7 @@
               <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence)" resolve="append" />
               <uo k="s:originTrace" v="n:7989828098006412311" />
               <node concept="Xl_RD" id="1T" role="37wK5m">
-                <property role="Xl_RC" value="&lt;main class=&quot;container&gt;&quot;" />
+                <property role="Xl_RC" value="&lt;main class=&quot;container&quot;&gt;" />
                 <uo k="s:originTrace" v="n:7989828098006412311" />
               </node>
             </node>
@@ -5318,7 +5318,7 @@
                 <node concept="3cpWs3" id="on" role="3uHU7B">
                   <uo k="s:originTrace" v="n:5303438170063290969" />
                   <node concept="Xl_RD" id="op" role="3uHU7B">
-                    <property role="Xl_RC" value="&lt;h3&gt;Degree course #" />
+                    <property role="Xl_RC" value="&lt;li&gt;&lt;h3&gt;Degree course #" />
                     <uo k="s:originTrace" v="n:5303438170063290970" />
                   </node>
                   <node concept="1eOMI4" id="oq" role="3uHU7w">
@@ -7023,62 +7023,62 @@
           </node>
         </node>
         <node concept="3clFbF" id="nU" role="3cqZAp">
-          <uo k="s:originTrace" v="n:167220957122096029" />
-          <node concept="2OqwBi" id="uy" role="3clFbG">
-            <uo k="s:originTrace" v="n:167220957122096029" />
-            <node concept="37vLTw" id="uz" role="2Oq$k0">
-              <ref role="3cqZAo" node="ob" resolve="tgs" />
-              <uo k="s:originTrace" v="n:167220957122096029" />
-            </node>
-            <node concept="liA8E" id="u$" role="2OqNvi">
-              <ref role="37wK5l" to="kpbf:~TextGenSupport.increaseIndent()" resolve="increaseIndent" />
-              <uo k="s:originTrace" v="n:167220957122096029" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="nV" role="3cqZAp">
           <uo k="s:originTrace" v="n:167220957122096031" />
-          <node concept="2OqwBi" id="u_" role="3clFbG">
+          <node concept="2OqwBi" id="uy" role="3clFbG">
             <uo k="s:originTrace" v="n:167220957122096031" />
-            <node concept="37vLTw" id="uA" role="2Oq$k0">
+            <node concept="37vLTw" id="uz" role="2Oq$k0">
               <ref role="3cqZAo" node="ob" resolve="tgs" />
               <uo k="s:originTrace" v="n:167220957122096031" />
             </node>
-            <node concept="liA8E" id="uB" role="2OqNvi">
+            <node concept="liA8E" id="u$" role="2OqNvi">
               <ref role="37wK5l" to="kpbf:~TextGenSupport.indent()" resolve="indent" />
               <uo k="s:originTrace" v="n:167220957122096031" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="nW" role="3cqZAp">
+        <node concept="3clFbF" id="nV" role="3cqZAp">
           <uo k="s:originTrace" v="n:167220957122096032" />
-          <node concept="2OqwBi" id="uC" role="3clFbG">
+          <node concept="2OqwBi" id="u_" role="3clFbG">
             <uo k="s:originTrace" v="n:167220957122096032" />
-            <node concept="37vLTw" id="uD" role="2Oq$k0">
+            <node concept="37vLTw" id="uA" role="2Oq$k0">
               <ref role="3cqZAo" node="ob" resolve="tgs" />
               <uo k="s:originTrace" v="n:167220957122096032" />
             </node>
-            <node concept="liA8E" id="uE" role="2OqNvi">
+            <node concept="liA8E" id="uB" role="2OqNvi">
               <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence)" resolve="append" />
               <uo k="s:originTrace" v="n:167220957122096032" />
-              <node concept="Xl_RD" id="uF" role="37wK5m">
+              <node concept="Xl_RD" id="uC" role="37wK5m">
                 <property role="Xl_RC" value="&lt;ul&gt;" />
                 <uo k="s:originTrace" v="n:167220957122096032" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="nX" role="3cqZAp">
+        <node concept="3clFbF" id="nW" role="3cqZAp">
           <uo k="s:originTrace" v="n:167220957122096033" />
-          <node concept="2OqwBi" id="uG" role="3clFbG">
+          <node concept="2OqwBi" id="uD" role="3clFbG">
             <uo k="s:originTrace" v="n:167220957122096033" />
-            <node concept="37vLTw" id="uH" role="2Oq$k0">
+            <node concept="37vLTw" id="uE" role="2Oq$k0">
               <ref role="3cqZAo" node="ob" resolve="tgs" />
               <uo k="s:originTrace" v="n:167220957122096033" />
             </node>
-            <node concept="liA8E" id="uI" role="2OqNvi">
+            <node concept="liA8E" id="uF" role="2OqNvi">
               <ref role="37wK5l" to="kpbf:~TextGenSupport.newLine()" resolve="newLine" />
               <uo k="s:originTrace" v="n:167220957122096033" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="nX" role="3cqZAp">
+          <uo k="s:originTrace" v="n:167220957122096029" />
+          <node concept="2OqwBi" id="uG" role="3clFbG">
+            <uo k="s:originTrace" v="n:167220957122096029" />
+            <node concept="37vLTw" id="uH" role="2Oq$k0">
+              <ref role="3cqZAo" node="ob" resolve="tgs" />
+              <uo k="s:originTrace" v="n:167220957122096029" />
+            </node>
+            <node concept="liA8E" id="uI" role="2OqNvi">
+              <ref role="37wK5l" to="kpbf:~TextGenSupport.increaseIndent()" resolve="increaseIndent" />
+              <uo k="s:originTrace" v="n:167220957122096029" />
             </node>
           </node>
         </node>
@@ -7275,7 +7275,7 @@
               <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence)" resolve="append" />
               <uo k="s:originTrace" v="n:5303438170063317313" />
               <node concept="Xl_RD" id="vs" role="37wK5m">
-                <property role="Xl_RC" value="&lt;/ul&gt;" />
+                <property role="Xl_RC" value="&lt;/ul&gt;&lt;/li&gt;" />
                 <uo k="s:originTrace" v="n:5303438170063317313" />
               </node>
             </node>

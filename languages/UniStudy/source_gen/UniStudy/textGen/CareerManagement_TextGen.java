@@ -32,7 +32,7 @@ public class CareerManagement_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.append("<body>");
     tgs.newLine();
-    tgs.append("<main class=\"container>\"");
+    tgs.append("<main class=\"container\">");
     tgs.newLine();
     tgs.append("<h1>Universities</h1>");
     tgs.newLine();
