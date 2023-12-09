@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-3nvte54c6dhmjq2bbail4m6u4tiye9x">
+<product version="3" modelHash="dnjx61dohxvnm37itlydgw8r8ce0lh7">
   <files names="CareerManagement_TextGen.java:Career_TextGen.java:CourseReference_TextGen.java:Course_TextGen.java:DegreeCourseReference_TextGen.java:DegreeCourse_TextGen.java:Department_TextGen.java:ExaminationCallReference_TextGen.java:ExaminationCall_TextGen.java:ExtraInfo_TextGen.java:NewsReference_TextGen.java:News_TextGen.java:PassingGradeReference_TextGen.java:PassingGrade_TextGen.java:ProfessorReference_TextGen.java:Professor_TextGen.java:StudentReference_TextGen.java:Student_TextGen.java:TextGenAspectDescriptor.java:ThesisReference_TextGen.java:Thesis_TextGen.java:University_TextGen.java" />
 </product>
 

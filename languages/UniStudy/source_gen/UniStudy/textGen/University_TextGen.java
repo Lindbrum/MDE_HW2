@@ -7,10 +7,11 @@ import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 public class University_TextGen extends TextGenDescriptorBase {
@@ -22,6 +23,11 @@ public class University_TextGen extends TextGenDescriptorBase {
     tgs.append("University #" + (SNodeOperations.getIndexInParent(ctx.getPrimaryInput()) + 1) + ": ");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$MnvL));
     tgs.append("</h2>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("<h3>Rector: ");
+    tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.rector$Ba5S), PROPS.name$MnvL));
+    tgs.append("</h3>");
     tgs.newLine();
     tgs.indent();
     tgs.append("<h3>Departments</h3>");
@@ -44,6 +50,7 @@ public class University_TextGen extends TextGenDescriptorBase {
   }
 
   private static final class LINKS {
+    /*package*/ static final SReferenceLink rector$Ba5S = MetaAdapterFactory.getReferenceLink(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4117b65abcfbf5cfL, 0x4117b65abcfbf5d2L, "rector");
     /*package*/ static final SContainmentLink departments$BazU = MetaAdapterFactory.getContainmentLink(0x6d0cfce3b6ce4188L, 0xa63493977a58376fL, 0x4117b65abcfbf5cfL, 0x4117b65abcfbf5d4L, "departments");
   }
 }
